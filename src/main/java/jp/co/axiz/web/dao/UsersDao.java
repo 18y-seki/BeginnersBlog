@@ -20,6 +20,8 @@ public class UsersDao {
 	private final String SQL_SELECT_ID_PASS = "SELECT * FROM users "
 						+ "WHERE user_id = ? AND password = ? AND delete_flg = 0";
 
+	private final String SQL_INSERT = "INSERT INTO users VALUES(?, ?, ?)";
+
 
 
 	public List<Users> find(Users users){
@@ -44,6 +46,10 @@ public class UsersDao {
 	}
 
 	public void register(Users users) {
+		jdbcTemplate.update(SQL_INSERT,
+				users.getUserId(),
+				users.getUsername(),
+				users.getPassword());
 
 	}
 
