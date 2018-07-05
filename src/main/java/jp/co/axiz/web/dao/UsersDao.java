@@ -84,7 +84,7 @@ public class UsersDao {
 	public void insertMembar(Users users) {
 		jdbcTemplate.update(SQL_INSERT_MEMBAR,
 				users.getUserId(),
-				users.getUsername(),
+				users.getUserName(),
 				users.getPassword());
 	}
 

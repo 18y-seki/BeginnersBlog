@@ -2,7 +2,7 @@ package jp.co.axiz.web.entity;
 
 public class Users {
 	private String userId;
-	private String username;
+	private String userName;
 	private String password;
 	private String sex;
 	private String birthday;
@@ -16,11 +16,11 @@ public class Users {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getUsername() {
-		return username;
+	public String getUserName() {
+		return userName;
 	}
-	public void setUsername(String username) {
-		this.username = username;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public String getPassword() {
 		return password;

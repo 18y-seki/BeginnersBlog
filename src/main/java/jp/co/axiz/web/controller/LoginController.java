@@ -53,24 +53,6 @@ public class LoginController {
 
 
 
-	@RequestMapping("/newInsert")
-	public String newInsert(@ModelAttribute("form") Users users, Model model) {
-		return "newInsert";
-	}
-
-	@RequestMapping(value="/newInsertConfirm", method=RequestMethod.POST)
-	public String newInsertConfirm(@ModelAttribute("form") Users users, Model model) {
-		return "newInsertConfirm";
-	}
-
-	@RequestMapping(value="/newInsertResult", method=RequestMethod.POST)
-	public String newInsertResult(@ModelAttribute("form") Users users, Model model) {
-		return "newInsertResult";
-	}
-
-
-
-
 	@RequestMapping("/logout")
 	public String logout(@ModelAttribute("form") Users users, Model model, HttpSession session) {
 		session.invalidate();

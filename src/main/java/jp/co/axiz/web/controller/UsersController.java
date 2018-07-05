@@ -1,5 +1,7 @@
 package jp.co.axiz.web.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -48,12 +50,17 @@ public class UsersController {
 	}
 
 	@RequestMapping("/usersUpdateConfirm")
-	public String usersUpdateConfirm(@ModelAttribute("form") Users users, Model model) {
+	public String usersUpdateConfirm(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+		session.setAttribute("newUsers", users);
 		return "usersUpdateConfirm";
 	}
 
 	@RequestMapping("/usersUpdateResult")
-	public String usersUpdateResult(@ModelAttribute("form") Users users, Model model) {
+	public String usersUpdateResult(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+		Users newUsers = (Users)session.getAttribute("newUsers");
+
+		ud.updateProfile(newUsers);
+		session.removeAttribute("newUsers");
 		return "usersUpdateResult";
 	}
 
@@ -65,12 +72,26 @@ public class UsersController {
 	}
 
 	@RequestMapping("/usersPassUpdateConfirm")
-	public String usersPassUpdateConfirm(@ModelAttribute("form") Users users, Model model) {
+	public String usersPassUpdateConfirm(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+		session.setAttribute("newUsers", users);
 		return "usersPassUpdateConfirm";
 	}
 
 	@RequestMapping("/usersPassUpdateResult")
-	public String usersPassUpdateResult(@ModelAttribute("form") Users users, Model model) {
+	public String usersPassUpdateResult(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+		Users newUsers = (Users)session.getAttribute("newUsers");
+
+		String newPass = newUsers.getPassword();
+		String rePass = users.getPassword();
+
+		if(!(newPass.equals(rePass))){
+			return "usersPassUpdateConfirm";
+		}
+
+		ud.updatePass(users);
+
+		session.removeAttribute("newUsers");
+
 		return "usersPassUpdateResult";
 	}
 

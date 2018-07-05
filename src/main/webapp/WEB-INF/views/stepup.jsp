@@ -39,7 +39,7 @@
 <img src="pchand.jpg" />
 
 <figcaption class="abso">
-<p class="profS"><a href="Beginner.html" class="syo">初級</a></p></figcaption>
+<p class="profS"><a href="Beginner" class="syo">初級</a></p></figcaption>
 </figure>
 </div>
 
@@ -47,7 +47,7 @@
 <figure class="rela">
 <img src="pcwater.jpg" />
 <figcaption class="abso">
-<p class="profS"><a href="Medium.html" class="chu">中級</a></p></figcaption>
+<p class="profS"><a href="Medium" class="chu">中級</a></p></figcaption>
 </figure>
 </div>
 
@@ -55,7 +55,7 @@
 <figure class="rela">
 <img src="pcwhite.jpg" />
 <figcaption class="abso">
-<p class="profS"><a href="Medium.html" class="zyo">上級</a></p></figcaption>
+<p class="profS"><a href="Medium" class="zyo">上級</a></p></figcaption>
 </figure>
 </div>
 
@@ -103,7 +103,7 @@ $(function(){
 });
 </script>
 <p class="prof">
-  <a href="usersMypage.html">マイページに戻る</a>
+  <a href="usersMypage">マイページに戻る</a>
 </p>
 </body>
 
