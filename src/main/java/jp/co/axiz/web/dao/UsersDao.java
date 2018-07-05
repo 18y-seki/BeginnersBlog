@@ -20,8 +20,20 @@ public class UsersDao {
 	private final String SQL_SELECT_ID_PASS = "SELECT * FROM users "
 						+ "WHERE user_id = ? AND password = ? AND delete_flg = 0";
 
-	private final String SQL_INSERT = "INSERT INTO users VALUES(?, ?, ?)";
+	private final String SQL_SELECT_MEMBAR = "SELECT * FROM users "
+			+ "WHERE account_level = 0 AND delete_flg = 0";
 
+	private final String SQL_SELECT_ADMIN = "SELECT * FROM users "
+			+ "WHERE account_level = 1 AND delete_flg = 0";
+
+
+	private final String SQL_INSERT_MEMBAR = "INSERT INTO users(user_id, user_name, password, delete_flg, account_level)"
+											+ " VALUES(?, ?, ?, ?, ?)";
+
+	private final String SQL_INSERT_ADMIN = "INSERT INTO users(user_id, password, delete_flg, account_level) "
+											+ "VALUES(?, ?, ?, ?)";
+
+	private final String SQL_DELETE_USERS = "UPDATE users SET delete_flg = 1 WHERE user_id = ?";
 
 
 	public List<Users> find(Users users){
@@ -45,19 +57,29 @@ public class UsersDao {
 		return list.get(0);
 	}
 
-	public void register(Users users) {
-		jdbcTemplate.update(SQL_INSERT,
+	public void insertMembar(Users users) {
+		jdbcTemplate.update(SQL_INSERT_MEMBAR,
 				users.getUserId(),
 				users.getUsername(),
-				users.getPassword());
+				users.getPassword(),
+				0,
+				0);
+	}
 
+	public void insertAdmin(Users users) {
+		jdbcTemplate.update(SQL_INSERT_ADMIN,
+				users.getUserId(),
+				users.getPassword(),
+				0,
+				1);
 	}
 
 	public void update(Users users) {
 
 	}
 
-	public void delete(Integer id) {
-
+	public void delete(String userId) {
+		jdbcTemplate.update(SQL_DELETE_USERS,
+				userId);
 	}
 }
