@@ -5,60 +5,33 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
-import jp.co.axiz.web.entity.LoginForm;
+import jp.co.axiz.web.entity.Article;
 
 @Controller
 public class ArticleController {
 
-	@RequestMapping("/index")
-	public String index(@ModelAttribute("form") LoginForm form, Model model) {
-		return "index";
+
+	@RequestMapping("/stepup")
+	public String stepup(@ModelAttribute("form") Article article, Model model) {
+		return "stepup";
 	}
 
-	@RequestMapping("/beginnerCon")
-	public String beginnerCon(@ModelAttribute("form") LoginForm form, Model model) {
-		return "BeginnerContribution";
+	@RequestMapping("/easy")
+	public String easy(@ModelAttribute("form") Article article, Model model) {
+		return "easy";
 	}
 
-	@RequestMapping("/beginnerConCon")
-	public String beginnerConCon(@ModelAttribute("form") LoginForm form, Model model) {
-		return "BeginnerContributionConfirm";
+	@RequestMapping("/normal")
+	public String normal(@ModelAttribute("form") Article article, Model model) {
+		return "normal";
 	}
 
-	@RequestMapping("/beginnerConRes")
-	public String beginnerConRes(@ModelAttribute("form") LoginForm form, Model model) {
-		return "BeginnerContributionResult";
+	@RequestMapping("/hard")
+	public String hard(@ModelAttribute("form") Article article, Model model) {
+		return "hard";
 	}
 
-	@RequestMapping("/mediumCon")
-	public String mediumCon(@ModelAttribute("form") LoginForm form, Model model) {
-		return "MediumContribution";
-	}
 
-	@RequestMapping("/mediumConCon")
-	public String mediumConCon(@ModelAttribute("form") LoginForm form, Model model) {
-		return "MediumContributionConfirm";
-	}
-
-	@RequestMapping("/mediumConRes")
-	public String mediumConRes(@ModelAttribute("form") LoginForm form, Model model) {
-		return "MediumContributionResult";
-	}
-
-	@RequestMapping("/highCon")
-	public String highCon(@ModelAttribute("form") LoginForm form, Model model) {
-		return "HighContribution";
-	}
-
-	@RequestMapping("/highConCon")
-	public String highConCon(@ModelAttribute("form") LoginForm form, Model model) {
-		return "HighContributionConfirm";
-	}
-
-	@RequestMapping("/highConRes")
-	public String highConRes(@ModelAttribute("form") LoginForm form, Model model) {
-		return "HighContributionResult";
-	}
 
 
 }

@@ -32,9 +32,7 @@ public class ArticleDao {
 
 
 
-	public List<Article> find(Article article){
-		return null;
-	}
+
 
 	public List<Article> findAll(){
 		List<Article> list = jdbcTemplate.query(SQL_SELECT_ALL,
@@ -51,7 +49,32 @@ public class ArticleDao {
 		return list.get(0);
 	}
 
+	public List<Article> findByUserid(String userId) {
+		List<Article> list = jdbcTemplate.query(SQL_SELECT_USERID,
+				new BeanPropertyRowMapper<Article>(Article.class),
+				userId);
+
+		return list;
+	}
+
+	public List<Article> findByCategory(String category) {
+		List<Article> list = jdbcTemplate.query(SQL_SELECT_CATEGORY,
+				new BeanPropertyRowMapper<Article>(Article.class),
+				category,
+				category,
+				category);
+
+		return list;
+	}
+
 	public void register(Article article) {
+		jdbcTemplate.update(SQL_INSERT,
+				article.getTitle(),
+				article.getArticleText(),
+				article.getUserId(),
+				article.getCategory01(),
+				article.getCategory02(),
+				article.getCategory03());
 
 	}
 
