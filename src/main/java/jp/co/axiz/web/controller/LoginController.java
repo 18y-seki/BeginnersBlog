@@ -27,7 +27,7 @@ public class LoginController {
 		return "usersMypage";
 	}
 
-	@RequestMapping(value="/newInsert", method=RequestMethod.POST)
+	@RequestMapping("/newInsert")
 	public String newInsert(@ModelAttribute("form") Users users, Model model) {
 		return "newInsert";
 	}

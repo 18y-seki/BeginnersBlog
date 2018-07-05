@@ -20,15 +20,8 @@ public class GoodDao {
 
 	private final String SQL_INSERT = "INSERT INTO good(article_id, user_id) VALUES(?, ?)";
 
-	private final String SQL_DELETE = "DELETE FROM good WHWRE article_id = ? AND user_id = ?";
+	private final String SQL_DELETE = "DELETE FROM good WHWRE good_id = ?";
 
-	public List<Good> find(Good good){
-		return null;
-	}
-
-	public Good findById(Integer id) {
-		return null;
-	}
 
 	public List<Good> findByArticleId(Integer articleId) {
 		List<Good> list = jdbcTemplate.query(SQL_SELECT_ARTICLEID,
@@ -55,7 +48,8 @@ public class GoodDao {
 
 	}
 
-	public void delete(Integer id) {
-
+	public void delete(Integer goodId) {
+		jdbcTemplate.update(SQL_DELETE,
+				goodId);
 	}
 }

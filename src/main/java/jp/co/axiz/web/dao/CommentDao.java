@@ -23,13 +23,6 @@ public class CommentDao {
 	private final String SQL_DELETE = "DELETE FROM comment WHERE comment_id = ?";
 
 
-	public List<Comments> find(Comments comments){
-		return null;
-	}
-
-	public Comments findById(Integer id) {
-		return null;
-	}
 
 	public List<Comments> findByArticleId(Integer articleId) {
 		List<Comments> list = jdbcTemplate.query(SQL_SELECT_ARTICLEID,

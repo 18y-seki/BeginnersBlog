@@ -26,9 +26,6 @@ public class IndexController {
 		return "help";
 	}
 
-	@RequestMapping("/menu")
-	public String menu(@ModelAttribute("form") Users users, Model model) {
-		return "menu";
-	}
+
 
 }

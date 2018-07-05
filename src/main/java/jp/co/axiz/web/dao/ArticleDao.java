@@ -31,7 +31,7 @@ public class ArticleDao {
 
 
 
-
+	private final String SQL_DELETE = "DELETE FROM article WHWRE article_id = ?";
 
 
 	public List<Article> findAll(){
@@ -82,8 +82,9 @@ public class ArticleDao {
 
 	}
 
-	public void delete(Integer id) {
-
+	public void delete(Integer articleId) {
+		jdbcTemplate.update(SQL_DELETE,
+				articleId);
 	}
 
 }
