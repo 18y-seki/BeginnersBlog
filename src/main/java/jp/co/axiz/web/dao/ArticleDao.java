@@ -46,6 +46,10 @@ public class ArticleDao {
 				new BeanPropertyRowMapper<Article>(Article.class),
 				articleId);
 
+		if(list.size()==0) {
+			return null;
+		}
+
 		return list.get(0);
 	}
 

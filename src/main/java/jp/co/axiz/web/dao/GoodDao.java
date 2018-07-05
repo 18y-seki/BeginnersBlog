@@ -37,6 +37,10 @@ public class GoodDao {
 				articleId,
 				userId);
 
+		if(list.size()==0) {
+			return null;
+		}
+
 		return list.get(0);
 	}
 

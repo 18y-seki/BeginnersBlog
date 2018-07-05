@@ -47,6 +47,10 @@ public class UsersDao {
 				new BeanPropertyRowMapper<Users>(Users.class),
 				userId);
 
+		if(list.size()==0) {
+			return null;
+		}
+
 		return list.get(0);
 	}
 
@@ -69,6 +73,10 @@ public class UsersDao {
 				new BeanPropertyRowMapper<Users>(Users.class),
 				users.getUserId(),
 				users.getPassword());
+
+		if(list.size()==0) {
+			return null;
+		}
 
 		return list.get(0);
 	}

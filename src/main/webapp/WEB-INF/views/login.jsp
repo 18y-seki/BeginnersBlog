@@ -20,7 +20,7 @@
 
 	<div id="formInsert">
 		<p class="form-title2">Login</p>
-		<form action="top_login" method="post">
+		<form action="login" method="post">
 			<p class="idText2">ID</p>
 			<p class="id">
 				<input type="text" name="id" />
@@ -29,10 +29,9 @@
 			<p class="pass">
 				<input type="password" name="pass" />
 			</p>
-			<a href="login_top" class="fl_tw4"> <i
-				class="fa fa-twitter3"></i> <span>ログイン</span>
-			</a>
+			<input type="submit" value="ログイン">
 		</form>
+		</div>
 		<p class="prof">
 			<a href="top">TOP画面へ</a>
 		</p>
