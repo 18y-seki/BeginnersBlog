@@ -1,5 +1,7 @@
 package jp.co.axiz.web.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -22,10 +24,34 @@ public class LoginController {
 		return "login";
 	}
 
-	@RequestMapping(value="/login", method=RequestMethod.POST)
-	public String loginForm(@ModelAttribute("form") Users users, Model model) {
-		return "usersMypage";
+	@RequestMapping(value = "/login", method=RequestMethod.POST)
+	public String login(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+
+		Users u = ud.findByIdPass(users);
+
+		if(u==null){
+			return "login";
+		}
+
+		Integer account =u.getAccountLevel();
+
+		if(account==0){
+			session.setAttribute("login", u);
+			return "usersMypage";
+		}
+		if(account==1){
+			session.setAttribute("login", u);
+			return "adminMypage";
+		}
+		if(account==2){
+			session.setAttribute("login", u);
+			return "superuserMypage";
+		}
+
+		return"login";
 	}
+
+
 
 	@RequestMapping("/newInsert")
 	public String newInsert(@ModelAttribute("form") Users users, Model model) {
@@ -46,7 +72,8 @@ public class LoginController {
 
 
 	@RequestMapping("/logout")
-	public String logout(@ModelAttribute("form") Users users, Model model) {
+	public String logout(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+		session.invalidate();
 		return "logout";
 	}
 }

@@ -16,6 +16,17 @@ public class UsersController {
 	UsersDao ud;
 
 
+	@RequestMapping("/usersLeave")
+	public String usersLeave(@ModelAttribute("form") Users users, Model model) {
+		return "usersLeave";
+	}
+
+	@RequestMapping("/usersLeaveResult")
+	public String usersLeaveResult(@ModelAttribute("form") Users users, Model model) {
+		ud.delete(users.getUserId());
+		return "usersLeaveResult";
+	}
+
 
 	@RequestMapping("/usersDelete")
 	public String usersDelete(@ModelAttribute("form") Users users, Model model) {

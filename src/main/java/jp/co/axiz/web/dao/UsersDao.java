@@ -28,10 +28,10 @@ public class UsersDao {
 
 
 	private final String SQL_INSERT_MEMBAR = "INSERT INTO users(user_id, user_name, password, delete_flg, account_level)"
-											+ " VALUES(?, ?, ?, ?, ?)";
+											+ " VALUES(?, ?, ?, 0, 0)";
 
 	private final String SQL_INSERT_ADMIN = "INSERT INTO users(user_id, password, delete_flg, account_level) "
-											+ "VALUES(?, ?, ?, ?)";
+											+ "VALUES(?, ?, 0, 1)";
 
 	private final String SQL_UPDATE_PASS = "UPDATE users SET password = ? WHERE user_id = ?";
 
@@ -85,17 +85,13 @@ public class UsersDao {
 		jdbcTemplate.update(SQL_INSERT_MEMBAR,
 				users.getUserId(),
 				users.getUsername(),
-				users.getPassword(),
-				0,
-				0);
+				users.getPassword());
 	}
 
 	public void insertAdmin(Users users) {
 		jdbcTemplate.update(SQL_INSERT_ADMIN,
 				users.getUserId(),
-				users.getPassword(),
-				0,
-				1);
+				users.getPassword());
 	}
 
 	public void updatePass(Users users) {

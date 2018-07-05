@@ -12,7 +12,7 @@
 <body id="top">
 <div id="top">
 	<header>
-		<h1><a href="top.html">Beginner's Blog</a></h1>
+		<h1><a href="top">Beginner's Blog</a></h1>
 	</header>
 </div>
 
@@ -24,31 +24,31 @@
 
 
 				<div class="submit">
-					<a href="stepup.html"> <input type="text" value="ブログ投稿" id="button-blue" readonly/>
+					<a href="stepup"> <input type="text" value="ブログ投稿" id="button-blue" readonly/>
 					</a>
 				</div>
 
 
 				<div class="submit">
-					<a href="usersUpdate.html"> <input type="text" value="プロフィール変更"
+					<a href="usersUpdate"> <input type="text" value="プロフィール変更"
 						id="button-blue" readonly/>
 					</a>
 				</div>
 
 				<div class="submit">
-					<a href="usersPassUpdate.html"> <input type="text" value="パスワード変更"
+					<a href="usersPassUpdate"> <input type="text" value="パスワード変更"
 						id="button-blue" readonly/>
 					</a>
 				</div>
 
 				<div class="submit">
-					<a href="usersLeave.html"> <input type="text" value="退会"
+					<a href="usersLeave"> <input type="text" value="退会"
 						id="button-blue" readonly/>
 					</a>
 				</div>
 
 				<div class="submit">
-					<a href="logout.html"> <input type="text" value="ログアウト"
+					<a href="logout"> <input type="text" value="ログアウト"
 						id="button-blue" readonly/>
 					</a>
 				</div>
@@ -56,7 +56,7 @@
 			</form>
 		</div>
 					<p class="profM">
- <a href="top.html">TOP画面へ</a>
+ <a href="top">TOP画面へ</a>
  </p><br>
 </body>
 </html>

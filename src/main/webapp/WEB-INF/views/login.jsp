@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -20,17 +23,19 @@
 
 	<div id="formInsert">
 		<p class="form-title2">Login</p>
-		<form action="login" method="post">
+
+		<form:form action="login" modelAttribute="form">
 			<p class="idText2">ID</p>
 			<p class="id">
-				<input type="text" name="id" />
+				<form:input path="userId" />
 			</p>
 			<p class="passText2">PASS</p>
 			<p class="pass">
-				<input type="password" name="pass" />
+				<form:password path="password" />
 			</p>
-			<input type="submit" value="ログイン">
-		</form>
+			<form:button>ログイン</form:button>
+		</form:form>
+
 		</div>
 		<p class="prof">
 			<a href="top">TOP画面へ</a>
