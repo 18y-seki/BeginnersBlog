@@ -18,6 +18,9 @@ public class GoodDao {
 	private final String SQL_SELECT_ARTICLEID = "SELECT * FROM good WHERE article_id = ? ";
 	private final String SQL_SELECT_ARTICLE_USERS = "SELECT * FROM good WHERE article_id = ? AND user_id = ?";
 
+	private final String SQL_INSERT = "INSERT INTO good(article_id, user_id) VALUES(?, ?)";
+
+	private final String SQL_DELETE = "DELETE FROM good WHWRE article_id = ? AND user_id = ?";
 
 	public List<Good> find(Good good){
 		return null;

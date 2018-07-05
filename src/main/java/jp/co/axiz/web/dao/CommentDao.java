@@ -17,6 +17,11 @@ public class CommentDao {
 
 	private final String SQL_SELECT_ARTICLEID = "SELECT * FROM comment WHERE article_id = ?";
 
+	private final String SQL_INSERT = "INSERT INTO comment(article_id, user_id, comment_text) "
+			+ "VALUES(?, ?, ?)";
+
+	private final String SQL_DELETE = "DELETE FROM comment WHERE comment_id = ?";
+
 
 	public List<Comments> find(Comments comments){
 		return null;
