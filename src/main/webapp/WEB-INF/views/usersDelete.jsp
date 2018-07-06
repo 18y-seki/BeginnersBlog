@@ -23,7 +23,7 @@
 		<p class="form-title">会員強制退会ページ</p>
 		<p class="headM">この会員でよろしいですか？</p>
 
-		<form action="powerDeleteResult.html" method="post">
+		<form action="usersDeleteResult" method="post">
 
 			<table class="table table-striped table-bordered table-hover">
 				<thead>
@@ -42,12 +42,12 @@
 					</tr>
 				</tbody>
 			</table>
-			<a href="usersDeleteResult.html" class="fl_tw4"> <i
+			<a href="usersDeleteResult" class="fl_tw4"> <i
 				class="fa fa-twitter3"></i> <span>削除</span>
 			</a>
 		</form>
 		<p class="prof">
-			<a href="adminMypage.html">管理者メニューへ</a>
+			<a href="adminMypage">管理者メニューへ</a>
 		</p>
 	</div>
 </body>

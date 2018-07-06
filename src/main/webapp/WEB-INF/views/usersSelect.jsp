@@ -1,5 +1,5 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,9 +13,7 @@
 </head>
 <body class="top">
 	<header>
-		<h1>
-			<a href="#">Beginner's Blog</a>
-		</h1>
+	<h1><a href="#">Beginner's Blog</a></h1>
 	</header>
 	<div class="center ue">
 		<p class="form-title">会員 参照結果</p>
@@ -40,7 +38,7 @@
 					<td>山田</td>
 					<td>axizaxiz</td>
 					<td>
-						<button type="submit" onclick="location.href='usersDelete.html'"
+						<button type="submit" onclick="location.href='usersDelete'"
 							class="mypagebuttoncollect">削除</button>
 					</td>
 				</tr>
@@ -49,7 +47,7 @@
 					<td>木村</td>
 					<td>pass</td>
 					<td>
-						<button type="submit" onclick="location.href='usersDelete.html'"
+						<button type="submit" onclick="location.href='usersDelete'"
 							class="mypagebuttoncollect">削除</button>
 					</td>
 				</tr>
@@ -58,7 +56,7 @@
 		</table>
 	</div>
 	<p class="prof">
-		<a href="adminMypage.html">管理者メニューへ</a>
+		<a href="adminMypage">管理者メニューへ</a>
 	</p>
 </body>
 </html>

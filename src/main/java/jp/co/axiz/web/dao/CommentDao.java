@@ -33,6 +33,10 @@ public class CommentDao {
 	}
 
 	public void register(Comments comments) {
+		jdbcTemplate.update(SQL_INSERT,
+				comments.getArticleId(),
+				comments.getUserId(),
+				comments.getCommentText());
 
 	}
 
@@ -40,7 +44,9 @@ public class CommentDao {
 
 	}
 
-	public void delete(Integer id) {
+	public void delete(Integer commentId) {
+		jdbcTemplate.update(SQL_DELETE,
+				commentId);
 
 	}
 }

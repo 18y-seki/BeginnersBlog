@@ -41,6 +41,17 @@ public class UsersController {
 		return "usersDeleteResult";
 	}
 
+	@RequestMapping("/adminDelete")
+	public String adminDelete(@ModelAttribute("form") Users users, Model model) {
+		return "adminDelete";
+	}
+
+	@RequestMapping("/adminDeleteResult")
+	public String adminDeleteResult(@ModelAttribute("form") Users users, Model model) {
+		ud.delete(users.getUserId());
+		return "adminDeleteResult";
+	}
+
 
 
 
