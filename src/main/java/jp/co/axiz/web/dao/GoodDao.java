@@ -20,7 +20,7 @@ public class GoodDao {
 
 	private final String SQL_INSERT = "INSERT INTO good(article_id, user_id) VALUES(?, ?)";
 
-	private final String SQL_DELETE = "DELETE FROM good WHWRE good_id = ?";
+	private final String SQL_DELETE = "DELETE FROM good WHERE good_id = ?";
 
 
 	public List<Good> findByArticleId(Integer articleId) {

@@ -32,7 +32,7 @@ public class CommentDao {
 		return list;
 	}
 
-	public void register(Comments comments) {
+	public void insert(Comments comments) {
 		jdbcTemplate.update(SQL_INSERT,
 				comments.getArticleId(),
 				comments.getUserId(),

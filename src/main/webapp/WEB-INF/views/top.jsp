@@ -56,7 +56,7 @@ $(function(){
     <tbody>
         <tr>
                 	<td class="thimg"><img src="articleicon.png" class="Aimg"></td>
-            <th><a href="sample1">Liveだ！</a></th>
+            <th><a href="article">Liveだ！</a></th>
                 <td class="nd"><img src="kategori.png" class="Kimg">　音楽</td>
             <td class="data fst">
                 凛として時雨のライブにいきました。<br>おすすめのアーティスト<br>

@@ -17,12 +17,12 @@ public class ArticleDao {
 
 	private final String SQL_SELECT_ALL = "SELECT * FROM article";
 
-	private final String SQL_SELECT_ID = "SELECT * FROM article WHWRE article_id = ?";
+	private final String SQL_SELECT_ID = "SELECT * FROM article WHERE article_id = ?";
 
 	private final String SQL_SELECT_CATEGORY = "SELECT * FROM article "
-			+ "WHWRE category_01 = ? OR category_02 = ? OR category_03 = ?";
+			+ "WHERE category_01 = ? OR category_02 = ? OR category_03 = ?";
 
-	private final String SQL_SELECT_USERID = "SELECT * FROM article WHWRE user_id = ?";
+	private final String SQL_SELECT_USERID = "SELECT * FROM article WHERE user_id = ?";
 
 
 	private final String SQL_INSERT = "INSERT INTO article"
@@ -31,7 +31,7 @@ public class ArticleDao {
 
 
 
-	private final String SQL_DELETE = "DELETE FROM article WHWRE article_id = ?";
+	private final String SQL_DELETE = "DELETE FROM article WHERE article_id = ?";
 
 
 	public List<Article> findAll(){
