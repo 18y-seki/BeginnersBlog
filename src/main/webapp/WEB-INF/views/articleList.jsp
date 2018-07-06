@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -78,6 +81,16 @@ $(function(){
 						<p>2018/07/02</p>
 					</div>
 				</a>
+				<c:forEach var="user" items="${userList}">
+					<tr>
+						<td>${fn:escapeXml(user.userId)}</td>
+
+						<td>
+							<button type="submit" onclick="location.href='usersDelete.html'"
+								class="mypagebuttoncollect">削除</button>
+						</td>
+					</tr>
+				</c:forEach>
 			</div>
 						<br><br>
 	<a href="#" class="square_btn">

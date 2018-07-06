@@ -44,13 +44,12 @@ public class GoodDao {
 		return list.get(0);
 	}
 
-	public void register(Good good) {
-
+	public void insert(Good good) {
+		jdbcTemplate.update(SQL_INSERT,
+				good.getArticleId(),
+				good.getUserId());
 	}
 
-	public void update(Good good) {
-
-	}
 
 	public void delete(Integer goodId) {
 		jdbcTemplate.update(SQL_DELETE,
