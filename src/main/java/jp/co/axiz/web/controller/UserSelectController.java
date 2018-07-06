@@ -12,13 +12,21 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import jp.co.axiz.web.dao.UsersDao;
+import jp.co.axiz.web.entity.SelectForm;
 import jp.co.axiz.web.entity.Users;
+import jp.co.axiz.web.service.SelectService;
 
 @Controller
-public class ArticleSelectController {
+public class UserSelectController {
+
 
 	@Autowired
 	UsersDao ud;
+
+	@Autowired
+	SelectService ss;
+
+//会員
 
 	@RequestMapping(value="/usersSelect", method =RequestMethod.GET)
 	public String select(@ModelAttribute("form") Users users, Model model, HttpSession session) {
@@ -30,13 +38,15 @@ public class ArticleSelectController {
 	}
 
 	@RequestMapping(value="/list", method =RequestMethod.GET)
-	public String list(@ModelAttribute("form") Users users, Model model) {
-		Users u = ud.findByIdPass(users);
+	public String list(@ModelAttribute("form") SelectForm form, Model model) {
+		List<Users> list = ss.find(form);
 
 
 
-		model.addAttribute("userList", u);
+		model.addAttribute("userList", list);
 		return "usersSelect";
 	}
+
+
 
 }

@@ -21,13 +21,12 @@
 		</h1>
 	</header>
 	<div class="center ue">
-		<p class="form-title">会員 参照結果</p>
-	</div>
+		<p class="form-title">管理者 参照結果</p>
+		</div>div>
+		<div class="containe6">
+			<table class="table table-striped table-bordered table-hover">
 
-	<div class="containe5">
-		<table class="table table-striped table-bordered table-hover">
-
-<form:form action="list" modelAttribute="form" method="get">
+<form:form action="adminList" modelAttribute="form" method="get">
   <fieldset>
     <div>
       <label>ID</label><form:input path="userId"/>
@@ -40,14 +39,14 @@
 				<tr>
 					<th>ID</th>
 
-					<th>名前</th>
+
 				</tr>
 			</thead>
 			<tbody>
 			<c:forEach var="user" items="${userList}">
 				<tr>
 					<td>${fn:escapeXml(user.userId)}</td>
-					<td>${fn:escapeXml(user.userName)}</td>
+
 	<td>
 						<button type="submit" onclick="location.href='usersDelete.html'"
 							class="mypagebuttoncollect">削除</button>
@@ -58,7 +57,7 @@
 		</table>
 	</div>
 	<p class="prof">
-		<a href="adminMypage.html">管理者メニューへ</a>
-	</p>
+			<a href="superuserMypage.html">スーパーユーザメニューへ</a>
+		</p>
 </body>
 </html>
