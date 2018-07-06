@@ -40,9 +40,9 @@ public class UsersDao {
 
 	private final String SQL_DELETE_USERS = "UPDATE users SET delete_flg = 1 WHERE user_id = ?";
 
+	private final String SQL_SELECT_ID_NAME = "SELECT * FROM users WHERE user_id = ? AND user_name = ?";
 
-
-	public Users findById(String userId) {
+	public List<Users> findById(String userId) {
 		List<Users> list = jdbcTemplate.query(SQL_SELECT_ID,
 				new BeanPropertyRowMapper<Users>(Users.class),
 				userId);
@@ -51,7 +51,15 @@ public class UsersDao {
 			return null;
 		}
 
-		return list.get(0);
+		return list;
+	}
+
+	public List<Users> findByIdName(String userId, String userName) {
+		List<Users> list = jdbcTemplate.query(SQL_SELECT_ID_NAME,
+				new BeanPropertyRowMapper<Users>(Users.class),
+				userId,
+				userName);
+		return list;
 	}
 
 	public List<Users> findMembar() {
@@ -113,5 +121,6 @@ public class UsersDao {
 	public void delete(String userId) {
 		jdbcTemplate.update(SQL_DELETE_USERS,
 				userId);
+		return;
 	}
 }

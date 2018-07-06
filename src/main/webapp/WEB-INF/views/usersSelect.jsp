@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -21,8 +24,16 @@
 
 	<div class="containe5">
 		<table class="table table-striped table-bordered table-hover">
-			<input type="search" name="search" placeholder="IDで検索">
-			<input type="submit" name="submit" value="検索">
+
+						<form:form action="adminList" modelAttribute="form" method="get">
+					<fieldset>
+						<div>
+							<label>ID</label>
+							<form:input path="usersId" value="${usersId}" />
+						</div>
+					</fieldset>
+					<form:button type="submit" class="btn btn-success">検索</form:button>
+				</form:form>
 
 			<thead>
 				<tr>

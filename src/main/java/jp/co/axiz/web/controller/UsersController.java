@@ -18,8 +18,13 @@ public class UsersController {
 	UsersDao ud;
 
 
+	@RequestMapping("/usersMypage")
+	public String usersMypage(@ModelAttribute("form") Users users, Model model) {
+		return "usersMypage";
+	}
+
 	@RequestMapping("/usersLeave")
-	public String usersLeave(@ModelAttribute("form") Users users, Model model) {
+	public String usersLeave(@ModelAttribute("form") Users users, Model model, HttpSession session) {
 		return "usersLeave";
 	}
 
@@ -28,7 +33,6 @@ public class UsersController {
 		ud.delete(users.getUserId());
 		return "usersLeaveResult";
 	}
-
 
 	@RequestMapping("/usersDelete")
 	public String usersDelete(@ModelAttribute("form") Users users, Model model) {
@@ -94,8 +98,5 @@ public class UsersController {
 
 		return "usersPassUpdateResult";
 	}
-
-
-
 
 }

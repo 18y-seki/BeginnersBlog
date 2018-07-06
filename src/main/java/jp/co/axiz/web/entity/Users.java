@@ -10,6 +10,7 @@ public class Users {
 	private String greet;
 	private Integer deleteFlg;
 	private Integer accountLevel;
+
 	public String getUserId() {
 		return userId;
 	}
