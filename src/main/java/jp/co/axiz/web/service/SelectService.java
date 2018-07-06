@@ -7,5 +7,7 @@ import jp.co.axiz.web.entity.Users;
 
 public interface SelectService {
 	public List<Users>find(SelectForm form);
+
+	public List<Users>adminfind(SelectForm form);
 	}
 

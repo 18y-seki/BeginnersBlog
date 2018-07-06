@@ -33,7 +33,7 @@ public class AdminSelectController {
 	@RequestMapping(value="/adminSelect", method =RequestMethod.GET)
 	public String select(@ModelAttribute("form") Users users, Model model, HttpSession session) {
 		List<Users> list = ud.findAdminmembar();
-		session.setAttribute("adminSelect", list);
+		session.setAttribute("userList", list);
 
 
 		return "adminSelect";
@@ -41,7 +41,7 @@ public class AdminSelectController {
 
 	@RequestMapping(value="/adminList", method =RequestMethod.GET)
 	public String list(@ModelAttribute("form") SelectForm form, Model model) {
-		List<Users> list = ss.find(form);
+		List<Users> list = ss.adminfind(form);
 
 
 

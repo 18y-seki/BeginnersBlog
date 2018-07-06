@@ -32,10 +32,31 @@ public class SelectServiceImpl implements SelectService{
 
 		List<Users> list = new ArrayList<Users>();
 		if(isId) {
-			list = ud.findMembarById(id);
+			list= ud.findMembarById(id);
 		}else {
 			list = ud.findMembar();
 		}
+
+
+		return list;
+
+	}
+
+	@Override
+	public List<Users>adminfind(SelectForm form) {
+		String id = form.getUserId();
+
+
+		boolean isId = false;
+
+		if(!("".equals(id))) {
+			isId = true;
+
+		}
+
+
+		List<Users> list = new ArrayList<Users>();
+
 		if(isId) {
 			list= ud.findAdminembarById(id);
 		}else {
