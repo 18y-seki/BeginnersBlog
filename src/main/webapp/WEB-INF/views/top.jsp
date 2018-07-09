@@ -35,9 +35,7 @@ $(function(){
 </head>
 <body>
 	<div id="top">
-		<header>
 		<h1>Beginner's Blog</h1>
-		</header>
 
 		<p id="headM">
 			このサイトはブログ初心者に向けたブログサイトです！<br>

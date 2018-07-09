@@ -20,7 +20,7 @@
 		<p id="headN">記事を編集しました。</p>
 
 		<p class="prof">
-			<a href="usersMypage">マイページに戻る</a>
+			<a href="usersMypage">マイページへ</a>
 		</p>
 	</div>
 

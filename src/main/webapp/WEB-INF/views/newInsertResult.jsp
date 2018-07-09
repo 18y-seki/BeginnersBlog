@@ -20,7 +20,7 @@
 		<p id="headN">登録が完了しました！</p>
 
 		<p class="prof">
-			<a href="top">TOP画面へ</a>
+			<a href="top">TOPページへ</a>
 		</p>
 
 	</div>

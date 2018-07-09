@@ -19,7 +19,7 @@
 	<div id="formOne">
 		<p id="headM">退会しました。</p>
 		<p class="prof">
-			<a href="top">TOP画面へ</a>
+			<a href="top">TOPページへ</a>
 		</p>
 	</div>
 </body>

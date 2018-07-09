@@ -31,9 +31,8 @@
 作り方はとっても簡単。
 できあがり。
 
-		<label>
-			カテゴリ：<form:input path="art_category" style="width: 300px" readonly />
-		</label>
+		<label>カテゴリ：</label>
+		<form:input path="art_category" style="width: 300px" readonly />
 
 		<p style="text-align: center;">
 			<form:button class="mypagebuttoncollect">投稿する</form:button>
@@ -41,7 +40,7 @@
 		</p>
 
 		<p class="prof">
-			<a href="usersMypage">マイページに戻る</a>
+			<a href="usersMypage">マイページへ</a>
 		</p>
 	</div>
 </body>

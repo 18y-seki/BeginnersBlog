@@ -77,7 +77,7 @@
 		</form:form>
 
 		<p class="prof">
-			<a href="top">TOP画面へ戻る</a>
+			<a href="top">TOPページへ</a>
 		</p>
 
 	</div>

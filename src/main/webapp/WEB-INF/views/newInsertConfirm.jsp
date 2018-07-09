@@ -62,6 +62,11 @@
 			</p>
 
 		</div>
+
+		<p class="prof">
+			<a href="top">TOPページへ</a>
+		</p>
+
 	</div>
 </body>
 </html>

@@ -37,11 +37,10 @@
 </head>
 <body>
 	<div id="top3">
-		<header>
 		<h1>
 			<a href="top">Beginner's Blog</a>
 		</h1>
-		</header>
+
 	</div>
 
 	<div>
@@ -49,25 +48,23 @@
 		<h2>初級投稿フォーム</h2>
 		</p>
 		<div class="buttonT">
-			<p>
 
-				<a href="easy" class="square_btn">チュートリアルを確認</a>
+			<a href="easy" class="square_btn">チュートリアルを確認</a>
 			<div class="article_main">
 
-				<form action="easyContributionConfirm" method="post"
-					enctype="multipart/form-data">
+				<form:form action="easyContributionConfirm" modelAttribute="form"
+					method="post" enctype="multipart/form-data">
 
-					<div>
-						タイトル：<input type="text" name="title" maxlength="30"
-							style="width: 480px;" value="Liveだ！">
-					</div>
-
+					<label>タイトル：</label>
+					<form:input path="title" maxlength="30" style="width: 480px;"
+						value="Liveだ！" />
 
 					<fieldset>
 						<legend>ボタン</legend>
-						<button type="button" class="html">画像挿入</button>
-						<input type="file" name="img">
+						<form:button class="html">画像挿入</form:button>
+						<form:input path="file" name="img" />
 					</fieldset>
+
 					<fieldset>
 						<div class="text">
 							<p>凛として時雨のライブにいきました。</p>
@@ -75,22 +72,21 @@
 							おすすめのアーティストなので是非聞いてください。 <br> <img
 								src="img/resize_image.jpg"> <br>
 							<div class="kategorii">
-								カテゴリ<input type="text" name="art_category" style="width: 300px;"
-									value="音楽">
+								<label>カテゴリ</label>
+								<form:input path="art_category" style="width: 300px;" value="音楽" />
 							</div>
 						</div>
 					</fieldset>
 
+					<form:button class="square_btn">確認画面へ</form:button>
+					<a href="usersMypage" class="square_btn">マイページへ</a>
 
-					<a href="easyContributionConfirm" class="square_btn">確認画面へ</a> <a
-						href="usersMypage" class="square_btn">マイページへ</a>
-
-				</form>
+				</form:form>
 			</div>
 		</div>
 	</div>
-		<footer>
-		<p>Copyright © 2018 Beginner's Blog All Rights Reserved.</p>
-		<a href="login_top" class="kanri">管理者ログイン</a> </footer>
+
+	<p>Copyright © 2018 Beginner's Blog All Rights Reserved.</p>
+	<a href="login_top" class="kanri">管理者ログイン</a>
 </body>
 </html>

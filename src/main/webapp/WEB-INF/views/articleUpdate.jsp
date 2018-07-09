@@ -73,8 +73,11 @@
 		</form:form>
 	</div>
 
+		<p class="prof">
+			<a href="usersMypage">マイページへ</a>
+		</p>
+
 	<p>Copyright © 2018 Beginner's Blog All Rights Reserved.</p>
-	<a href="login_top" class="kanri">管理者ログイン</a>
 
 </body>
 </html>
