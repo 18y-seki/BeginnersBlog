@@ -19,36 +19,30 @@
 
 
 		<!-- つぶやきならタイトル欄を表示しない -->
-		<p>
-			タイトル：<input type="text" name="title" maxlength="40"
-				style="width: 540px;" value="本日の献立" readonly>
-		</p>
 
-		<p>本文：</p>
-		<textarea style="resize: none;" name="main" cols="125" rows="35"
-			readonly>ああああ
+			<label>タイトル：</label>
+			<form:input path="title" maxlength="40" style="width: 540px;" value="本日の献立" readonly></form:input>
+
+
+		<label>本文：</label>
+		<form:textarea path="main" cols="125" rows="35" readonly />
+
+カレーの作り方。
 作り方はとっても簡単。
+できあがり。
 
-ああああ
-【あ】
-
-</textarea>
-
-		<p>
-			カテゴリ：<input type="text" name="art_category" style="width: 300px"
-				readonly>
-		</p>
+		<label>
+			カテゴリ：<form:input path="art_category" style="width: 300px" readonly />
+		</label>
 
 		<p style="text-align: center;">
-			<button type="submit" name="" value=""
-				onclick="location.href='articleUpdateResult'"
-				class="mypagebuttoncollect">投稿する</button>
+			<form:button class="mypagebuttoncollect">投稿する</form:button>
+			<a href="articleUpdate">戻る</a>
+		</p>
 
-			<button type="submit" name="" value=""
-				onclick="location.href='articleUpdate'"
-				class="mypagebuttoncollect">戻る</button>
+		<p class="prof">
+			<a href="usersMypage">マイページに戻る</a>
 		</p>
 	</div>
-
 </body>
 </html>

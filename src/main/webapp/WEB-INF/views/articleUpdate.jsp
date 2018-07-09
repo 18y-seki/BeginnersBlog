@@ -53,22 +53,21 @@
 			</fieldset>
 
 
-			<textarea style="resize: none;" name="main" cols="125" rows="35">
+			<form:textarea path="main" cols="125" rows="35" value="" />
 
 カレーの作り方。
 作り方はとっても簡単。
 できあがり。
 
-</textarea>
+
 			<!-- htmlボタンなどを設置 -->
 
 			<label>カテゴリ：</label>
-			<form:input path="art_category" style="width: 300px;" value="aaa"></form:input>
+			<form:input path="art_category" style="width: 300px;" value="aaa" />
 
 				<p style="text-align: center;">
-					<form:button type="submit" name="art_ok"
-						class="mypagebuttoncollect">確認画面へ</form:button>
-					<form:button onclick="location.href='articleList'; return false;">戻る</form:button>
+					<form:button path="art_ok" class="mypagebuttoncollect">確認画面へ</form:button>
+					<a href="article">戻る</a>
 
 				</p>
 		</form:form>
