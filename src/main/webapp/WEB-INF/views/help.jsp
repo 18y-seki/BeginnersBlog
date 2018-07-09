@@ -33,7 +33,7 @@
 </div>
 
 <p class="prof">
- <a href="top.html">TOP画面へ</a>
+ <a href="top">TOP画面へ</a>
  </p>
 
 
@@ -50,7 +50,5 @@ $(function(){
     });
 });
 </script>
-
-
 </body>
 </html>

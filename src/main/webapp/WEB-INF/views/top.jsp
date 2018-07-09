@@ -30,9 +30,11 @@ $(function(){
 </head>
 <body>
 <div id="top">
-		<header>
-			<h1><p>Beginner's Blog</p></h1>
-		</header>
+	<header>
+		<h1>
+			<a href="top">Beginner's Blog</a>
+		</h1>
+	</header>
 		<p id="headM">このサイトはブログ初心者に向けたブログサイトです！<br></p>
 		<p id="headS"><span id="under"><a href="help">このサイトについて詳しく知る</a></span></p>
 		<a href="newInsert" class="fl_tw2">
@@ -106,6 +108,5 @@ $(function(){
 		<div class="scroll_button">
    			 <a href="#">ページTOPへ戻る</a>
 		</div>
-	</div>
 </body>
 </html>

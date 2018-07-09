@@ -16,7 +16,9 @@
 
 <div id="top">
 	<header>
-		<h1><p>Beginner's Blog</p></h1>
+		<h1>
+			<a href="top">Beginner's Blog</a>
+		</h1>
 	</header>
 </div>
 

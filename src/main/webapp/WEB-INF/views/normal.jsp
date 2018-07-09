@@ -19,7 +19,9 @@
 
 <div id="top">
 	<header>
-		<h1><p><a href="top.html">Beginner's Blog</a></p></h1>
+		<h1>
+			<a href="top">Beginner's Blog</a>
+		</h1>
 	</header>
 </div>
 
@@ -70,6 +72,5 @@ $(function(){
     });
 });
 </script>
-
 </body>
 </html>
