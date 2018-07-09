@@ -34,13 +34,7 @@ $(function(){
 <body>
 
 	<div id="top3">
-		<header>
-			<h1>
-				<p>
-					<a href="top.html">Beginner's Blog</a>
-				</p>
-			</h1>
-		</header>
+			<h1><a href="top.html">Beginner's Blog</a></h1>
 	</div>
 	<fieldset class="containe">
 	<div>
@@ -64,40 +58,7 @@ $(function(){
 					<img src="img/resize_image.jpg">
 					<p class="kategori">カテゴリ：音楽　　　　　投稿日時:2018/06/29</p>
 					</fieldset>
-					<div>
-						<fieldset class="containeC">
-						<div class="overflow">
-							<h3>コメント</h3>
-							<p>名前:田中</p>
-							<p class="comment">お！</p>
-							<p class="nitiji">2018/06/30</p>
-							<br>
-							<p>名前:山田</p>
-							<p class="comment">
-								時雨ですね！<br> 是非行ってみたいです！</p>
-							<p class="nitiji">2018/07/02</p>
-							</div>
-						</fieldset>
-						<fieldset class="containe">
-							<h3>コメントフォーム</h3>
-							<form>
-								※コメントは最大1000文字まで<br> <label>名前:</label><input type="text"
-									name="comenntname" style="width: 200px;"><br> <label>コメント:</label>
-								<textarea name="kanso" rows="4" cols="40"></textarea>
-								<br> <input type="submit" value="送信">
-							</form>
-						</fieldset class="containe">
-						<fieldset class="containe">
-							<div align="center">
-								<div id="page">
-									<div style="">
-										<a href="sample3.html" class="square_btn"><i
-											class="fa fa-caret-right"></i>前の記事へ</a> <a href="sample2.html"
-											class="square_btn"><i class="fa fa-caret-right"></i>次の記事へ</a>
-									</div>
-								</div>
-						</fieldset>
-					</div>
+
 					<div class="prof2">
 					<a href="articleUpdate.html">記事の編集</a>
 					<a href="articleDelete.html"">記事の削除</a>

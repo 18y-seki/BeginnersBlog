@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-   <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
@@ -14,9 +14,7 @@
 <link href="css/topBack.css" rel="stylesheet">
 </head>
 <body class="top">
-	<header>
-		<h1><a href="top">Beginner's Blog</a></h1>
-	</header>
+	<h1><a href="top">Beginner's Blog</a></h1>
 
 	<div class="formInsertCon">
 		<p class="form-title">パスワード変更画面</p>
@@ -25,21 +23,21 @@
 			新しいパスワードを入力してください<br> ※IDは変更できません
 		</p>
 
-		<form action="adminUpdate" method="post">
+		<form:form action="superuserUpdateConfirm" modelAttribute="form" method="post">
 
-			<p class="idText">ID</p>
+			<label class="idText">ID</label>
 			<p class="id">
-				<input type="text" name="id" value="kuma"
+				<form:input type="text" path="id"
 					style="background-color: gray;" readonly />
 			</p>
-			<p class="passText">PASS</p>
+			<label class="passText">PASS</label>
 			<p class="pass">
 				<input type="password" name="pass" />
 			</p>
 			<a href="superuserUpdateConfirm" class="fl_tw4"> <i
 				class="fa fa-twitter3"></i> <span>変更</span>
 			</a>
-		</form>
+		</form:form>
 		<p class="prof">
 			<a href="superuserMypage">スーパーユーザメニューへ</a>
 		</p>

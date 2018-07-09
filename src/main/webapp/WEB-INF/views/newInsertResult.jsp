@@ -11,16 +11,18 @@
 <link rel="icon" href="icon.png">
 </head>
 <body id="top">
-	<header>
-	<h1><a href="top.html">Beginner's Blog</a></h1>
-	</header>
+
+	<h1>
+		<a href="top">Beginner's Blog</a>
+	</h1>
 
 	<div id="formOne">
 		<p id="headN">登録が完了しました！</p>
 
 		<p class="prof">
-			<a href="top.html">TOP画面へ</a>
+			<a href="top">TOP画面へ</a>
 		</p>
+
 	</div>
 </body>
 </html>

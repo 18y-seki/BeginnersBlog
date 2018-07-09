@@ -29,8 +29,8 @@
 	<h1>記事編集</h1>
 
 	<div class="article_main">
-		<form action="articleUpdateConfirm" method="post"
-			enctype="multipart/form-data">
+		<form:form action="articleUpdateConfirm" modelAttribute="form"
+			method="post" enctype="multipart/form-data">
 
 			<p>
 				タイトル：<input type="text" name="title" maxlength="40"
@@ -53,35 +53,29 @@
 			</fieldset>
 
 
-			<textarea style="resize: none;" name="main" cols="125" rows="35">ああああ
-作り方はとっても簡単。
+			<textarea style="resize: none;" name="main" cols="125" rows="35">
 
-ああああ
-【あ】
+カレーの作り方。
+作り方はとっても簡単。
+できあがり。
 
 </textarea>
 			<!-- htmlボタンなどを設置 -->
 
-			<br>
+			<label>カテゴリ：</label>
+			<form:input path="art_category" style="width: 300px;" value="aaa"></form:input>
 
-			<p>
-				カテゴリ：<input type="text" name="art_category" style="width: 300px;"
-					value="aaa">
-			</p>
+				<p style="text-align: center;">
+					<form:button type="submit" name="art_ok"
+						class="mypagebuttoncollect">確認画面へ</form:button>
+					<form:button onclick="location.href='articleList'; return false;">戻る</form:button>
 
-			<p style="text-align: center;">
-				<input type="submit" name="art_ok" value="確認画面へ"
-					class="mypagebuttoncollect"> <input type="submit"
-					name="button" value="戻る"
-					onclick="location.href='sample1'; return false;">
-			</p>
-
-		</form>
+				</p>
+		</form:form>
 	</div>
 
-	<footer>
 	<p>Copyright © 2018 Beginner's Blog All Rights Reserved.</p>
-	<a href="login_top" class="kanri">管理者ログイン</a> </footer>
+	<a href="login_top" class="kanri">管理者ログイン</a>
 
 </body>
 </html>

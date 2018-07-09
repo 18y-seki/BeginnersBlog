@@ -16,41 +16,35 @@
 </head>
 <body id="top">
 	<div class="center">
-		<header>
 		<h1>
 			<a href="top">Beginner's Blog</a>
 		</h1>
-		</header>
 
 		<div id="formInsert">
 			<p id="headN">この記事を削除しますか？</p>
 
-			<form action="articleDelete" method="post" id="form1">
+			<form:form action="articleDeleteResult" modelAttribute="form" method="post" id="form1">
 
-
-				<p class="idText2">記事ID</p>
+				<label class="idText2">記事ID</label>
 				<p class="id">
-					<input type="text" name="articleId" value="記事ID" readonly />
+					<form:input path="articleId" value="${Article.articleId}" readonly />
 				</p>
 
-				<p class="nameText2">記事タイトル</p>
+				<label class="nameText2">記事タイトル</label>
 				<p class="id">
-					<input type="text" name="title" value="タイトル" readonly />
+					<form:input path="title" value="${Article.title}" readonly />
 				</p>
 
-				<p class="idText2">会員ID</p>
+				<label class="idText2">会員ID</label>
 				<p class="id">
-					<input type="text" name="id" value="会員ID" readonly />
+					<form:input path="id" value="${Users.userId}" readonly />
 				</p>
-
-				<a href="articleDeleteResult" class="fl_tw4"> <i
-					class="fa fa-twitter3"></i><span>削除</span><br>
-				</a>
+				<form:button type="submit" class="fa fa-twitter3">></i>削除</form:button>
 				<p class="prof">
 					<a href="usersMypage">マイページに戻る</a>
 				</p>
 
-			</form>
+			</form:form>
 		</div>
 	</div>
 

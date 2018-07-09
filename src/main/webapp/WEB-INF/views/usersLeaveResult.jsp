@@ -13,9 +13,9 @@
 </head>
 
 <body id="top">
-	<header>
-	<h1>Beginner's Blog</h1>
-	</header>
+
+	<h1><a href="top">Beginner's Blog</a></h1>
+
 	<div id="formOne">
 		<p id="headM">退会しました。</p>
 		<p class="prof">

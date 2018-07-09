@@ -18,11 +18,8 @@
 
 <body id="top">
 	<div class="center">
-		<header>
-			<h1>
-				<a href="top">Beginner's Blog</a>
-			</h1>
-		</header>
+
+			<h1><a href="top">Beginner's Blog</a></h1>
 
 		<div id="formUsersDelete">
 			<p class="form-title">会員退会ページ</p>
@@ -30,7 +27,6 @@
 				<p id="headN">退会しますか？</p>
 
 				<form:form action="usersLeaveResult" modelAttribute="form" id="form1">
-
 
 					<fieldset>
 						<label class="idText">ID</label>
