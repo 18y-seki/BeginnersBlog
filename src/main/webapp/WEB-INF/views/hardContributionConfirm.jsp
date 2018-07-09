@@ -37,11 +37,9 @@
 <body>
 
 	<div id="top3">
-		<header>
 		<h1>
 			<a href="top">Beginner's Blog</a>
 		</h1>
-		</header>
 
 	</div>
 
@@ -64,51 +62,6 @@
 		</div>
 	</fieldset>
 
-	<div class="hidden_box">
-		<label for="label1" style="text-align: center;">コメントを見る！</label> <input
-			type="checkbox" id="label1" />
-
-		<div class="hidden_show">
-			<fieldset class="containeC">
-				<div class="overflow">
-					<h3>コメント</h3>
-					<p>名前:吉田</p>
-					<div class="comment">東京駅の八重洲北口にあるパン屋さんもオススメですよ！</div>
-					<p class="nitiji">2018/06/30</p>
-					<br>
-					<p>名前:田中</p>
-					<div class="comment">明太子が食べたいです！！</div>
-					<p class="nitiji">2018/06/30</p>
-					<br>
-				</div>
-			</fieldset>
-		</div>
-
-		<br>
-		<fieldset class="containe">
-			<h3>コメントフォーム</h3>
-			<form>
-				※コメントは最大1000文字まで<br>
-				<p>名前:</p>
-				<input type="text" name="comenntname" style="width: 200px;"><br>
-				<p>コメント:</p>
-				<textarea name="kanso" rows="4" cols="40"></textarea>
-				<br> <input type="submit" value="送信">
-			</form>
-		</fieldset>
-
-		<fieldset class="containe">
-			<div align="center">
-				<div id="page">
-					<div style="">
-						<a href="sample1" class="square_btn"><i
-							class="fa fa-caret-right"></i>前の記事へ</a> <a href="sample3"
-							class="square_btn"><i class="fa fa-caret-right"></i>次の記事へ</a>
-					</div>
-				</div>
-			</div>
-		</fieldset>
-	</div>
 	<div class="prof2">
 		<a href="articleUpdate">記事の編集</a> &lt;
 		<a href="articleDelete">記事の削除</a>
@@ -118,7 +71,7 @@
 	<br>
 	<br>
 	<div class="scroll_button">
-		<a href="top">ページTOPへ戻る</a>
+		<a href="top">TOPページへ</a>
 	</div>
 </body>
 </html>

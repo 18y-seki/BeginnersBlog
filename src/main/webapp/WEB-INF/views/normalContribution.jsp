@@ -37,9 +37,7 @@
 </head>
 <body>
 	<div id="top3">
-		<header>
 		<h1><a href="top.html">Beginner's Blog</a></h1>
-		</header>
 	</div>
 
 	<div>
@@ -49,17 +47,15 @@
 		<div class="buttonT">
 			<p>
 
-				<a href="normal.html" class="square_btn">チュートリアルを確認</a>
+				<a href="normal" class="square_btn">チュートリアルを確認</a>
 			<div class="article_main">
 
-				<form action="normalContributionConfirm.html" method="post"
-					enctype="multipart/form-data">
+				<form:form action="normalContributionConfirm" modelAttribute="form"
+				method="post" enctype="multipart/form-data">
 
-					<div>
-						タイトル：<input type="text" name="title" maxlength="40"
-							style="width: 540px;" value="晴れ！">
-					</div>
-
+						<label>タイトル：</label>
+						<form:input path="title" maxlength="40"
+							style="width: 540px;" value="晴れ！" />
 
 					<fieldset>
 						<legend>ボタン</legend>
@@ -82,22 +78,21 @@
 						</div>
 						<img src="img/47334.jpg">
 						<div class="kategorii">
-							<br> カテゴリ：<input type="text" name="art_category"
-								style="width: 300px;" value="海">
+							<label>カテゴリ：</label>
+							<form:input path="art_category" style="width: 300px;" value="海" />
 						</div>
 					</fieldset>
 
 
-					<a href="hardContributionConfirm.html" class="square_btn">確認画面へ</a>
-					<a href="usersMypage.html" class="square_btn">マイページへ</a>
-				</form>
+					<a href="hardContributionConfirm" class="square_btn">確認画面へ</a>
+					<a href="usersMypage" class="square_btn">マイページへ</a>
+				</form:form>
 			</div>
 		</div>
 
-		<footer>
 		<p>Copyright © 2018 Beginner's Blog All Rights Reserved.</p>
 		<a href="login_top.html" class="kanri">管理者ログイン</a>
-		</footer>
+
 	</div>
 </body>
 </html>

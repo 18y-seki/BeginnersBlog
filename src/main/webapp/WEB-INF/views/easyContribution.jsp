@@ -62,7 +62,7 @@
 					<fieldset>
 						<legend>ボタン</legend>
 						<form:button class="html">画像挿入</form:button>
-						<form:input path="file" name="img" />
+						<input type="file" name="img">
 					</fieldset>
 
 					<fieldset>

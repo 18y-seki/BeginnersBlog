@@ -37,11 +37,11 @@
 </head>
 <body>
 	<div id="top3">
-		<header>
-		<h1><a href="top.html">Beginner's Blog</a></h1>
-		</header>
-
+		<h1>
+			<a href="top">Beginner's Blog</a>
+		</h1>
 	</div>
+
 	<fieldset class="containe">
 		<div id="container">
 			<div id="center" class="column">
@@ -56,11 +56,8 @@
 								<br> ちなみに沖縄の海の写真だよ！
 							</b>
 						</div>
-						<img src="img/47334.jpg"> <br> <br>
-						<br>
-						<br>
-						<br>
-						<br>
+						<img src="img/47334.jpg"> <br> <br> <br> <br>
+						<br> <br>
 						<p class="kategori">カテゴリ：海 投稿日時:2018/07/02</p>
 					</div>
 				</div>
@@ -68,37 +65,7 @@
 		</div>
 	</fieldset>
 
-	<div>
-		<fieldset class="containeC">
-			<div class="overflow">
-				<h3>コメント</h3>
-				<p>名前:山田</p>
-				<div class="comment">とても綺麗ですね！！！</div>
-				<p class="nitiji">2018/07/03</p>
-				<br>
-			</div>
-		</fieldset>
-		<fieldset class="containe">
-			<h3>コメントフォーム</h3>
-			<form>
-				※コメントは最大1000文字まで<br> <label>名前:</label><input type="text"
-					name="comenntname" style="width: 200px;"><br> <label>コメント:</label>
-				<textarea name="kanso" rows="4" cols="40"></textarea>
-				<br> <input type="submit" value="送信">
-			</form>
-		</fieldset>
-		<fieldset class="containe">
-			<div align="center">
-				<div id="page">
-					<div style="">
-						<a href="sample2" class="square_btn"><i
-							class="fa fa-caret-right"></i>前の記事へ</a> <a href="sample1"
-							class="square_btn"><i class="fa fa-caret-right"></i>次の記事へ</a>
-					</div>
-				</div>
-			</div>
-		</fieldset>
-	</div>
+
 	<div class="prof2">
 		<a href="articleUpdate">記事の編集</a> <a href="articleDelete">記事の削除</a>
 	</div>
@@ -108,7 +75,7 @@
 	<br>
 	<br>
 	<div class="scroll_button">
-		<a href="top">ページTOPへ戻る</a>
+		<a href="top">TOPページへ</a>
 	</div>
 
 </body>

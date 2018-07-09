@@ -66,17 +66,30 @@
 										おすすめのアーティストなので是非聞いてください。 <br> <img
 											src="img/resize_image.jpg">
 										<p class="kategori">カテゴリ：音楽 投稿日時:2018/06/29</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
 	</fieldset>
 
 	<div class="prof2">
 		<a href="articleUpdate">記事の編集</a> <a href="articleDelete">記事の削除</a>
 	</div>
+
 	<br>
 	<br>
 	<br>
 	<br>
+
 	<div class="scroll_button">
 		<a href="top">ページTOPへ戻る</a>
 	</div>
+
 </body>
 </html>
+
