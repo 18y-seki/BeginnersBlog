@@ -1,0 +1,101 @@
+
+body{  
+	background-color: silver;
+	background-size: cover;
+	height:100%;
+	margin:0; 
+}
+
+/* 青くするやつ。ヘッダーのやつ。 */
+.top {
+	background: #7474bf;
+	background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
+	background: linear-gradient(to right, #7474bf, #348ac7);
+	margin:0; 
+}
+
+.top h1 {
+	text-align: center;
+	line-height: 140px;
+	color: #FFFFFF;
+	font-size: 77px;
+	font-family: 'Gulim';
+	margin:0; 
+}
+
+.top h1 a {
+	text-decoration: none;
+	color: white;
+}
+
+.top h1 a:visited {
+	color: #FFFFFF;
+}
+
+.top h1 a:hover {
+	text-decoration: none;
+}
+
+.name {
+	color: #000080;
+	font-size: 35px;
+	text-align: center;
+}
+
+.form-main{
+	width:100%;
+	float:left;
+	padding-top:0px;
+	margin:0; 
+}
+
+.form-div {
+	background-color: #808080;
+	padding: 20px 35px 50px 35px;
+	width: 650px;
+	float: left;
+	left: 50%;
+	position: absolute;
+	margin-top:0px;
+	margin-left: -360px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+}
+
+input:hover, input:focus {
+	background-color:white;
+}
+
+.button-blue{
+	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
+	float:left;
+	width: 100%;
+	border: #fbfbfb solid 4px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	transition: all 0.1s;
+	margin-top:-4px;
+	font-weight:700;
+	text-align: center;
+}
+
+.button-blue:hover{
+	background-color: rgba(50,50,50,0.1);
+	color: white;
+}
+
+.ease {
+	width: 0px;
+	height: 83px;
+	background-color: #fbfbfb;
+	transition: .1s ease;
+}
+
+.submit:hover .ease{
+	width:100%;
+	background-color: turquoise;
+}

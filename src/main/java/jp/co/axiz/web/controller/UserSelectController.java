@@ -41,6 +41,10 @@ public class UserSelectController {
 	public String list(@ModelAttribute("form") SelectForm form, Model model) {
 		List<Users> list = ss.find(form);
 
+		if(list.size()==0) {
+			model.addAttribute("msg", "　入力されたデータは存在しませんでした");
+			return "usersSelect";
+		}
 
 
 		model.addAttribute("userList", list);

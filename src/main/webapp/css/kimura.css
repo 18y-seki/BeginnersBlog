@@ -1,3 +1,18 @@
+.containe7 {
+	width: 50%;
+	margin: 90px 0px 0px 350px;
+}
+.button1{
+	margin: -35px 0px 0px 300px;
+}
+
+
+
+ID{
+
+	margin: 80px 0px 10px 100px;
+}
+
 body,p,form,input{margin: 0}
 .form{
 	width: 800px;
@@ -54,7 +69,7 @@ form p{
 .form-title{
 	font-size: 40px;
 	text-align: center;
-	color: #004080;
+	color: #ffffff;
 	font-family: 'GlimChe';
 }
 
@@ -78,7 +93,7 @@ form p{
 
 input[type="text"],
 input[type="password"] {
-	width: 300px;
+	width: 240px;
 	padding: 6px;
 	font-size: 17px;
 }
@@ -86,4 +101,3 @@ input[type="password"] {
 .submit{
 	width: 100%;
 	margin: 0px 0px 0px 60px;
-}

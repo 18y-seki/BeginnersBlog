@@ -10,9 +10,12 @@
 <title>Beginner's Blog</title>
 <link href="image/Blog_icon.png" rel="icon">
 <link href="css/commons.css" rel="stylesheet">
-<link href="css/login.css" rel="stylesheet">
+
 <link href="css/topBack.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/kimura.css" rel="stylesheet">
+
+
 </head>
 <body class="top">
 	<header>
@@ -23,23 +26,25 @@
 	<div class="center ue">
 		<p class="form-title">管理者 参照結果</p>
 	</div>
-	<div class="containe5">
+	<div class="containe7">
 		<table class="table table-striped table-bordered table-hover">
 
 			<form:form action="adminList" modelAttribute="form" method="get">
-				<fieldset>
+			 <p class="message">${msg}</p>
+				<fieldset class="ID">
 					<div>
 						<label>ID</label>
 						<form:input path="userId" />
 					</div>
 
 				</fieldset>
-				<form:button>検索</form:button>
+				<form:button class="button1">検索</form:button>
 			</form:form>
 			<thead>
 				<tr>
 					<th>ID</th>
 
+					<th>削除</th>
 
 				</tr>
 			</thead>
@@ -49,7 +54,7 @@
 						<td>${fn:escapeXml(user.userId)}</td>
 
 						<td>
-							<button type="submit" onclick="location.href='usersDelete.html'"
+							<button type="submit" onclick="location.href='adminDelete'"
 								class="mypagebuttoncollect">削除</button>
 						</td>
 					</tr>
@@ -58,7 +63,7 @@
 		</table>
 	</div>
 	<p class="prof">
-		<a href="superuserMypage.html">スーパーユーザメニューへ</a>
+		<a href="superuserMypage">スーパーユーザメニューへ</a>
 	</p>
 </body>
 </html>

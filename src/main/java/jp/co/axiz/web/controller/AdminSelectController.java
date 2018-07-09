@@ -43,6 +43,11 @@ public class AdminSelectController {
 	public String list(@ModelAttribute("form") SelectForm form, Model model) {
 		List<Users> list = ss.adminfind(form);
 
+		if(list.size()==0) {
+			model.addAttribute("msg", "　入力されたデータは存在しませんでした");
+			return "adminSelect";
+		}
+
 
 
 		model.addAttribute("userList", list);
