@@ -25,6 +25,13 @@ public class ArticleUpdateController {
 		return "articleUpdateConfirm";
 	}
 
+	@RequestMapping("/articleUpdateResult")
+	public String articleUpdateResult(@ModelAttribute("form") Article article, Model model) {
+		return "articleUpdateResult";
+	}
+
+
+
 	@RequestMapping("/articleDelete")
 	public String articleDelete(@ModelAttribute("form") Article article, Model model) {
 		return "articleDelete";

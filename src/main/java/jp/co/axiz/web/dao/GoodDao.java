@@ -31,7 +31,7 @@ public class GoodDao {
 		return list;
 	}
 
-	public Good findByArticleUsers(Integer articleId, Integer userId) {
+	public Good findByArticleUsers(Integer articleId, String userId) {
 		List<Good> list = jdbcTemplate.query(SQL_SELECT_ARTICLE_USERS,
 				new BeanPropertyRowMapper<Good>(Good.class),
 				articleId,
@@ -44,15 +44,15 @@ public class GoodDao {
 		return list.get(0);
 	}
 
-	public void insert(Good good) {
+	public void insert(Integer articleId, String userId) {
 		jdbcTemplate.update(SQL_INSERT,
-				good.getArticleId(),
-				good.getUserId());
+				articleId,
+				userId);
 	}
 
 
-	public void delete(Integer goodId) {
+	public void delete(Good good) {
 		jdbcTemplate.update(SQL_DELETE,
-				goodId);
+				good.getGoodId());
 	}
 }
