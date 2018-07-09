@@ -80,7 +80,7 @@
 
 							<div class="kategorii">
 								<label>カテゴリ：</label>
-								<form:input path="art_category" style="width: 300px;" value="おすすめのごはん" />
+								<form:input path="category01 category02 category03" style="width: 300px;" value="おすすめのごはん" />
 							</div>
 						</div>
 					</fieldset>

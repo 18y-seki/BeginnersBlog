@@ -21,18 +21,18 @@
 		<!-- つぶやきならタイトル欄を表示しない -->
 
 			<label>タイトル：</label>
-			<form:input path="title" maxlength="40" style="width: 540px;" value="本日の献立" readonly></form:input>
+			<form:input path="title" maxlength="40" style="width: 540px;" value="本日の献立" readonly />
 
 
 		<label>本文：</label>
-		<form:textarea path="main" cols="125" rows="35" readonly />
+		<form:textarea path="articleText" cols="125" rows="35" readonly />
 
 カレーの作り方。
 作り方はとっても簡単。
 できあがり。
 
 		<label>カテゴリ：</label>
-		<form:input path="art_category" style="width: 300px" readonly />
+		<form:input path="category01 category02 category03" style="width: 300px" readonly />
 
 		<p style="text-align: center;">
 			<form:button class="mypagebuttoncollect">投稿する</form:button>

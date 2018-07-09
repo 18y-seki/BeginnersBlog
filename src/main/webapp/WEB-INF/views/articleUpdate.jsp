@@ -32,12 +32,8 @@
 		<form:form action="articleUpdateConfirm" modelAttribute="form"
 			method="post" enctype="multipart/form-data">
 
-			<p>
-				タイトル：<input type="text" name="title" maxlength="40"
-					style="width: 540px;" value="本日の献立">
-			</p>
-
-
+				<label>タイトル：</label>
+				<form:input path="title" maxlength="40" style="width: 540px;" value="" />
 
 			<fieldset class="htmltag">
 				htmlタグボタン:

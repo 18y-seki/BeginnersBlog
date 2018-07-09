@@ -42,7 +42,7 @@
 
 				<label class="required idText3">ID</label>
 				<p class="id">
-					<form:input path="id" />
+					<form:input path="userId" />
 				</p>
 			</div>
 
@@ -53,7 +53,7 @@
 
 				<label class="required nameText3">NAME</label>
 				<p class="id">
-					<form:input path="name" />
+					<form:input path="userName" />
 				</p>
 			</div>
 
@@ -65,7 +65,7 @@
 
 				<label class="required passText3">PASS</label>
 				<p class="pass">
-					<form:password path="pass" />
+					<form:password path="password" />
 				</p>
 			</div>
 

@@ -43,9 +43,9 @@
 	</div>
 
 	<fieldset class="containe">
-		<div id="container">
-			<div id="center" class="column">
-				<div id="content">
+		<div class="container">
+			<div class="center" class="column">
+				<div class="content">
 					<div class="title">
 						<strong>タイトル：晴れ！</strong>
 					</div>

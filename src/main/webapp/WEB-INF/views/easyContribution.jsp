@@ -73,7 +73,7 @@
 								src="img/resize_image.jpg"> <br>
 							<div class="kategorii">
 								<label>カテゴリ</label>
-								<form:input path="art_category" style="width: 300px;" value="音楽" />
+								<form:input path="category01 category02 category03" style="width: 300px;" value="" />
 							</div>
 						</div>
 					</fieldset>

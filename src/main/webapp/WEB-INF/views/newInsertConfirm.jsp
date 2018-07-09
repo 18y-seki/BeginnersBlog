@@ -34,17 +34,17 @@
 
 				<label class="idText3">ID</label>
 				<p class="id">
-					<form:input path="id" value="${fn:escapeXml(form.userId)}" readonly="true" />
+					<form:input path="userId" value="${fn:escapeXml(form.userId)}" readonly="true" />
 				</p>
 
 				<label class="nameText3">名前</label>
 				<p class="id">
-					<form:input path="name" value="${fn:escapeXml(form.userName)}" readonly="true" />
+					<form:input path="userName" value="${fn:escapeXml(form.userName)}" readonly="true" />
 				</p>
 
 				<label class="passText3">PASS</label>
 				<p class="pass">
-					<form:password path="pass" value="${fn:escapeXml(form.pass)}" readonly="true" />
+					<form:password path="password" value="${fn:escapeXml(form.pass)}" readonly="true" />
 				</p>
 
 			</form:form>

@@ -46,7 +46,7 @@
 	<fieldset class="containe">
 		<div>
 			<div class="column">
-				<div id="content">
+				<div class="content">
 					<div class="text">
 						<p class="mypagebuttonmargin">
 							<button type="submit" name="mypage" value="mypage"

@@ -37,7 +37,7 @@
 </head>
 <body>
 	<div id="top3">
-		<h1><a href="top.html">Beginner's Blog</a></h1>
+		<h1><a href="top">Beginner's Blog</a></h1>
 	</div>
 
 	<div>
@@ -79,7 +79,7 @@
 						<img src="img/47334.jpg">
 						<div class="kategorii">
 							<label>カテゴリ：</label>
-							<form:input path="art_category" style="width: 300px;" value="海" />
+							<form:input path="category01 category02 category03" style="width: 300px;" value="海" />
 						</div>
 					</fieldset>
 

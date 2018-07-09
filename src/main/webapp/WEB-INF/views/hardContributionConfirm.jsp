@@ -46,8 +46,8 @@
 	<fieldset class="containe">
 		style='background-color: #CCCCCC;&gt;
 		<div>
-			<div id="center" class="column">
-				<div id="content">
+			<div class="center" class="column">
+				<div class="content">
 					<div class="title">
 						<strong>タイトル：今日のご飯</strong>
 					</div>
