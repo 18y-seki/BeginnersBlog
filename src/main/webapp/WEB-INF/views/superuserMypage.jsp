@@ -15,7 +15,7 @@
 		</h1>
 	</header>
 	<p class="Smsg">
-		お疲れ様です<br>スーパーユーザ くま さん
+		お疲れ様です<br>スーパーユーザ ${beforeUser.userId} さん
 	</p>
 	<div class="btns">
 		<div>
@@ -31,7 +31,7 @@
 		</div>
 
 		<div>
-			<a href="#" class="Lo_btn">ログアウト</a>
+			<a href="logout" class="Lo_btn">ログアウト</a>
 		</div>
 	</div>
 </body>

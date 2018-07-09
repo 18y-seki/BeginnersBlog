@@ -17,45 +17,29 @@
 </div>
 
 		<div id="form-div">
-			<form class="form" id="form1">
-
-
-				<p class="name"><strong>木村さんのマイページ</></p>
-
+				<p class="name"><strong>${beforeUser.userId}</strong>さんのマイページ</></p>
 
 				<div class="submit">
-					<a href="stepup"> <input type="text" value="ブログ投稿" id="button-blue" readonly/>
-					</a>
-				</div>
-
-
-				<div class="submit">
-					<a href="usersUpdate"> <input type="text" value="プロフィール変更"
-						id="button-blue" readonly/>
-					</a>
+					<a href="stepup" class="Re_btn">ブログ投稿</a>
 				</div>
 
 				<div class="submit">
-					<a href="usersPassUpdate"> <input type="text" value="パスワード変更"
-						id="button-blue" readonly/>
-					</a>
+					<a href="usersUpdate" class="Re_btn">プロフィール変更</a>
 				</div>
 
 				<div class="submit">
-					<a href="usersLeave"> <input type="text" value="退会"
-						id="button-blue" readonly/>
-					</a>
+					<a href="usersPassUpdate" class="Re_btn">パスワード変更</a>
 				</div>
 
 				<div class="submit">
-					<a href="logout"> <input type="text" value="ログアウト"
-						id="button-blue" readonly/>
-					</a>
+					<a href="usersLeave" class="Re_btn">退会</a>
 				</div>
 
-			</form>
+				<div class="submit">
+					<a href="logout" class="Re_btn">ログアウト</a>
+				</div>
 		</div>
-					<p class="profM">
+	<p class="profM">
  <a href="top">TOP画面へ</a>
  </p><br>
 </body>

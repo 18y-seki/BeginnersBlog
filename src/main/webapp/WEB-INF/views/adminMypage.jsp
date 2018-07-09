@@ -3,7 +3,7 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -22,30 +22,20 @@
 	<div class="form-main">
 		<div class="form-div">
 
-			<form class="form" class="form1">
 				<p class="name">
-					お疲れ様です<br>管理人 しおり さん
+					お疲れ様です<br>管理人 ${beforeUser.userId} さん
 				</p>
 
 				<div class="submit">
-					<a href="usersSelect"> <input type="text" value="会員参照"
-						class="button-blue" />
-					</a>
+					<a href="usersInsert" class="Re_btn">会員参照</a>
 				</div>
-
 				<div class="submit">
-					<a href="adminUpdate"> <input type="text" value="パスワード変更"
-						class="button-blue" />
-					</a>
+					<a href="adminUpdate" class="Re_btn">パスワード変更参照</a>
 				</div>
-
 				<div class="submit">
-					<a href="top"> <input type="text" value="ログアウト"
-						class="button-blue" />
-					</a>
+					<a href="logout" class="Re_btn">ログアウト</a>
 				</div>
 				<div class="ease"></div>
-			</form>
 		</div>
 	</div>
 </body>
