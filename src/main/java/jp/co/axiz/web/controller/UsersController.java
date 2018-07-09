@@ -8,6 +8,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import jp.co.axiz.web.dao.ArticleDao;
 import jp.co.axiz.web.dao.UsersDao;
 import jp.co.axiz.web.entity.UpdateUsers;
 import jp.co.axiz.web.entity.Users;
@@ -18,6 +19,8 @@ public class UsersController {
 	@Autowired
 	UsersDao ud;
 
+	@Autowired
+	ArticleDao ad;
 
 	@RequestMapping("/usersLeave")
 	public String usersLeave(@ModelAttribute("form") Users users, Model model) {
@@ -27,6 +30,7 @@ public class UsersController {
 	@RequestMapping("/usersLeaveResult")
 	public String usersLeaveResult(@ModelAttribute("form") Users users, Model model) {
 		ud.delete(users.getUserId());
+		ad.deleteUser(users.getUserId());
 		return "usersLeaveResult";
 	}
 
@@ -40,8 +44,10 @@ public class UsersController {
 	@RequestMapping("/usersDeleteResult")
 	public String usersDeleteResult(@ModelAttribute("form") Users users, Model model) {
 		ud.delete(users.getUserId());
+		ad.deleteUser(users.getUserId());
 		return "usersDeleteResult";
 	}
+
 
 	@RequestMapping("/adminDelete")
 	public String adminDelete(@ModelAttribute("form") Users users, Model model) {

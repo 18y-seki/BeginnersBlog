@@ -10,6 +10,7 @@ import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import jp.co.axiz.web.dao.ArticleDao;
 import jp.co.axiz.web.dao.CommentDao;
@@ -46,8 +47,11 @@ public class ArticleSelectController {
 	}
 
 	@RequestMapping(value="/article", method=RequestMethod.GET)
-	public String article(@ModelAttribute("form") Comments comment, Model model, HttpSession session) {
-
+	public String article(@ModelAttribute("form") Comments comment, @RequestParam("id")Integer id, Model model, HttpSession session) {
+		Article art = ad.findById(id);
+		List<Comments> com = cd.findByArticleId(id);
+		session.setAttribute("art", art);
+		session.setAttribute("com", com);
 		return "article";
 	}
 

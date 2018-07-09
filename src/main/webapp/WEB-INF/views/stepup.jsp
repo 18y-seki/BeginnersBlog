@@ -122,7 +122,7 @@
 		});
 	</script>
 	<p class="prof">
-		<a href="usersMypage">マイページに戻る</a>
+		<a href="usersMypage">マイページへ</a>
 	</p>
 </body>
 
