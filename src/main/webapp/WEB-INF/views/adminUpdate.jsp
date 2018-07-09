@@ -26,10 +26,10 @@
 			新しいPASSを入力してください<br>
 		</p>
 
-	<form:form action="adminUpdate" modelAttribute="form">
+	<form:form action="adminUpdateConfirm" modelAttribute="form">
 			<p class="passText">新しいPASS</p>
 			<p class="pass">
-				<form:password path="newPass" />
+				<form:password path="password" />
 			</p>
 			<p class="fl_tw4"> <i class="fa fa-twitter3"></i>
 				<form:button>確認</form:button>

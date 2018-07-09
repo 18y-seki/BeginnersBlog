@@ -23,14 +23,14 @@
 
 		<p class="headM">これでよろしいですか？</p>
 
-		<form:form action="adminUpdateConfirm" modelAttribute="form">
+		<form:form action="adminUpdateResult" modelAttribute="form">
 			<p class="idTextr">ID:${beforeUser.userId}</p>
 
 			<fieldset class="col">
 				<legend class="headM">変更前</legend>
 				<p class="passText">PASS</p>
 				<p class="pass">
-					<form:input value="${beforeUser.userId}" path="password" readonly="true" />
+					<form:input value="${beforeUser.password}" path="password" readonly="true" />
 				</p>
 			</fieldset>
 
@@ -43,7 +43,7 @@
 					PASS<br>(再入力)
 				</p>
 				<p class="pass">
-					<form:password path="rePass" />
+					<form:password path="newPassword" />
 				</p>
 			</fieldset>
 			<br>

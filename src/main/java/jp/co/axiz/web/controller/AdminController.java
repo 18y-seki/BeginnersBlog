@@ -36,7 +36,10 @@ public class AdminController {
 
 
 	@RequestMapping("/adminUpdate")
-	public String adminUpdate(@ModelAttribute("form") UpdateUsers users, Model model) {
+	public String adminUpdate(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
+		Users u = (Users)session.getAttribute("login");
+		Users beforeUser = ud.findById(u.getUserId());
+		session.setAttribute("beforeUser", beforeUser);
 		return "adminUpdate";
 	}
 
@@ -49,6 +52,11 @@ public class AdminController {
 	@RequestMapping("/adminUpdateResult")
 	public String adminUpdateResult(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
 		UpdateUsers newUsers = (UpdateUsers)session.getAttribute("newUsers");
+
+		Users u = (Users)session.getAttribute("login");
+		String id = u.getUserId();
+
+		newUsers.setUserId(id);
 
 		String newPass = newUsers.getPassword();
 		String rePass = users.getNewPassword();

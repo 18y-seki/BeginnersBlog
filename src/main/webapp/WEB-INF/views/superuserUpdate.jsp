@@ -30,7 +30,7 @@
 		<form:form action="superuserUpdateConfirm" modelAttribute="form">
 			<p class="passText">新しいPASS</p>
 			<p class="pass">
-				<form:password path="newPassword" />
+				<form:password path="password" />
 			</p>
 			<p class="fl_tw4"> <i class="fa fa-twitter3"></i>
 				<form:button>確認</form:button>

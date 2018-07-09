@@ -37,7 +37,10 @@ public class SuperuserController {
 
 
 	@RequestMapping("/superuserUpdate")
-	public String superuserUpdate(@ModelAttribute("form") UpdateUsers users, Model model) {
+	public String superuserUpdate(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
+		Users u = (Users)session.getAttribute("login");
+		Users beforeUser = ud.findById(u.getUserId());
+		session.setAttribute("beforeUser", beforeUser);
 		return "superuserUpdate";
 	}
 
@@ -57,6 +60,8 @@ public class SuperuserController {
 		newUsers.setUserId(id);
 
 		String newPass = newUsers.getPassword();
+
+		System.out.println(newPass);
 		String rePass = users.getNewPassword();
 
 		if(!(newPass.equals(rePass))){
