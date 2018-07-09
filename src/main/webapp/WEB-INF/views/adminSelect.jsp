@@ -30,9 +30,10 @@
 		<table class="table table-striped table-bordered table-hover">
 
 			<form:form action="adminList" modelAttribute="form" method="get">
-			 <p class="message">${msg}</p>
+
 				<fieldset class="ID">
 					<div>
+					<p class="message">${msg}</p>
 						<label>ID</label>
 						<form:input path="userId" />
 					</div>

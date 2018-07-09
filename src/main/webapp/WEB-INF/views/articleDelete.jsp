@@ -33,7 +33,7 @@
         <p class="id"><form:input path="title" /></p>
 
         <p class="idText2">会員ID</p>
-        <p class="id"><form:input path="id" /></p>
+        <p class="id"><form:input path="userId" /></p>
 
 		<a href="articleDeleteResult" class="fl_tw4">
 			<i class="fa fa-twitter3"></i><span>削除</span><br>

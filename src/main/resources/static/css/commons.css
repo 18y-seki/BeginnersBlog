@@ -1,134 +1,52 @@
 
 
-header {
-	height: 160px;
-  background: #7474bf;
-  background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
-  background: linear-gradient(to right, #7474bf, #348ac7);
-}
+.top {
 
-#top {
-
-  background: #7474bf;
-  background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
-  background: linear-gradient(to right, #7474bf, #348ac7);
+ background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #56ccf2, #2f80ed);
 }
-#top h1 {
+.top h1 {
 	text-align: center;
 	line-height: 190px;
 	color: #FFFFFF;
 	font-size: 80px;
 	font-family: 'Gulim';
 }
-#top h1 a {
+.top h1 a {
 	text-decoration: none;
 }
-#top h1 a:visited {
+.top h1 a:visited {
 	color: #FFFFFF;
 }
-#top h1 a:hover {
+.top h1 a:hover {
 	text-decoration: none;
 }
 
 
-#headM {
+.headM {
 	text-align:center;
 	font-size: 200%;
 	font-family: 'Gulim';
 	margin: 90px 0px 0px 0px;
 	color: #FFF;
 }
-#headS {
+
+.headN {
 	text-align:center;
 	font-size: 200%;
-	font-family: 'Gulim';
-	margin: 18px 0px 0px 0px;
-	color: #FFF;
+	font-family: 'Meiryo';
+	margin: 70px 0px 60px 0px;
+	color: #110e51;
 }
 
-#headDown {
+.headDown {
 	text-align:center;
 	font-size: 300%;
 	font-family: 'Gulim';
 	margin: 90px 0px 0px 0px;
-	color: #FFF;
+	color: #blue;
 }
-
-#headS a {
-	color: #FFF;
-	  text-decoration: none;
-}
-
-#btn2 {
-	width: 15%;
-	margin: 0 auto;
-}
-#jirusi {
-	width: 15%;
-	margin: 20px 0px 0px 635px ;
-}
-.fl_tw2{/*ボタンの背景*/
-  color: #FFF;/*文字・アイコン色*/
-  border-radius: 7px;/*角丸に*/
-  display: inline-block;
-  height: 120px;/*高さ*/
-  width: 450px;/*幅*/
-  text-align: center;/*中身を中央寄せ*/
-  font-size: 70px;/*文字のサイズ*/
-  line-height: 121px;/*高さと合わせる*/
-  margin: 50px 0px 0px 196px;
-  background: #1da1f3;
-  overflow: hidden;/*はみ出た部分を隠す*/
-  text-decoration:none;/*下線は消す*/
-}
-
-.fl_tw2 .fa-twitter {
-    text-shadow: 2px 2px 0px #4287d6;
-    font-size: 30px;
-}
-
-.fl_tw2 span {/*テキスト*/
-font-family: 'Gulim';
-  display:inline-block;
-  transition: .5s}
-
-.fl_tw2:hover span{/*ホバーで一周回転*/
-  -webkit-transform: rotateX(360deg);
-  -ms-transform: rotateX(360deg);
-  transform: rotateX(360deg);
-}
-
-.fl_tw3{/*ボタンの背景*/
-  color: #FFF;/*文字・アイコン色*/
-  border-radius: 7px;/*角丸に*/
-  display: inline-block;
-  height: 120px;/*高さ*/
-  width: 450px;/*幅*/
-  text-align: center;/*中身を中央寄せ*/
-  font-size: 76px;/*文字のサイズ*/
-  line-height: 121px;/*高さと合わせる*/
-  margin: -10px 0px 0px 70px;
-  background: #1da1f3;
-  overflow: hidden;/*はみ出た部分を隠す*/
-  text-decoration:none;/*下線は消す*/
-}
-
-.fl_tw3 .fa-twitter2 {
-    text-shadow: 2px 2px 0px #4287d6;
-    font-size: 30px;
-}
-
-.fl_tw3 span {/*テキスト*/
-font-family: 'Gulim';
-  display:inline-block;
-  transition: .5s}
-
-.fl_tw3:hover span{/*ホバーで一周回転*/
-  -webkit-transform: rotateX(360deg);
-  -ms-transform: rotateX(360deg);
-  transform: rotateX(360deg);
-}
-
 .fl_tw4{/*ボタンの背景*/
   color: #FFF;/*文字・アイコン色*/
   border-radius: 7px;/*角丸に*/
@@ -161,101 +79,10 @@ font-family: 'Gulim';
   transform: rotateX(360deg);
 }
 
-
-.scroll_button a{ /*とっぷへもどるやーつ*/
-    position: fixed;
-    display: block;
-    right:50px;
-    bottom:50px;
-    background: #313131;
-    color:#fff;
-    padding:20px;
-    margin: 0px -40px -33px 0px;
-}
-
-#under {
-  border-bottom: double 6px #FFF;
-  }
-
-
-#hoku {
-	background-color: #fff;
-	float: right;
-	width: 450px;
-	height: 450px;
-	margin: 20px 146px 20px 20px;
-}
-#hoku p {
-	color: #000;
-	text-align: center;
-	line-height: 450px;
-	font-family: 'Monotype Corsiva',sans-serif;
-	font-size: 42px;
-}
-#hoku2 {
-	background-color: #fff;
-	float: right;
-	width: 450px;
-	height: 450px;
-	margin: 20px 20px 20px 110px;
-	position: relative;
-}
-#hoku2 #caption {
-	font-size: 22px;
-	text-align: center;
-	padding-top: 80px;
-	color: #fff;
-	font-family: 'GlimChe',sans-serif;
-}
-#hoku2 #mask {
-	width: 100%;
-	height: 100%;
-	position: absolute;	/* 絶対位置指定 */
-	top: 0;
-	left: 0;
-	opacity: 0;	/* マスクを表示しない */
-	background-color: rgba(0,0,0,0.4);	/* マスクは半透明 */
-	-webkit-transition: all 0.2s ease;
-	transition: all 0.2s ease;
-}
-#hoku2:hover #mask {
-	opacity: 1;	/* マスクを表示する */
-}
-#hoku2 img {
-	width: 100%;
-	height: 100%;
-	object-fit: cover;
-}
-
-.containe {
-	width: 70%;
-	margin: 80px 0px 0px 220px;
-}
-
-.containe2 {
-	width: 70%;
-	margin: 50px 0px 0px 250px;
-}
-
 .containe5 {
 	width: 60%;
 	margin: 80px 0px 0px 210px;
 }
-
-.containe6 {
-	width: 40%;
-	margin: 80px 0px 0px 310px;
-}
-
-.sintyaku {
-	width: 100%;
-	margin: -250px 0px 0px 0px;
-	font-size: 25px;
-}
-.yohaku {
-	width: 200%;
-	margin: 700px 0px 0px 0px;
-	}
 
 .insert {
 width: 60%;
