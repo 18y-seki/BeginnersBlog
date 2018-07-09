@@ -10,50 +10,57 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
 import jp.co.axiz.web.entity.Users;
-import jp.co.axiz.web.service.SuperuserInsertService;
+import jp.co.axiz.web.service.InsertService;
 
 @Controller
-public class SuperuserInsertController {
+public class UsersInsertController {
 
 
 	@Autowired
-	SuperuserInsertService sis;
+	InsertService is;
 
-	@RequestMapping(value="/adminInsert", method =RequestMethod.GET)
+	@RequestMapping(value="/newInsert", method =RequestMethod.GET)
 	public String jump(@ModelAttribute("form") Users users, Model model) {
-		return "adminInsert";
+		return "newInsert";
 	}
 
-	@RequestMapping(value="/adminInsert", method =RequestMethod.POST)
+	@RequestMapping(value="/newInsert", method =RequestMethod.POST)
 	public String insert(@ModelAttribute("form") Users users, Model model, HttpSession session) {
 		if(users==null) {
-			return "adminInsert";
+			return "newInsert";
 		}
 
 		String id = users.getUserId();
+		String name = users.getUserName();
 		String pass = users.getPassword();
 
 		if (id == null || id.isEmpty()) {
-			return "adminInsert";
+			return "newInsert";
+		}
+
+		if (name == null || name.isEmpty()) {
+			return "newInsert";
 		}
 
 		if (pass == null || pass.isEmpty()) {
-			return "adminInsert";
+			return "newInsert";
 		}
 
 		session.setAttribute("form", users);
-		return "adminInsertConfirm";
+		return "newInsertConfirm";
 	}
 
-	@RequestMapping(value="/adminInsertConfirm")
-	public String superuserInsertConfirm(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+	@RequestMapping(value="/newInsertConfirm", method =RequestMethod.POST)
+	public String newInsertConfirm(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+
 		String id = users.getUserId();
+		String name = users.getUserName();
 		String pass = users.getPassword();
 
 
-		sis.insertAdmin(id,pass);
+				is.insertMembar(id,name,pass);
 
-		return "adminInsertResult";
-	}
+				return "newInsertResult";
+			}
 
 }

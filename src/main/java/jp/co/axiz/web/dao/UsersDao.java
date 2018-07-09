@@ -89,11 +89,9 @@ public class UsersDao {
 		return list.get(0);
 	}
 
-	public void insertMembar(Users users) {
+	public void insertMembar(String id, String name, String pass) {
 		jdbcTemplate.update(SQL_INSERT_MEMBAR,
-				users.getUserId(),
-				users.getUserName(),
-				users.getPassword());
+				id,name,pass);
 	}
 
 	public void insertAdmin(String id, String pass) {
