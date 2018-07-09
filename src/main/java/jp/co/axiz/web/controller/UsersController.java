@@ -59,23 +59,29 @@ public class UsersController {
 
 
 	@RequestMapping("/usersUpdate")
-	public String usersUpdate(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+	public String usersUpdate(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
 		Users u = (Users)session.getAttribute("login");
-		session.setAttribute("beforeUser", u);
+		Users beforeUser = ud.findById(u.getUserId());
+		session.setAttribute("beforeUser", beforeUser);
 		return "usersUpdate";
 	}
 
 	@RequestMapping("/usersUpdateConfirm")
-	public String usersUpdateConfirm(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+	public String usersUpdateConfirm(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
+		String birthday= users.getNewYear()+"-"+users.getNewMonth()+"-"+users.getNewDate();
+		users.setNewBirthday(birthday);
+
 		session.setAttribute("newUsers", users);
 		return "usersUpdateConfirm";
 	}
 
 	@RequestMapping("/usersUpdateResult")
 	public String usersUpdateResult(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
-		Users newUsers = (Users)session.getAttribute("newUsers");
+		UpdateUsers newUsers = (UpdateUsers)session.getAttribute("newUsers");
+		Users u = (Users)session.getAttribute("login");
+		String id = u.getUserId();
 
-		System.out.println(users.getYear());
+		newUsers.setUserId(id);
 
 		ud.updateProfile(newUsers);
 		session.removeAttribute("beforeUser");
@@ -98,7 +104,7 @@ public class UsersController {
 
 	@RequestMapping("/usersPassUpdateResult")
 	public String usersPassUpdateResult(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
-		Users newUsers = (Users)session.getAttribute("newUsers");
+		UpdateUsers newUsers = (UpdateUsers)session.getAttribute("newUsers");
 
 		String newPass = newUsers.getPassword();
 		String rePass = users.getNewPassword();
@@ -114,7 +120,10 @@ public class UsersController {
 		return "usersPassUpdateResult";
 	}
 
-
+	@RequestMapping("/usersMypage")
+	public String usersMypage(@ModelAttribute("form") UpdateUsers users, Model model) {
+		return "usersMypage";
+	}
 
 
 }

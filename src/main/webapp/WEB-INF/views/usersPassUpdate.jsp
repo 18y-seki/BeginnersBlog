@@ -24,15 +24,11 @@
 		<p class="form-title">パスワード変更画面</p>
 
 		<p class="headM">
-			新しいパスワードを入力してください<br> ※IDは変更できません
+			新しいパスワードを入力してください
 		</p>
 
 		<form:form action="usersPassUpdateConfirm" modelAttribute="form">
 
-			<p class="idText">ID</p>
-			<p class="id">
-				<form:input path="userId" readonly="true" />
-			</p>
 			<p class="passText">PASS</p>
 			<p class="pass">
 				<form:password path="password" />

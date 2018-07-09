@@ -1,5 +1,8 @@
 package jp.co.axiz.web.dao;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +10,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import jp.co.axiz.web.entity.UpdateUsers;
 import jp.co.axiz.web.entity.Users;
 
 @Repository
@@ -94,20 +98,33 @@ public class UsersDao {
 				users.getPassword());
 	}
 
-	public void updatePass(Users users) {
+	public void updatePass(UpdateUsers users) {
 		jdbcTemplate.update(SQL_UPDATE_PASS,
 				users.getPassword(),
 				users.getUserId());
 	}
 
-	public void updateProfile(Users users) {
+	public void updateProfile(UpdateUsers users) {
+		try {
+		String birthday = users.getNewBirthday();
+        SimpleDateFormat sdFormat = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = sdFormat.parse(birthday);
+
 		jdbcTemplate.update(SQL_UPDATE_PROFILE,
-				users.getPassword(),
-				users.getSex(),
-				users.getBirthday(),
-				users.getHobby(),
-				users.getGreet(),
+				users.getNewuserName(),
+				users.getNewSex(),
+				date,
+				users.getNewHobby(),
+				users.getNewGreet(),
 				users.getUserId());
+
+
+		}catch (ParseException e) {
+            e.printStackTrace();
+        }
+
+
+
 	}
 
 	public void delete(String userId) {

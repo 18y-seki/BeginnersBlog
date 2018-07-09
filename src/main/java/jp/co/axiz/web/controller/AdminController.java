@@ -48,7 +48,7 @@ public class AdminController {
 
 	@RequestMapping("/adminUpdateResult")
 	public String adminUpdateResult(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
-		Users newUsers = (Users)session.getAttribute("newUsers");
+		UpdateUsers newUsers = (UpdateUsers)session.getAttribute("newUsers");
 
 		String newPass = newUsers.getPassword();
 		String rePass = users.getNewPassword();

@@ -30,11 +30,8 @@
 			<p class="idTextr">ID:${beforeUser.userId}</p>
 
 			<p class="nameText">名前</p>
-			<p class="id"><form:input path="userName" value="${beforeUser.userName}"/></p>
-
-			<p class="passText">PASS</p>
-			<p class="id"><form:input path="password" value="${beforeUser.password}" /></p>
-
+			<p><form:input path="newuserName" value="${beforeUser.userName}"/></p>
+			<br><br>
 			<p class="sexText">性別</p>
 			<p class="id">男&nbsp; 女
 			<form:radiobutton path="sex" value="男" />
@@ -44,8 +41,8 @@
 
 			<p class="dayText">誕生日</p>
 			<p class="id">
-				<form:select path="year">
-					<option value="${beforeUser.year}">${beforeUser.year}</option>
+				<form:select path="newYear">
+					<option value="${beforeUser.year}" selected>${beforeUser.year}</option>
 					<option value="1900">1900</option>
 					<option value="1901">1901</option>
 					<option value="1902">1902</option>
@@ -167,7 +164,7 @@
 					<option value="2018">2018</option>
 					</form:select> 年
 
-					<form:select path="month">
+					<form:select path="newMonth">
 					<option value="${beforeUser.month}">${beforeUser.month}</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -183,7 +180,7 @@
 					<option value="12">12</option>
 					</form:select>月
 
-					<form:select path="date">
+					<form:select path="newDate">
 					<option value="${beforeUser.date}">${beforeUser.date}</option>
 					<option value="1">1</option>
 					<option value="2">2</option>
@@ -220,11 +217,13 @@
 			</p>
 
 			<p class="hobyText">趣味</p>
-			<p class="id"><form:input path="hobby" value="${beforeUser.hobby}" /></p>
+			<p class="id"><form:input path="newHobby" value="${beforeUser.hobby}" /></p>
 
 			<p class="comText">コメント</p>
-			<p class="id"><form:textarea name="com" cols="30" rows="3" maxlength="10"
-					path="Greet" value="${beforeUser.greet}" /></p>
+			<p class="id">
+			<form:textarea cols="30" rows="3" maxlength="10"
+					path="greet" value="${beforeUsers.greet}" />
+					</p>
 
 			<div id="center_yose">
 				<form:button>確認</form:button>

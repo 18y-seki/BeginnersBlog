@@ -34,55 +34,65 @@
 				<legend id="headM">変更前</legend>
 				<p class="nameText">名前</p>
 				<p class="id">
-					<form:input path="userName" value="${beforeUser.userName}" />
+					${beforeUser.userName}
 				</p>
-				<p class="passText">PASS</p>
-				<p class="pass">
-					<form:input path="Password" value="${beforeUser.password}" />
+
+
+
+				<br>
+
+				<p class="sexText">性別</p>
+				<p class="id">
+					${beforeUser.sex}
 				</p>
-			<p class="sexText">性別</p>
-			<p class="id">${beforeUser.sex}</p>
 
- 			<p class="dayText">誕生日</p>
-			<p class="id">
-				<p>${beforeUser.year}年 </p>
+				<br><br>
 
-					<p>${beforeUser.month}月 </p>
+ 				<p class="dayText">誕生日</p>
+				<p class="id">
+					${beforeUser.year}年
+					${beforeUser.month}月
+					${beforeUsers.date}日
+				</p>
 
-				<p>${beforeUsers.date}日 </p>
-			<p class="hobyText">趣味</p>
-			<p class="id">${beforeUser.hobby}</p>
+				<br>
+
+				<p class="hobyText">趣味</p>
+				<p class="id">
+					${beforeUser.hobby}
+				</p>
+		<br>
 
 			<p class="comText">コメント</p>
-			<p class="id"><form:textarea name="com" cols="30" rows="3" maxlength="10"
-					path="Greet" value="${beforeUser.greet}" /></p>
+			<p class="id">
+			<form:textarea cols="30" rows="3" maxlength="10"
+					path="greet" value="${beforeUser.greet}" readonly ="true"/>
+					</p>
   </fieldset>
 
   <div id="headDown">↓</div>
 
   <fieldset class="col label-110">
-        <p class="nameText">名前</p>
-        <p class="id">
-			<form:input path="newuserName" value="${newUsers.userName}" readonly ="true"/>
-		</p>
-        <p class="passText">PASS</p>
-        <p class="pass">
-			<form:input path="newPassword" value="${newUsers.password}"  readonly ="true"/>
+			<p class="nameText">名前</p>
+				<p class="id">
+					${newUsers.userName}
 				</p>
+
+		<br><br>
+
 			<p class="sexText">性別</p>
 			<p class="id">${newUsers.sex}</p>
 
+	<br>
+
  			<p class="dayText">誕生日</p>
 			<p class="id">
-				<p>${newUsers.year}年 </p>
-
-					<p>${newUsers.month}月 </p>
-
-				<p>${newUsers.date}日 </p>
-        <p class="id">
+				${newUsers.newYear}年
+					${newUsers.newMonth}月
+					${newUsers.newDate}日 </p>
 			<p class="hobyText">趣味</p>
-			<p class="id">${newUsers.hobby}</p>
-
+			<p class="id">${newUsers.newHobby}</p>
+<br>
 			<p class="comText">コメント</p>
 			<p class="id">
 			<form:textarea cols="30" rows="3" maxlength="10"

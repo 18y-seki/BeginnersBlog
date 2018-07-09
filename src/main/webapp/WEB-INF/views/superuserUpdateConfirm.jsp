@@ -24,13 +24,13 @@
 
 		<p class="headM">これでよろしいですか？</p>
 
-		<form:form action="superuserUpdateConfirm" modelAttribute="form">
+		<form:form action="superuserUpdateResult" modelAttribute="form">
 
 			<fieldset class="col">
 				<legend class="headM">変更前</legend>
 				<p class="passText">PASS</p>
 				<p class="pass">
-					<form:input value="${beforeUser.userId}" path="password" readonly="true" />
+					${beforeUser.password}
 				</p>
 			</fieldset>
 
@@ -43,7 +43,7 @@
 					PASS<br>(再入力)
 				</p>
 				<p class="pass">
-					<form:password path="RePass" />
+					${newUser.newPassword}
 				</p>
 			</fieldset>
 			<br> <p class="fl_tw4"> <i class="fa fa-twitter3"></i>

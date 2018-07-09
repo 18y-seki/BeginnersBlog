@@ -49,7 +49,12 @@ public class SuperuserController {
 
 	@RequestMapping("/superuserUpdateResult")
 	public String superuserUpdateResult(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
-		Users newUsers = (Users)session.getAttribute("newUsers");
+		UpdateUsers newUsers = (UpdateUsers)session.getAttribute("newUsers");
+
+		Users u = (Users)session.getAttribute("login");
+		String id = u.getUserId();
+
+		newUsers.setUserId(id);
 
 		String newPass = newUsers.getPassword();
 		String rePass = users.getNewPassword();
