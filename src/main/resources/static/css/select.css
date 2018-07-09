@@ -1,0 +1,102 @@
+
+
+.top {
+
+ background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #56ccf2, #2f80ed);
+}
+.top h1 {
+	text-align: center;
+	line-height: 190px;
+	color: #FFFFFF;
+	font-size: 80px;
+	font-family: 'Gulim';
+}
+.top h1 a {
+	text-decoration: none;
+}
+.top h1 a:visited {
+	color: #FFFFFF;
+}
+.top h1 a:hover {
+	text-decoration: none;
+}
+
+
+.headM {
+	text-align:center;
+	font-size: 200%;
+	font-family: 'Gulim';
+	margin: 90px 0px 0px 0px;
+	color: #FFF;
+}
+
+.headN {
+	text-align:center;
+	font-size: 200%;
+	font-family: 'Meiryo';
+	margin: 70px 0px 60px 0px;
+	color: #110e51;
+}
+
+.headDown {
+	text-align:center;
+	font-size: 300%;
+	font-family: 'Gulim';
+	margin: 90px 0px 0px 0px;
+	color: #blue;
+}
+.fl_tw4{/*ボタンの背景*/
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  display: inline-block;
+  height: 40px;/*高さ*/
+  width: 120px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 22px;/*文字のサイズ*/
+  line-height: 35px;/*高さと合わせる*/
+  margin: -10px 0px 0px 500px;
+  background: #88bae2;
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+  font-weight: bold;
+}
+
+.fl_tw4 .fa-twitter3 {
+    text-shadow: 2px 2px 0px #4287d6;
+    font-size: 30px;
+}
+
+.fl_tw4 span {/*テキスト*/
+font-family: 'Gulim';
+  display:inline-block;
+  transition: .5s}
+
+.fl_tw4:hover span{/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.containe5 {
+	width: 60%;
+	margin: 80px 0px 0px 210px;
+}
+
+.insert {
+width: 60%;
+margin: 0px 0px 0px 300px;
+}
+
+.insert p {
+text-align: center;
+}
+
+.center {
+ text-align: center;
+}
+
+.ue {
+	margin-top: 55px;
+}

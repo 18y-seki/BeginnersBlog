@@ -15,7 +15,6 @@
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/kimura.css" rel="stylesheet">
 
-
 </head>
 <body class="top">
 	<header>

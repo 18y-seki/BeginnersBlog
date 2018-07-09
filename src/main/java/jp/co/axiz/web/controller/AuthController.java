@@ -17,5 +17,12 @@ public class AuthController {
 
 	}
 
+	@RequestMapping(value = "articleList", method = RequestMethod.GET)
+	public String g(Model mode1) {
+
+		return "articleList";
+
+	}
+
 
 }
