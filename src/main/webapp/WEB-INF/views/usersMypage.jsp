@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
-	<link rel="icon" href="icon.png">
+<link href="icon.png" rel="icon">
 <link href="css/moc3.css" rel="stylesheet">
 <link href="css/topBack2.css" rel="stylesheet">
 </head>

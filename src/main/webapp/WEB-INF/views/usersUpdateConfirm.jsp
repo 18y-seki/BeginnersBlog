@@ -84,8 +84,10 @@
 			<p class="id">${newUsers.hobby}</p>
 
 			<p class="comText">コメント</p>
-			<p class="id"><form:textarea cols="30" rows="3" maxlength="10"
-					path="newGreet" value="${newUsers.greet}" readonly ="true"/></p>
+			<p class="id">
+			<form:textarea cols="30" rows="3" maxlength="10"
+					path="newGreet" value="${newUsers.greet}" readonly ="true"/>
+					</p>
   </fieldset>
 			<br>
 			<div id="center_yose">
