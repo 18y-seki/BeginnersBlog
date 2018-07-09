@@ -2,7 +2,7 @@
 	pageEncoding="UTF-8"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form" %>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -16,35 +16,34 @@
 </head>
 <body class="top">
 	<header>
-	<h1><a href="top">Beginner's Blog</a></h1>
+	<h1>
+		<a href="top">Beginner's Blog</a>
+	</h1>
 	</header>
 
 	<div class="formInsert">
 
 		<p class="form-title">管理者強制退会ページ</p>
 		<p class="headM">この管理者でよろしいですか？</p>
+		<form:form action="adminDeleteResult" modelAttribute="form">
+			<table class="table table-striped table-bordered table-hover">
+				<thead>
+					<tr>
+						<th>ID</th>
+					</tr>
+				</thead>
+				<tbody>
 
-		<table class="table table-striped table-bordered table-hover">
-			<thead>
-				<tr>
-					<th>ID</th>
-					<th>名前</th>
-					<th>PASSWORD</th>
-				</tr>
-			</thead>
-			<tbody>
+					<tr>
+						<td><form:input path="userId" readonly="true" /></td>
+					</tr>
+				</tbody>
+			</table>
 
-				<tr>
-					<td>111</td>
-					<td>山田</td>
-					<td>axizaxiz</td>
-				</tr>
-			</tbody>
-		</table>
+			<i class="fa fa-twitter3"></i>
+			<form:button>削除</form:button>
 
-		<a href="adminDeleteResult" class="fl_tw4"> <i
-			class="fa fa-twitter3"></i> <span>削除</span>
-		</a>
+		</form:form>
 
 		<p class="prof">
 			<a href="superuserMypage">スーパーユーザメニューへ</a>

@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -13,7 +16,7 @@
 <body class="top">
 	<header>
 		<h1>
-			<a href="#">Beginner's Blog</a>
+			<a href="top">Beginner's Blog</a>
 		</h1>
 	</header>
 
@@ -22,18 +25,18 @@
 
 		<p class="headM">これでよろしいですか？</p>
 
-		<form action="adminUpdateConfirm.html" method="post">
+		<form:form action="adminUpdateConfirm" method="post">
 
 			<p class="idText">ID</p>
 			<p class="id">
-				<input type="text" name="id" value="kimukimu" readonly />
+				<form:input path="userId" readonly="true" />
 			</p>
 
 			<fieldset class="col">
 				<legend class="headM">変更前</legend>
 				<p class="passText">PASS</p>
 				<p class="pass">
-					<input type="password" name="pass" />
+					<form:input path="password" readonly="true" />
 				</p>
 			</fieldset>
 
@@ -46,16 +49,15 @@
 					PASS<br>(再入力)
 				</p>
 				<p class="pass">
-					<input type="password" name="pass" />
+					<form:input path="newPassword" />
 				</p>
 			</fieldset>
-			<br> <a href="usersPassUpdateResult.html" class="fl_tw4"> <i
-				class="fa fa-twitter3"></i> <span>確認</span>
-			</a>
+			<br> <i class="fa fa-twitter3"></i>
+			<form:button>確認</form:button>
 
-		</form>
+		</form:form>
 		<p class="prof">
-			<a href="usersMypage.html">マイページへ</a>
+			<a href="usersMypage">マイページへ</a>
 		</p>
 	</div>
 </body>

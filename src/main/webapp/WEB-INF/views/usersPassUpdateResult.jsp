@@ -13,14 +13,14 @@
 <body class="top">
 	<header>
 		<h1>
-			<a href="#">Beginner's Blog</a>
+			<a href="top">Beginner's Blog</a>
 		</h1>
 	</header>
 	<div class="formOne">
 		<p class="headM">更新されました。</p>
 
 		<p class="prof">
-			<a href="usersMypage.html">マイページへ</a>
+			<a href="usersMypage">マイページへ</a>
 		</p>
 	</div>
 </body>

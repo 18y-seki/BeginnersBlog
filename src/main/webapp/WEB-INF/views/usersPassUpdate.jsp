@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -24,22 +27,21 @@
 			新しいパスワードを入力してください<br> ※IDは変更できません
 		</p>
 
-		<form action="usersPassUpdateConfirm.html" method="post">
+		<form:form action="usersPassUpdateConfirm" modelAttribute="form">
 
 			<p class="idText">ID</p>
 			<p class="id">
-				<input type="text" name="id" value="kimukimu" readonly />
+				<form:input path="userId" readonly="true" />
 			</p>
 			<p class="passText">PASS</p>
 			<p class="pass">
-				<input type="password" name="pass" />
+				<form:password path="password" />
 			</p>
-			<a href="usersPassUpdateConfirm.html" class="fl_tw4"> <i
-				class="fa fa-twitter3"></i> <span>変更</span>
-			</a>
-		</form>
+			<i class="fa fa-twitter3"></i>
+			<form:button>変更</form:button>
+		</form:form>
 		<p class="prof">
-			<a href="usersMypage.html">マイページへ</a>
+			<a href="usersMypage">マイページへ</a>
 		</p>
 	</div>
 </body>

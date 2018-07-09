@@ -9,6 +9,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
 import jp.co.axiz.web.dao.UsersDao;
+import jp.co.axiz.web.entity.UpdateUsers;
 import jp.co.axiz.web.entity.Users;
 
 @Controller
@@ -32,6 +33,7 @@ public class UsersController {
 
 	@RequestMapping("/usersDelete")
 	public String usersDelete(@ModelAttribute("form") Users users, Model model) {
+		model.addAttribute("users", users);
 		return "usersDelete";
 	}
 
@@ -43,6 +45,7 @@ public class UsersController {
 
 	@RequestMapping("/adminDelete")
 	public String adminDelete(@ModelAttribute("form") Users users, Model model) {
+		model.addAttribute("users", users);
 		return "adminDelete";
 	}
 
@@ -56,18 +59,18 @@ public class UsersController {
 
 
 	@RequestMapping("/usersUpdate")
-	public String usersUpdate(@ModelAttribute("form") Users users, Model model) {
+	public String usersUpdate(@ModelAttribute("form") UpdateUsers users, Model model) {
 		return "usersUpdate";
 	}
 
 	@RequestMapping("/usersUpdateConfirm")
-	public String usersUpdateConfirm(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+	public String usersUpdateConfirm(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
 		session.setAttribute("newUsers", users);
 		return "usersUpdateConfirm";
 	}
 
 	@RequestMapping("/usersUpdateResult")
-	public String usersUpdateResult(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+	public String usersUpdateResult(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
 		Users newUsers = (Users)session.getAttribute("newUsers");
 
 		ud.updateProfile(newUsers);
@@ -78,28 +81,28 @@ public class UsersController {
 
 
 	@RequestMapping("/usersPassUpdate")
-	public String usersPassUpdate(@ModelAttribute("form") Users users, Model model) {
+	public String usersPassUpdate(@ModelAttribute("form") UpdateUsers users, Model model) {
 		return "usersPassUpdate";
 	}
 
 	@RequestMapping("/usersPassUpdateConfirm")
-	public String usersPassUpdateConfirm(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+	public String usersPassUpdateConfirm(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
 		session.setAttribute("newUsers", users);
 		return "usersPassUpdateConfirm";
 	}
 
 	@RequestMapping("/usersPassUpdateResult")
-	public String usersPassUpdateResult(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+	public String usersPassUpdateResult(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
 		Users newUsers = (Users)session.getAttribute("newUsers");
 
 		String newPass = newUsers.getPassword();
-		String rePass = users.getPassword();
+		String rePass = users.getNewPassword();
 
 		if(!(newPass.equals(rePass))){
 			return "usersPassUpdateConfirm";
 		}
 
-		ud.updatePass(users);
+		ud.updatePass(newUsers);
 
 		session.removeAttribute("newUsers");
 
