@@ -50,6 +50,7 @@
 			<p>
 
 				<a href="hard" class="square_btn">チュートリアルを確認</a>
+
 			<div class="article_main">
 
 				<form:form action="hardContributionConfirm" modelAttribute="form"

@@ -55,8 +55,6 @@ a:visited {
     text-decoration:underline;
 }
 
-
-
 .prof2{
 	text-align: center;
 }
@@ -88,7 +86,7 @@ img.kuma2 {
 	height: 550px;
 }
 
-#kumakuma {
+.kumakuma {
 	line-height: 0;
 	margin: -16px 0px 0px 0px;
 }

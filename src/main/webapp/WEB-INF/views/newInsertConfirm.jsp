@@ -15,21 +15,21 @@
 
 <link rel="icon" href="icon.png">
 </head>
-<body id="top">
+<body class="top">
 	<h1>
 		<a href="top">Beginner's Blog</a>
 	</h1>
 
-	<div id="new">
+	<div class="new">
 
-		<div id="formNew">
+		<div class="formNew">
 			<p class="form-title2">入力情報確認ページ</p>
 
-			<p id="headN">入力した情報を確認してください。</p>
+			<p class="headN">入力した情報を確認してください。</p>
 
 		</div>
 
-		<div id="formNew2">
+		<div class="formNew2">
 			<form:form action="newInsertResult" modelAttribute="form" method="post">
 
 				<label class="idText3">ID</label>
@@ -50,8 +50,8 @@
 			</form:form>
 		</div>
 
-		<div id="formNew">
-			<p id="headN">
+		<div class="formNew">
+			<p class="headN">
 				登録情報に間違いがなければ、<br>下の登録ボタンをクリックしてください！
 			</p>
 

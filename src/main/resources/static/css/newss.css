@@ -1,0 +1,107 @@
+
+img{
+width: 400px;
+height: 280px;
+
+}
+
+.rela {
+    position: relative;
+
+}
+.abso {
+    position: absolute;
+    bottom: 50px;
+    color: #fff;
+    background: #000;
+    background: rgba(0,0,0,0.6);
+    width: 100%;
+    max-width: 400px;
+    padding: 1em 0;
+}
+
+.abso p {
+    margin: 0;
+    padding: 0 0.8em;
+    font-size: 250%;
+    text-align: center;
+}
+
+.profS{
+	text-align: center;
+	padding: 50px;
+		font-size: 23px;
+	color: #fff;
+}
+
+.profS a {
+	color: #fff;
+}
+
+.profS a:visited {
+	color: #fff;
+}
+.#profS a:hover {
+	text-decoration: none;
+		color: #ffd700;
+}
+
+article {
+	background: url(../form/sea1.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% auto;
+	text-align: center;
+	width: auto;
+	line-height: 250%;
+	padding-top: 50px;
+}
+
+footer {
+	text-align: right;
+	width: 900px;
+	padding: 10px 80px 60px 80px;
+	line-height: 150%
+}
+
+.let{
+	text-align: center;
+	padding: 50px;
+		font-size: 28px;
+	color: #fff;
+}
+
+.let a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.let a:visited {
+	color: #fff;
+}
+
+.let a:hover {
+	text-decoration: none;
+		color: #fff;
+}
+
+.three .ch {
+  width: 400px;
+  margin: 5px;
+  padding: 5px;
+}
+
+.three{
+  display: flex;
+  display: -moz-flex;
+  display: -o-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  flex-direction: row;
+  -moz-flex-direction: row;
+  -o-flex-direction: row;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+}
+
+

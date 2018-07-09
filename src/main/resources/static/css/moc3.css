@@ -17,7 +17,7 @@ body{
 }
 
 
-#form-main{
+.form-main{
 	width:100%;
 	float:left;
 	padding-top:0px;
@@ -29,7 +29,7 @@ color: #000;
 }
 
 
-#form-div {
+.form-div {
 	 background-color:  #FFFF99;
 	padding: 20px 35px 50px 35px;
 	width: 650px;
@@ -52,7 +52,7 @@ input:hover, input:focus {
 	background-color:black;
 }
 
-#button-blue{
+.button-blue{
 	font-family: 'Montserrat', Arial, Helvetica, sans-serif;
 	float:left;
 	width: 100%;
@@ -69,7 +69,7 @@ input:hover, input:focus {
   text-align: center;
 }
 
-#button-blue:hover{
+.button-blue:hover{
 	background-color: rgba(50,50,50,0.1);
 	/*background-color: black;*/
 	color: black;
@@ -96,15 +96,14 @@ input:hover, input:focus {
 	color: #FFF;
 }
 
-
-#top {
+.top {
   background: #7474bf;
   background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
   background: linear-gradient(to right, #7474bf, #348ac7);
    margin:0;
 }
 
-#top h1 {
+.top h1 {
 	text-align: center;
 	line-height: 140px;
 	color: #FFFFFF;
@@ -113,16 +112,16 @@ font-family: 'Gulim';
  margin:0;
 }
 
-#top h1 a {
+.top h1 a {
 	text-decoration: none;
 	color: white;
 }
 
-#top h1 a:visited {
+.top h1 a:visited {
 	color: #FFFFFF;
 }
 
-#top h1 a:hover {
+.top h1 a:hover {
 	text-decoration: none;
 }
 

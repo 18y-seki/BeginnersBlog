@@ -10,14 +10,14 @@
 <link href="css/topBack.css" rel="stylesheet">
 <link rel="icon" href="icon.png">
 </head>
-<body id="top">
+<body class="top">
 
 	<h1>
 		<a href="top">Beginner's Blog</a>
 	</h1>
 
-	<div id="formOne">
-		<p id="headN">登録が完了しました！</p>
+	<div class="formOne">
+		<p class="headN">登録が完了しました！</p>
 
 		<p class="prof">
 			<a href="top">TOPページへ</a>

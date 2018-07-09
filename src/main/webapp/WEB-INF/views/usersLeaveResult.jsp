@@ -1,6 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,12 +12,12 @@
 <link href="css/topBack2.css" rel="stylesheet">
 </head>
 
-<body id="top">
+<body class="top">
 
 	<h1><a href="top">Beginner's Blog</a></h1>
 
-	<div id="formOne">
-		<p id="headM">退会しました。</p>
+	<div class="formOne">
+		<p class="headN">退会しました。</p>
 		<p class="prof">
 			<a href="top">TOPページへ</a>
 		</p>

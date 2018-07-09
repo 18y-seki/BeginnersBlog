@@ -11,11 +11,11 @@
 <link href="css/topBack.css" rel="stylesheet">
 </head>
 <body class="top">
-	<header>
+
 	<h1><a href="top">Beginner's Blog</a></h1>
-	</header>
+
 	<div class="formOne">
-		<p class="headM">強制退会させました。</p>
+		<p class="headN">強制退会させました。</p>
 
 		<p class="prof">
 			<a href="adminMypage">管理者メニューへ</a>
