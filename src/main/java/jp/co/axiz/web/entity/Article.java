@@ -1,5 +1,7 @@
 package jp.co.axiz.web.entity;
 
+import org.springframework.web.multipart.MultipartFile;
+
 public class Article {
 
 	private Integer articleId;
@@ -12,6 +14,17 @@ public class Article {
 	private Integer good_num;
 	private String createdAt;
 	private String updatedAt;
+
+	private MultipartFile file;
+
+
+
+	public MultipartFile getFile() {
+		return file;
+	}
+	public void setFile(MultipartFile file) {
+		this.file = file;
+	}
 	public Integer getArticleId() {
 		return articleId;
 	}

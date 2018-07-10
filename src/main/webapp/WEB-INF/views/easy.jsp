@@ -1,5 +1,6 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+    <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -26,7 +27,7 @@
 
 
 	<div  align="right">
-	<a class="button" href="usersMypage.html">マイページ</a>
+	<a class="button" href="usersMypage">マイページ</a>
 	</div>
 <div align="center">
 	<div id="header">
@@ -58,11 +59,12 @@
 
 	</div>
 </div>
+<form:form action="easyContribution" modelAttribute="form">
 <div id="footer">
 		<br><br><br><br><br>
-		 <a class="button" href="easyContribution.html">作ってみよう！</a>
-	</div>
+	<form:button>作ってみよう</form:button>
 </div>
+</form:form>
 
 	<div class="scroll_button">
 		<a href="#">ページTOPへ戻る</a>
