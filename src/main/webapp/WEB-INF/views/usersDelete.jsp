@@ -32,14 +32,15 @@
 				<thead>
 					<tr>
 						<th>ID</th>
-						<th>名前</th>
+
 					</tr>
 				</thead>
 				<tbody>
 
 					<tr>
-						<td><form:input path="userId" readonly="true" /></td>
-						<td><form:input path="userName" readonly="true" /></td>
+						<td><form:input path="userId"  value="${fn:escapeXml(users.userId)}" readonly="true" /></td>
+
+
 					</tr>
 				</tbody>
 			</table>

@@ -60,7 +60,8 @@
 
 						<form:form action="usersDelete" modelAttribute="form" >
 
-						<form:button name="id" path="userId"  value="${fn:escapeXml(user.userId)}" >削除</form:button>
+					<form:button name="id" path="userId" value="${fn:escapeXml(user.userId)}">削除</form:button>
+
 
 							</form:form>
 

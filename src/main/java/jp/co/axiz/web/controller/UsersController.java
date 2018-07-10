@@ -33,14 +33,15 @@ public class UsersController {
 	}
 
 
+
 	@RequestMapping("/usersDelete")
-	public String usersDelete(@ModelAttribute("form") Users users,@RequestParam("id")String id,@RequestParam("name")String name, Model model) {
+	public String usersDelete(@ModelAttribute("form") Users users,@RequestParam("id")String id, Model model) {
 		users.setUserId(id);
-		users.setUserName(name);
 		model.addAttribute("users", users);
 
 		return "usersDelete";
 	}
+
 
 	@RequestMapping("/usersDeleteResult")
 	public String usersDeleteResult(@ModelAttribute("form") Users users, Model model) {
