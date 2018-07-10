@@ -1,0 +1,55 @@
+
+.prof {
+	text-align: center;
+	padding: 50px;
+	font-size: 23px;
+	color: #29292A;
+}
+
+.prof a {
+	text-decoration: none;
+	color: #29292A;
+}
+
+.prof a:visited {
+	color: #29292A;
+}
+
+.prof a:hover {
+	text-decoration: none;
+}
+
+.profM a {
+	text-decoration: none;
+	color: #29292A;
+}
+
+.profM a:visited {
+	color: #29292A;
+}
+
+.profM a:hover {
+	text-decoration: none;
+}
+
+.profM{
+	text-align: center;
+	margin: 640px 0px 0px 0px;
+}
+
+a{
+	color:fff;
+	font-style:normal;
+	text-decoration:underline;
+}
+
+a:link {
+	color:fff;
+	font-style:normal;
+	text-decoration:underline;
+}
+
+a:visited {
+	color:#934C7B;
+	text-decoration:underline;
+}

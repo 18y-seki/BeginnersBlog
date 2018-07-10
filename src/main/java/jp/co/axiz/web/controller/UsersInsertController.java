@@ -1,5 +1,7 @@
 package jp.co.axiz.web.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -9,6 +11,7 @@ import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 
+import jp.co.axiz.web.dao.UsersDao;
 import jp.co.axiz.web.entity.Users;
 import jp.co.axiz.web.service.InsertService;
 
@@ -19,6 +22,9 @@ public class UsersInsertController {
 	@Autowired
 	InsertService is;
 
+	@Autowired
+	UsersDao ud;
+
 	@RequestMapping(value="/newInsert", method =RequestMethod.GET)
 	public String jump(@ModelAttribute("form") Users users, Model model) {
 		return "newInsert";
@@ -26,6 +32,7 @@ public class UsersInsertController {
 
 	@RequestMapping(value="/newInsert", method =RequestMethod.POST)
 	public String insert(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+
 		if(users==null) {
 			return "newInsert";
 		}
@@ -35,19 +42,52 @@ public class UsersInsertController {
 		String pass = users.getPassword();
 
 		if (id == null || id.isEmpty()) {
+			model.addAttribute("msg", "必須項目を入力してください");
 			return "newInsert";
 		}
+
+		if (id.length()>8) {
+			model.addAttribute("msg", "IDを8文字以内で入力してください");
+			return "newInsert";
+		}
+
 
 		if (name == null || name.isEmpty()) {
+			model.addAttribute("msg", "必須項目を入力してください");
 			return "newInsert";
 		}
+
+		if (name.length()>8) {
+			model.addAttribute("msg", "NAMEを8文字以内で入力してください");
+			return "newInsert";
+		}
+
+
 
 		if (pass == null || pass.isEmpty()) {
+			model.addAttribute("msg", "必須項目を入力してください");
 			return "newInsert";
 		}
 
-		session.setAttribute("form", users);
-		return "newInsertConfirm";
+		if (pass.length()!=4) {
+			model.addAttribute("msg", "PASSを4文字で入力してください");
+			return "newInsert";
+		}
+
+
+
+
+		List<Users> u = ud.findById(id);
+
+		if(u ==null) {
+			session.setAttribute("form", users);
+			return "newInsertConfirm";
+		}
+
+		model.addAttribute("msg", "そのIDは別のユーザーが既に使用しています。");
+		return "newInsert";
+
+
 	}
 
 	@RequestMapping(value="/newInsertConfirm", method =RequestMethod.POST)

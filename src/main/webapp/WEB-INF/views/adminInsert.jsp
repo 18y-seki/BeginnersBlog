@@ -9,21 +9,22 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
 <link href="icon.png" rel="icon">
-<link href="css/commons.css" rel="stylesheet">
-<link href="css/login.css" rel="stylesheet">
-<link href="css/topBack.css" rel="stylesheet">
+<link href="css2/commons.css" rel="stylesheet">
+<link href="css2/login.css" rel="stylesheet">
+<link href="css2/topBack.css" rel="stylesheet">
 </head>
 <body class="top">
 	<header>
 	<h1>
-		<a href="top">Beginner's Blog</a>
+		<a href="#">Beginner's Blog</a>
 	</h1>
 	</header>
 
 	<div class="formInsert">
 		<p class="form-title">新規管理者登録</p>
 
-		<p class="headM">登録するIDとパスワードを入力してください！</p>
+		<p class="headM">登録するIDとパスワードを入力してください！
+		<br>${msg}</p>
 
 		<form:form action="adminInsert" modelAttribute="form" method="post">
 			<p class="idText">ID</p>

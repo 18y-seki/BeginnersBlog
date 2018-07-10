@@ -1,0 +1,142 @@
+.button_left{
+	float:left;
+}
+
+header {
+	height: 160px;
+	background: #7474bf;
+	background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
+	background: linear-gradient(to right, #7474bf, #348ac7);
+}
+
+.top {
+	background: #7474bf;
+	background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
+	background: linear-gradient(to right, #7474bf, #348ac7);
+}
+
+.top h1 {
+	text-align: center;
+	line-height: 190px;
+	color: #FFFFFF;
+	font-size: 80px;
+	font-family: 'Gulim';
+}
+
+.top h1 a {
+	text-decoration: none;
+}
+
+.top h1 a:visited {
+	color: #FFFFFF;
+}
+
+.top h1 a:hover {
+	text-decoration: none;
+}
+
+.headM {
+	text-align:center;
+	font-size: 200%;
+	font-family: 'Gulim';
+	margin: 90px 0px 0px 0px;
+	color: #FFF;
+}
+
+
+.headDown {
+	text-align:center;
+	font-size: 300%;
+	font-family: 'Gulim';
+	margin: 90px 0px 0px 0px;
+	color: #FFF;
+}
+
+.fl_tw4 {/*�{�^���̔w�i*/
+	color: #FFF;/*�����E�A�C�R���F*/
+	border-radius: 7px;/*�p�ۂ�*/
+	display: inline-block;
+	height: 40px;/*����*/
+	width: 120px;/*��*/
+	text-align: center;/*���g�𒆉���*/
+	font-size: 22px;/*�����̃T�C�Y*/
+	line-height: 35px;/*�����ƍ��킹��*/
+	margin: -10px 0px 0px 350px;
+	background: #88bae2;
+	overflow: hidden;/*�͂ݏo���������B��*/
+	text-decoration:none;/*�����͏���*/
+	font-weight: bold;
+}
+
+.fl_tw5 {/*�{�^���̔w�i*/
+	color: #FFF;/*�����E�A�C�R���F*/
+	border-radius: 7px;/*�p�ۂ�*/
+	display: inline-block;
+	height: 40px;/*����*/
+	width: 120px;/*��*/
+	/*text-align: center;/*���g�𒆉���*/
+	font-size: 22px;/*�����̃T�C�Y*/
+	line-height: 35px;/*�����ƍ��킹��*/
+	margin: 10px 70px 10px 20px;
+	background: #88bae2;
+	overflow: hidden;/*�͂ݏo���������B��*/
+	text-decoration:none;/*�����͏���*/
+	font-weight: bold;
+}
+
+.fl_tw6 {
+	color: #FFF;
+	border-radius: 7px;
+	display: inline-block;
+	height: 40px;
+	width: 120px;
+	text-align: center;
+	font-size: 22px;
+	line-height: 35px;
+	margin: 10px 50px 10px 50px;
+	background: #88bae2;
+	overflow: hidden;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+
+
+.fl_tw4 .fa-twitter3 {
+	text-shadow: 2px 2px 0px #4287d6;
+	font-size: 30px;
+}
+
+.fl_tw4 span {/*�e�L�X�g*/
+	font-family: 'Gulim';
+	display:inline-block;
+	transition: .5s
+}
+
+/*.fl_tw4:hover span {/*�z�o�[�ň����]*/
+/*	-webkit-transform: rotateX(360deg);
+	-ms-transform: rotateX(360deg);
+	transform: rotateX(360deg);
+}*/
+
+.containe6 {
+	width: 40%;
+	margin: 80px 0px 0px 310px;
+}
+
+.insert {
+	width: 60%;
+	margin: 0px 0px 0px 300px;
+}
+
+.insert p {
+	text-align: center;
+}
+
+.center {
+	text-align: center;
+}
+
+.ue {
+	margin-top: 55px;
+}

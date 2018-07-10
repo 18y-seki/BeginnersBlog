@@ -5,14 +5,16 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
-<link href="css/commons.css" rel="stylesheet">
-<link href="css/login.css" rel="stylesheet">
-<link href="css/topBack.css" rel="stylesheet">
+<link href="css3/commons.css" rel="stylesheet">
+<link href="css3/login.css" rel="stylesheet">
+<link href="css3/topBack.css" rel="stylesheet">
 <link rel="icon" href="icon.png">
 </head>
 <body id="top">
 	<header>
-	<h1><a href="top.html">Beginner's Blog</a></h1>
+	<h1>
+		<a href="top.html">Beginner's Blog</a>
+	</h1>
 	</header>
 
 	<div id="formOne">

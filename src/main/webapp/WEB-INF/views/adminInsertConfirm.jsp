@@ -9,14 +9,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
 <link href="icon.png" rel="icon">
-<link href="css/commons.css" rel="stylesheet">
-<link href="css/login.css" rel="stylesheet">
-<link href="css/topBack.css" rel="stylesheet">
+<link href="css2/commons.css" rel="stylesheet">
+<link href="css2/login.css" rel="stylesheet">
+<link href="css2/topBack.css" rel="stylesheet">
 </head>
 <body class="top">
 	<header>
 	<h1>
-		<a href="top">Beginner's Blog</a>
+		<a href="#">Beginner's Blog</a>
 	</h1>
 	</header>
 
@@ -31,10 +31,10 @@
 			<p class="id">
 				<form:input path="userId" value="${fn:escapeXml(form.userId)}"
 					readonly="true" />
-
-
-
 			</p>
+
+
+
 			<p class="passText">PASS</p>
 			<p class="pass">
 				<form:input path="password" value="${fn:escapeXml(form.password)}"
@@ -46,17 +46,21 @@
 				登録情報に間違いがなければ、<br>下の登録ボタンをクリックしてください！
 			</p>
 
-
-			<form:button onclick="location.href='adminInsert'; return false;"
-				class="fl_tw4">
-				<i class="fa fa-twitter3"></i>
-				<span>戻る</span>
-			</form:button>
-
-			<form:button class="fl_tw4">
-				<i class="fa fa-twitter3"></i>
-				<span>登録</span>
-			</form:button>
+			<div class="button_line">
+				<div class="button_left">
+					<form:button onclick="location.href='adminInsert'; return false;"
+						class="fl_tw5">
+						<div class="fa fa-twitter3"></div>
+						<span>戻る</span>
+					</form:button>
+				</div>
+				<div class="button_left">
+					<form:button class="fl_tw5">
+						<div class="fa fa-twitter3"></div>
+						<span>登録</span>
+					</form:button>
+				</div>
+			</div>
 		</form:form>
 
 		<p class="prof">
