@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
-<link href="image/Blog_icon.png" rel="icon">
+<link href="icon.png" rel="icon">
 <link href="css/commons.css" rel="stylesheet">
 <link href="css/login.css" rel="stylesheet">
 <link href="css/topBack.css" rel="stylesheet">
@@ -23,32 +23,32 @@
 
 	<div class="formInsert">
 
-		<p class="form-title">会員強制退会ページ</p>
-		<p class="headM">この会員でよろしいですか？</p>
-
-		<form:form action="usersDeleteResult" modelAttribute="form">
-
+		<p class="form-title">管理者強制退会ページ</p>
+		<p class="headM">この管理者でよろしいですか？</p>
+		<form:form action="adminDeleteResult" modelAttribute="form">
 			<table class="table table-striped table-bordered table-hover">
 				<thead>
 					<tr>
 						<th>ID</th>
-						<th>名前</th>
 					</tr>
 				</thead>
 				<tbody>
 
 					<tr>
-						<td><form:input path="userId" readonly="true" /></td>
-						<td><form:input path="userName" readonly="true" /></td>
+						<td><form:input path="userId"  value="${fn:escapeXml(users.userId)}" readonly="true" /></td>
 					</tr>
 				</tbody>
 			</table>
+
 			<i class="fa fa-twitter3"></i>
 			<form:button>削除</form:button>
+
 		</form:form>
+
 		<p class="prof">
-			<a href="adminMypage">管理者メニューへ</a>
+			<a href="superuserMypage">スーパーユーザメニューへ</a>
 		</p>
+
 	</div>
 </body>
 </html>

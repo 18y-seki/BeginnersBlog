@@ -32,9 +32,10 @@
 
 				<fieldset class="ID">
 					<div>
-					<p class="message">${msg}</p>
+						<p class="message">${msg}</p>
 						<label>ID</label>
 						<form:input path="userId" />
+
 					</div>
 
 				</fieldset>
@@ -49,14 +50,20 @@
 				</tr>
 			</thead>
 			<tbody>
-				<c:forEach var="user" items="${userList}">
+				<c:forEach var="user" items="${userList}" >
 					<tr>
 						<td>${fn:escapeXml(user.userId)}</td>
 
+
 						<td>
-							<button type="submit" onclick="location.href='adminDelete'"
-								class="mypagebuttoncollect">削除</button>
-						</td>
+
+						<form:form action="adminDelete" modelAttribute="form" >
+
+						<form:button name="id" path="userId" value="${fn:escapeXml(user.userId)}">削除</form:button>
+
+							</form:form>
+
+							</td>
 					</tr>
 				</c:forEach>
 			</tbody>

@@ -53,10 +53,18 @@
 					<tr>
 						<td>${fn:escapeXml(user.userId)}</td>
 						<td>${fn:escapeXml(user.userName)}</td>
+
+
+
 						<td>
-							<button type="submit" onclick="location.href='usersDelete'"
-								class="mypagebuttoncollect">削除</button>
-						</td>
+
+						<form:form action="usersDelete" modelAttribute="form" >
+
+						<form:button name="id" path="userId"  value="${fn:escapeXml(user.userId)}" >削除</form:button>
+
+							</form:form>
+
+							</td>
 					</tr>
 				</c:forEach>
 			</tbody>

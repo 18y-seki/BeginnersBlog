@@ -26,12 +26,14 @@ public class ArticleDao {
 
 
 	private final String SQL_INSERT = "INSERT INTO article"
-			+ "(title, article_text, user_id, category_01, category_02, category_03) "
-			+ "VALUES (?, ?, ?, ?, ?, ?)";
+			+ "(title, article_text, user_id, category_01, category_02, category_03, created_at) "
+			+ "VALUES (?, ?, ?, ?, ?, ?, now())";
 
 
 
 	private final String SQL_DELETE = "DELETE FROM article WHERE article_id = ?";
+
+	private final String SQL_DELETE_USER = "DELETE FROM article WHERE user_id = ?";
 
 
 	public List<Article> findAll(){
@@ -89,6 +91,11 @@ public class ArticleDao {
 	public void delete(Integer articleId) {
 		jdbcTemplate.update(SQL_DELETE,
 				articleId);
+	}
+
+	public void deleteUser(String userId) {
+		jdbcTemplate.update(SQL_DELETE,
+				userId);
 	}
 
 }
