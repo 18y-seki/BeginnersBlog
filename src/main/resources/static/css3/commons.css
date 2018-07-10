@@ -2,11 +2,11 @@
 .top {
  background: #56ccf2; /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #56ccf2, #2f80ed); 
+  background: linear-gradient(to top, #56ccf2, #2f80ed);
 }
 .top h1 {
 	text-align: center;
-	line-height: 160px;
+	line-height: 0px;
 	color: #FFFFFF;
 	font-size: 80px;
 	font-family: 'Gulim';
@@ -73,7 +73,7 @@
 	color: #FFF;
 	  text-decoration: none;
 }
-	
+
 .btn2 {
 	width: 15%;
 	margin: 0 auto;
@@ -82,19 +82,19 @@
 	width: 15%;
 	margin: 20px 0px 0px 635px ;
 }
-.fl_tw2{/*ƒ{ƒ^ƒ“‚Ì”wŒi*/
-  color: #FFF;/*•¶šEƒAƒCƒRƒ“F*/
-  border-radius: 7px;/*ŠpŠÛ‚É*/
+.fl_tw2{/*ï¿½{ï¿½^ï¿½ï¿½ï¿½Ì”wï¿½i*/
+  color: #FFF;/*ï¿½ï¿½ï¿½ï¿½ï¿½Eï¿½Aï¿½Cï¿½Rï¿½ï¿½ï¿½F*/
+  border-radius: 7px;/*ï¿½pï¿½Û‚ï¿½*/
   display: inline-block;
-  height: 120px;/*‚‚³*/
-  width: 450px;/*•*/
-  text-align: center;/*’†g‚ğ’†‰›Šñ‚¹*/
-  font-size: 70px;/*•¶š‚ÌƒTƒCƒY*/
-  line-height: 121px;/*‚‚³‚Æ‡‚í‚¹‚é*/
+  height: 120px;/*ï¿½ï¿½ï¿½ï¿½*/
+  width: 450px;/*ï¿½ï¿½*/
+  text-align: center;/*ï¿½ï¿½ï¿½gï¿½ğ’†‰ï¿½ï¿½ï¿½*/
+  font-size: 70px;/*ï¿½ï¿½ï¿½ï¿½ï¿½ÌƒTï¿½Cï¿½Y*/
+  line-height: 121px;/*ï¿½ï¿½ï¿½ï¿½ï¿½Æï¿½ï¿½í‚¹ï¿½ï¿½*/
   margin: 50px 0px 0px 196px;
   background: #F8C41A;
-  overflow: hidden;/*‚Í‚İo‚½•”•ª‚ğ‰B‚·*/
-  text-decoration:none;/*‰ºü‚ÍÁ‚·*/
+  overflow: hidden;/*ï¿½Í‚İoï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Bï¿½ï¿½*/
+  text-decoration:none;/*ï¿½ï¿½ï¿½ï¿½ï¿½Íï¿½ï¿½ï¿½*/
   box-shadow: 4px 4px #B49326;
 }
 
@@ -103,32 +103,32 @@
     font-size: 30px;
 }
 
-.fl_tw2 span {/*ƒeƒLƒXƒg*/
+.fl_tw2 span {/*ï¿½eï¿½Lï¿½Xï¿½g*/
 font-family: 'Gulim';
   display:inline-block;
       text-shadow: 3px 3px 5px #222;
   transition: .5s}
 
-.fl_tw2:hover span{/*ƒzƒo[‚Åˆêü‰ñ“]*/
+.fl_tw2:hover span{/*ï¿½zï¿½oï¿½[ï¿½Åˆï¿½ï¿½ï¿½ï¿½]*/
   -webkit-transform: rotateX(360deg);
   -ms-transform: rotateX(360deg);
   transform: rotateX(360deg);
 }
 
 
-.fl_tw3{/*ƒ{ƒ^ƒ“‚Ì”wŒi*/
-  color: #FFF;/*•¶šEƒAƒCƒRƒ“F*/
-  border-radius: 7px;/*ŠpŠÛ‚É*/
+.fl_tw3{/*ï¿½{ï¿½^ï¿½ï¿½ï¿½Ì”wï¿½i*/
+  color: #FFF;/*ï¿½ï¿½ï¿½ï¿½ï¿½Eï¿½Aï¿½Cï¿½Rï¿½ï¿½ï¿½F*/
+  border-radius: 7px;/*ï¿½pï¿½Û‚ï¿½*/
   display: inline-block;
-  height: 120px;/*‚‚³*/
-  width: 450px;/*•*/
-  text-align: center;/*’†g‚ğ’†‰›Šñ‚¹*/
-  font-size: 76px;/*•¶š‚ÌƒTƒCƒY*/
-  line-height: 121px;/*‚‚³‚Æ‡‚í‚¹‚é*/
+  height: 120px;/*ï¿½ï¿½ï¿½ï¿½*/
+  width: 450px;/*ï¿½ï¿½*/
+  text-align: center;/*ï¿½ï¿½ï¿½gï¿½ğ’†‰ï¿½ï¿½ï¿½*/
+  font-size: 76px;/*ï¿½ï¿½ï¿½ï¿½ï¿½ÌƒTï¿½Cï¿½Y*/
+  line-height: 121px;/*ï¿½ï¿½ï¿½ï¿½ï¿½Æï¿½ï¿½í‚¹ï¿½ï¿½*/
   margin: -10px 0px 0px 70px;
   background: #F8C41A;
-  overflow: hidden;/*‚Í‚İo‚½•”•ª‚ğ‰B‚·*/
-  text-decoration:none;/*‰ºü‚ÍÁ‚·*/
+  overflow: hidden;/*ï¿½Í‚İoï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Bï¿½ï¿½*/
+  text-decoration:none;/*ï¿½ï¿½ï¿½ï¿½ï¿½Íï¿½ï¿½ï¿½*/
     box-shadow: 4px 4px #B49326;
 }
 
@@ -137,31 +137,31 @@ font-family: 'Gulim';
     font-size: 30px;
 }
 
-.fl_tw3 span {/*ƒeƒLƒXƒg*/
+.fl_tw3 span {/*ï¿½eï¿½Lï¿½Xï¿½g*/
 font-family: 'Gulim';
     text-shadow: 3px 3px 5px #222;
   display:inline-block;
   transition: .5s}
 
-.fl_tw3:hover span{/*ƒzƒo[‚Åˆêü‰ñ“]*/
+.fl_tw3:hover span{/*ï¿½zï¿½oï¿½[ï¿½Åˆï¿½ï¿½ï¿½ï¿½]*/
   -webkit-transform: rotateX(360deg);
   -ms-transform: rotateX(360deg);
   transform: rotateX(360deg);
 }
 
-.fl_tw4{/*ƒ{ƒ^ƒ“‚Ì”wŒi*/
-  color: #FFF;/*•¶šEƒAƒCƒRƒ“F*/
-  border-radius: 7px;/*ŠpŠÛ‚É*/
+.fl_tw4{/*ï¿½{ï¿½^ï¿½ï¿½ï¿½Ì”wï¿½i*/
+  color: #FFF;/*ï¿½ï¿½ï¿½ï¿½ï¿½Eï¿½Aï¿½Cï¿½Rï¿½ï¿½ï¿½F*/
+  border-radius: 7px;/*ï¿½pï¿½Û‚ï¿½*/
   display: inline-block;
-  height: 40px;/*‚‚³*/
-  width: 120px;/*•*/
-  text-align: center;/*’†g‚ğ’†‰›Šñ‚¹*/
-  font-size: 22px;/*•¶š‚ÌƒTƒCƒY*/
-  line-height: 35px;/*‚‚³‚Æ‡‚í‚¹‚é*/
+  height: 40px;/*ï¿½ï¿½ï¿½ï¿½*/
+  width: 120px;/*ï¿½ï¿½*/
+  text-align: center;/*ï¿½ï¿½ï¿½gï¿½ğ’†‰ï¿½ï¿½ï¿½*/
+  font-size: 22px;/*ï¿½ï¿½ï¿½ï¿½ï¿½ÌƒTï¿½Cï¿½Y*/
+  line-height: 35px;/*ï¿½ï¿½ï¿½ï¿½ï¿½Æï¿½ï¿½í‚¹ï¿½ï¿½*/
   margin: -10px 0px 0px 500px;
   background: #1da1f3;
-  overflow: hidden;/*‚Í‚İo‚½•”•ª‚ğ‰B‚·*/
-  text-decoration:none;/*‰ºü‚ÍÁ‚·*/
+  overflow: hidden;/*ï¿½Í‚İoï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Bï¿½ï¿½*/
+  text-decoration:none;/*ï¿½ï¿½ï¿½ï¿½ï¿½Íï¿½ï¿½ï¿½*/
   font-weight: bold;
 }
 
@@ -170,19 +170,19 @@ font-family: 'Gulim';
     font-size: 30px;
 }
 
-.fl_tw4 span {/*ƒeƒLƒXƒg*/
+.fl_tw4 span {/*ï¿½eï¿½Lï¿½Xï¿½g*/
 font-family: 'Gulim';
   display:inline-block;
   transition: .5s}
 
-.fl_tw4:hover span{/*ƒzƒo[‚Åˆêü‰ñ“]*/
+.fl_tw4:hover span{/*ï¿½zï¿½oï¿½[ï¿½Åˆï¿½ï¿½ï¿½ï¿½]*/
   -webkit-transform: rotateX(360deg);
   -ms-transform: rotateX(360deg);
   transform: rotateX(360deg);
 }
 
 
-.scroll_button a{ /*‚Æ‚Á‚Õ‚Ö‚à‚Ç‚é‚â[‚Â*/
+.scroll_button a{ /*ï¿½Æ‚ï¿½ï¿½Õ‚Ö‚ï¿½ï¿½Ç‚ï¿½ï¿½[ï¿½ï¿½*/
     position: fixed;
     display: block;
     right:50px;
@@ -196,7 +196,7 @@ font-family: 'Gulim';
 .under {
   border-bottom: double 6px #FFF;
   }
-  
+
 
 .containe {
 	width: 900px;
@@ -264,7 +264,7 @@ text-align: center;
 		font-family: 'Gulim';
 		color: #FFF;
 	}
-	
+
 .syokyuB {
 	background-color: #FFF;
 	width: 70%;
@@ -387,7 +387,7 @@ font-size: 17px;
     background: #ECECEC;
     transition: .4s;
   }
-  
+
   #box0{
 
       width:150px;

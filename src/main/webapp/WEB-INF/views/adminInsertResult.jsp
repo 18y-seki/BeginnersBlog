@@ -14,7 +14,7 @@
 <body class="top">
 	<header>
 	<h1>
-		<a href="#">Beginner's Blog</a>
+		<a href="top">Beginner's Blog</a>
 	</h1>
 	</header>
 	<div class="formOne">

@@ -6,12 +6,12 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formAdSe{
     width: 800px;
     height: 450px;
@@ -19,12 +19,12 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formInsert{
     width: 800px;
     height: 550px;
@@ -32,12 +32,12 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formLogin{
     width: 680px;
     height: 520px;
@@ -46,12 +46,12 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formUsersDelete{
     width: 700px;
     height: 570px;
@@ -59,12 +59,12 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formInsertCon{
     width: 800px;
     height: 570px;
@@ -72,12 +72,12 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formAdInCon{
     width: 800px;
     height: 600px;
@@ -85,12 +85,12 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formNewInsert{
     width: 800px;
     height: 1000px;
@@ -100,20 +100,20 @@ body,p,form,input{margin: 0}
     border-radius: 20px;
         background-color: #f7ffc9;
     }
-    
+
 .formNew{
     width: 800px;
-    height: 280px;
+    height: 240px;
     margin: 30px auto;
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formNew2{
     width: 680px;
     height: 230px;
@@ -121,12 +121,12 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formsyokyu{
     width: 800px;
     height: 900px;
@@ -134,14 +134,14 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
-    
-    
+
+
+
 .formNewInCon{
     width: 800px;
     height: 850px;
@@ -149,12 +149,12 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formUpCon{
     width: 730px;
     height: 1150px;
@@ -162,12 +162,12 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formhelp{
     width: 800px;
     height: 620px;
@@ -177,7 +177,7 @@ body,p,form,input{margin: 0}
     border-radius: 20px;
     background-color: white;
     }
-    
+
 .formUsersUpCon{
     width: 800px;
     height: 1120px;
@@ -185,12 +185,12 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formUserPro{
     width: 750px;
     height: 800px;
@@ -198,12 +198,12 @@ body,p,form,input{margin: 0}
     padding: 0px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formAdPro{
     width: 800px;
     height: 350px;
@@ -211,12 +211,12 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
-    
+
 .formOne{
     width: 450px;
     height: 270px;
@@ -224,7 +224,7 @@ body,p,form,input{margin: 0}
     padding: 20px;
     border: 20px double #fcc962;
     border-radius: 20px;
-    
+
     background: -moz-linear-gradient(top, #fcf988, #fffdb5);
     background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
     background: linear-gradient(to bottom, #fcf988, #fffdb5);
@@ -244,8 +244,8 @@ form p{
     margin: 35px 0px 0px 0px;
 	font-family: 'GlimChe';
     }
-    
-        
+
+
 .form-title2{
 	font-size: 40px;
     text-align: center;
@@ -337,7 +337,7 @@ border-bottom: dashed 2px #6594e0;
     }
  .pass {
 	margin: 33px 0px 0px 20px;
-	margin-bottom: 40px;
+	margin-bottom: 50px;
  }
 .name {
 	margin: 35px 0px 0px 20px;
@@ -372,12 +372,12 @@ input[type="password"] {
     padding: 6px;
     font-size: 17px;
     }
-    
+
 .submit{
     width: 100%;
     margin: 0px 0px 0px 60px;
     }
-    
+
     textarea {
   resize: none;
   width:700px;

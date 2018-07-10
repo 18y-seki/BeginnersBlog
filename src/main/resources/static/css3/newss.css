@@ -7,7 +7,7 @@ height: 280px;
 
 .rela {
     position: relative;
-    
+
 }
 .abso {
     position: absolute;
@@ -66,7 +66,7 @@ article {
 	text-align: center;
 	width: auto;
 	line-height: 250%;
-	padding-top: 50px;
+	padding-top: 0px;
 }
 
 

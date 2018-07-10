@@ -32,17 +32,17 @@
 		<div class="formNew2">
 
 
-				<label class="idText3">ID</label>
+				<p class="idText3">ID</p>
 				<p class="id">
 					<form:input path="userId" value="${fn:escapeXml(form.userId)}" readonly="true" />
 				</p>
 
-				<label class="nameText3">名前</label>
+				<p class="nameText3">名前</p>
 				<p class="id">
 					<form:input path="userName" value="${fn:escapeXml(form.userName)}" readonly="true" />
 				</p>
 
-				<label class="passText3">PASS</label>
+				<p class="passText3">PASS</p>
 				<p class="pass">
 					<form:input path="password" value="${fn:escapeXml(form.password)}" readonly="true" />
 				</p>
@@ -57,15 +57,15 @@
 			<form:button><div class="fa fa-twitter3">登録</div></form:button>
 
 
-			<p class="prof">
+			<div class="prof">
 				<a href="newInsert">戻る</a>
-			</p>
+			</div>
 		</div>
 </form:form>
 
-		<p class="prof">
+		<div class="prof">
 			<a href="top">TOPページへ</a>
-		</p>
+		</div>
 
 	</div>
 

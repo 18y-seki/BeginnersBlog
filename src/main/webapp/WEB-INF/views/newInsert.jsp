@@ -35,11 +35,11 @@
 
 			<div class="formNew2">
 				<p class="headNu">
-					①IDを決めてください。<br> 好きな文字を<strong>8文字</strong>入力してください。<br>
+					①IDを決めてください。<br> 好きな文字を<strong>8文字以内で</strong>入力してください。<br>
 					（例）12abあい78<br>
 				</p>
 
-				<label class="required idText3">ID</label>
+				<p class="idText3">ID</p>
 				<p class="id">
 					<form:input path="userId" />
 				</p>
@@ -53,7 +53,7 @@
 				</p>
 
 
-				<label class="required nameText3">NAME</label>
+				<p class="nameText3">NAME</p>
 				<p class="id">
 					<form:input path="userName" />
 				</p>
@@ -61,11 +61,11 @@
 
 			<div class="formNew2">
 				<p class="headNu">
-					③パスワードを決めてください。 、<strong>4文字で</strong>入力してください。<br>
+					③パスワードを決めてください。<br><strong>4文字で</strong>入力してください。<br>
 					（例）12ab、123k、AB12
 				</p>
 
-				<label class="required passText3">PASS</label>
+				<p class="passText3">PASS</p>
 				<p class="pass">
 					<form:input path="password" />
 				</p>
@@ -74,7 +74,10 @@
 			<div class="formNew">
 				<p class="headNuu">全ての入力が終わったら、下の確認ボタンをクリックしてください！</p>
 
-				<form:button type="submit" class="fa fa-twitter3">確認</form:button>
+				<div  class="fa fa-twitter3">
+				<form:button>
+				<i class="fa fa-twitter3"></i>
+				<span>確認</span></form:button></div>
 			</div>
 		</form:form>
 

@@ -10,18 +10,18 @@
 <link href="css3/topBack.css" rel="stylesheet">
 <link rel="icon" href="icon.png">
 </head>
-<body id="top">
+<body class="top">
 	<header>
 	<h1>
-		<a href="top.html">Beginner's Blog</a>
+		<p><a href="top">Beginner's Blog</a></p>
 	</h1>
 	</header>
 
-	<div id="formOne">
-		<p id="headN">登録が完了しました！</p>
+	<div class="formOne">
+		<p class="headN">登録が完了しました！</p>
 
 		<p class="prof">
-			<a href="top.html">TOP画面へ</a>
+			<a href="top">TOPページへ</a>
 		</p>
 	</div>
 </body>
