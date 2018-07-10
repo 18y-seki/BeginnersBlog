@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
@@ -9,77 +12,80 @@
 <link href="css/commons.css" rel="stylesheet">
 <link href="css/topBack.css" rel="stylesheet">
 <link href="css/overflow.css" rel="stylesheet">
-	<link rel="icon" href="icon.png">
+<link rel="icon" href="icon.png">
 <!-- jquery読み込み -->
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+<script
+	src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
+	type="text/javascript"></script>
 <!-- スクロール -->
 <script type="text/javascript">
-$(function(){
-    $("a[href^=#]").click(function(){
-    var speed = 1200;
-    var href = $(this).attr("href");
-    var target = $(href == "#" || href == ""?"html" : href);
-    var position = target.offset().top;
-
-    $("body, html").animate({scrollTop:position}, speed, "swing");
-    return false;
-    });
-});
+	$(function() {
+		$("a[href^=#]").click(function() {
+			var speed = 1200;
+			var href = $(this).attr("href");
+			var target = $(href == "#" || href == "" ? "html" : href);
+			var position = target.offset().top;
+			$("body, html").animate({
+				scrollTop : position
+			}, speed, "swing");
+			return false;
+		});
+	});
 </script>
 
 </head>
 <body>
-<div id="top3">
-		<header>
-			<h1>
-				<p>
-					<a href="top.html">Beginner's Blog</a>
-				</p>
-			</h1>
-		</header>
+	<div id="top3">
+		<h1>
+			<a href="top">Beginner's Blog</a>
+		</h1>
+
 	</div>
 
-<div>
-<p class="syokyuT2"><h2>初級投稿フォーム</h2></p>
-<div class="buttonT"><p>
+	<div>
+		<p class="syokyuT2">
+		<h2>初級投稿フォーム</h2>
+		</p>
+		<div class="buttonT">
 
-<a href="easy.html" class="square_btn">チュートリアルを確認</a>
+			<a href="easy" class="square_btn">チュートリアルを確認</a>
+			<div class="article_main">
 
-<div class="article_main">
+				<form:form action="easyContributionConfirm" modelAttribute="form"
+					method="post" enctype="multipart/form-data">
 
-<form action="easyContributionConfirm.html" method="post" enctype="multipart/form-data">
+					<label>タイトル：</label>
+					<form:input path="title" maxlength="30" style="width: 480px;"
+						value="Liveだ！" />
 
-<div>タイトル：<input type="text" name="title" maxlength="30" style="width: 480px;"value="Liveだ！"></div>
-
-
-<fieldset><legend>ボタン</legend>
-<button type="button" class="html">画像挿入</button><input type="file" name="img">
-</fieldset>
-<fieldset>
-<div class="text">
-					<p>凛として時雨のライブにいきました。</p>
-
-					おすすめのアーティストなので是非聞いてください。
-					<br>
-					<img src="img/resize_image.jpg">
-					<br>
-					<div class="kategorii">
-					カテゴリ<input type="text" name="art_category" style="width: 300px;"value="音楽">
-					</div>
+					<fieldset>
+						<legend>ボタン</legend>
+						<form:button class="html">画像挿入</form:button>
+						<input type="file" name="img">
 					</fieldset>
 
+					<fieldset>
+						<div class="text">
+						<textarea style="width: 600px; height: 200px;">
+							</textarea><br>
 
-<a href="easyContributionConfirm.html" class="square_btn">確認画面へ</a>
-<a href="usersMypage.html" class="square_btn">マイページへ</a>
-</div>
-</form>
-</div>
-<footer>
+							<img src="img/resize_image.jpg"> <br>
+							<div class="kategorii">
+								<label>カテゴリ</label>
+								<form:input path="category_01" style="width: 300px;" value="" />
+							</div>
+						</div>
+					</fieldset>
 
-<p>Copyright © 2018 Beginner's Blog All Rights Reserved.</p>
+					<form:button class="square_btn">確認画面へ</form:button>
+					<a href="usersMypage" class="square_btn">マイページへ</a>
 
-<a href="login_top.html" class="kanri">管理者ログイン</a>
+				</form:form>
+			</div>
+		</div>
+	</div>
 
-</footer>
+	<p>Copyright © 2018 Beginner's Blog All Rights Reserved.</p>
+	<a href="login_top" class="kanri">管理者ログイン</a>
 </body>
 </html>

@@ -47,10 +47,20 @@
 		<p id="headS">
 			<span id="under"><a href="help">このサイトについて詳しく知る</a></span>
 		</p>
+		<c:choose>
+		<c:when test="${empty login}">
 		<a href="newInsert" class="fl_tw2"> <i class="fa fa-twitter"></i>
 			<span>新規登録</span>
 		</a> <a href="login" class="fl_tw3"> <i class="fa fa-twitter2"></i> <span>ログイン</span>
 		</a>
+		</c:when>
+		<c:otherwise>
+				<a href="usersMypage" class="fl_tw2"> <i class="fa fa-twitter"></i>
+			<span>マイページ</span>
+		</a> <a href="logout" class="fl_tw3"> <i class="fa fa-twitter2"></i> <span>ログアウト</span>
+		</a>
+		</c:otherwise>
+		</c:choose>
 		<div id="jirusi">
 			<img src="sankaku1.png" alt="矢印">
 			<div></div>
