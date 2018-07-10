@@ -10,6 +10,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 
 import jp.co.axiz.web.dao.GoodDao;
 import jp.co.axiz.web.entity.Article;
+import jp.co.axiz.web.entity.Comments;
 import jp.co.axiz.web.entity.Good;
 import jp.co.axiz.web.entity.Users;
 
@@ -20,9 +21,9 @@ public class GoodController {
 	GoodDao gd;
 
 	@RequestMapping("/good")
-	public String good(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+	public String good(@ModelAttribute("form") Comments comment, Model model, HttpSession session) {
 
-		Article selectArt = (Article)session.getAttribute("article");
+		Article selectArt = (Article)session.getAttribute("art");
 		Users loginuser = (Users)session.getAttribute("login");
 
 		Integer art = selectArt.getArticleId();
@@ -34,9 +35,13 @@ public class GoodController {
 
 		if(isGood) {
 			gd.delete(good);
+			session.removeAttribute("isGood");
 		}else {
 			gd.insert(art,login);
+			session.setAttribute("isGood", "good");
 		}
+
+
 
 		return "article";
 	}

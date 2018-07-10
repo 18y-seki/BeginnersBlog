@@ -54,7 +54,26 @@ $(function(){
 					${art.articleText}
 					<br>
 					<img src="img/resize_image.jpg">
-					<p class="kategori">カテゴリ：${art.category_01}　　　　　投稿日時:${art.createdAt}</p>
+					<p class="kategori">
+							カテゴリ：${art.category_01} 投稿日時:${art.createdAt}
+
+							<c:choose>
+								<c:when test="${not empty isGood}">
+									<a href="good"> <img src="image/good2.png">
+									</a>
+								</c:when>
+								<c:when test="${not empty login}">
+									<a href="good"> <img src="image/good.png">
+									</a>
+								</c:when>
+								<c:otherwise>
+								 <img src="image/good.png"
+								 style="height:20px; width:20px;">
+								</c:otherwise>
+							</c:choose>
+								${art.good_num}
+
+						</p>
 					</fieldset>
 					<div>
 						<fieldset class="containeC">

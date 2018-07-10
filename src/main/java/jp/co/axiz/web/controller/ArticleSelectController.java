@@ -18,6 +18,7 @@ import jp.co.axiz.web.dao.GoodDao;
 import jp.co.axiz.web.dao.UsersDao;
 import jp.co.axiz.web.entity.Article;
 import jp.co.axiz.web.entity.Comments;
+import jp.co.axiz.web.entity.Good;
 import jp.co.axiz.web.entity.Users;
 
 @Controller
@@ -48,6 +49,13 @@ public class ArticleSelectController {
 	public String article(@ModelAttribute("form") Comments comment, @RequestParam("id")Integer id, Model model, HttpSession session) {
 		Article art = ad.findById(id);
 		List<Comments> com = cd.findByArticleId(id);
+		List<Good> good = gd.findByArticleId(id);
+		if(good!=null) {
+			art.setGood_num(good.size());
+		}else {
+			art.setGood_num(0);
+		}
+
 		List<Comments> comments = new ArrayList<Comments>();
 		if(com!=null) {
 			for(int i = 0 ; i< com.size() ;i++) {
@@ -59,10 +67,21 @@ public class ArticleSelectController {
 			}
 		}
 
-
 		session.setAttribute("art", art);
 		session.setAttribute("comments", comments);
-		return "article";
+
+		Users loginuser = (Users)session.getAttribute("login");
+
+		if(loginuser==null) {
+			return "article";
+		}else {
+			String userId = loginuser.getUserId();
+			Good isGood = gd.findByArticleUsers(id, userId);
+
+			session.setAttribute("isGood", isGood);
+			return "article";
+		}
+
 	}
 
 }
