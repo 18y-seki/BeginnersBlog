@@ -1,0 +1,102 @@
+.box8 {
+    padding: 0.5em 1em;
+    margin: 2em 0;
+    color: #232323;
+    background: #fff8e8;
+    border-left: solid 10px #ffc06e;
+}
+.box8 p {
+    margin: 0;
+    padding: 0;
+}
+
+.part_line{
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 0.25em 0.5em;
+    text-decoration: none;
+    border-bottom: solid 3px #668ad8;
+    border-left: solid 3px #668ad8;
+    color: #668ad8;
+    transition: .4s;
+    }
+
+.part_line:hover {
+    padding-left: 0.7em;
+    padding-right: 0.3em;
+}
+.fl_tw3{/*ボタンの背景*/
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  display: inline-block;
+  height: 120px;/*高さ*/
+  width: 450px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 76px;/*文字のサイズ*/
+  line-height: 121px;/*高さと合わせる*/
+  margin: -10px 0px 0px 70px;
+  background: #1da1f3;
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+}
+
+.syokyuT2 {
+	font-size: 30px;
+
+	text-align: center;
+}
+
+.syokyuT3 {
+	font-size: 20px;
+
+
+}
+
+.blogbun{
+ position:absolute;
+  left:325px;
+  top:100px;
+ }
+
+ .blogbun2{
+ position:absolute;
+  left:360px;
+  top:95px;
+ }
+
+.blogbun3{
+ position:absolute;
+  left:425px;
+  top:105px;
+ }
+
+blogtitle{
+position:absolute;
+  left:350px;
+  top:50px;
+ }
+
+.square_btn {
+
+    position: relative;
+    display: inline-block;
+    font-weight: bold;
+    padding: 8px 10px 5px 10px;
+    text-decoration: none;
+    color: #FFA000;
+    background: #fff1da;
+    border-bottom: solid 4px #FFA000;
+    border-radius: 15px 15px 0 0;
+    transition: .4s;
+}
+
+.square_btn:hover {
+    background: #ffc25c;
+    color: #FFF;
+}
+.simpleblock {
+    padding: 10px;
+
+    border: 1px #808080 solid;
+}

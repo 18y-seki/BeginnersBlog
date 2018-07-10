@@ -1,0 +1,268 @@
+body, p, form, input {
+	margin: 0
+}
+
+.form {
+	width: 800px;
+	height: 400px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+
+.formAdSe {
+	width: 800px;
+	height: 450px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+
+.formInsert {
+	width: 800px;
+	height: 510px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+
+.formUsersDelete {
+	width: 800px;
+	height: 570px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+	background-color: #FFFF99;
+}
+
+.formInsertCon {
+	width: 800px;
+	height: 570px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+
+.formAdInCon {
+	width: 800px;
+	height: 600px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+
+.formNewInsert {
+	width: 800px;
+	height: 670px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+
+.formsyokyu {
+	width: 800px;
+	height: 900px;
+	margin: 50px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+
+.formNewInCon {
+	background-color: #FFFF99;
+	width: 800px;
+	height: 950px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+
+.formUpCon {
+	width: 800px;
+	height: 920px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+
+.formUsersUpCon {
+	width: 800px;
+	height: 1520px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+	background-color: #FFFF99;
+}
+
+.formUserPro {
+	width: 750px;
+	height: 800px;
+	margin: 40px auto;
+	padding: 0px;
+	border: 5px solid #555;
+	border-radius: 20px;
+	background-color: #f7ffc9;
+}
+
+.formAdPro {
+	width: 800px;
+	height: 350px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+
+.formOne {
+	width: 800px;
+	height: 270px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+	background-color: #FFFF99;
+}
+
+form p {
+	font-size: 29px;
+	font-family: 'GlimChe';
+	text-align: center;
+	color: black;
+}
+
+.form-title {
+	font-size: 40px;
+	text-align: center;
+	color: black;
+	margin: 15px 0px 0px 0px;
+	font-family: 'GlimChe';
+}
+
+.idText {width 100%;
+	margin: 29px 0px -82px -350px;
+}
+
+.idText2 {width 100%;
+	margin: 29px 0px -82px -410px;
+}
+
+.nameText {width 100%;
+	margin: 10px 0px -86px -380px;
+}
+
+.nameText2 {width 100%;
+	margin: 10px 0px -86px -500px;
+}
+
+.passText {width 100%;
+	margin: 0px 4px -82px -390px;
+}
+
+.passText2 {width 100%;
+	margin: 0px 4px -95px -410px;
+}
+
+.sexText {width 100%;
+	margin: 10px 0px -86px -383px;
+}
+
+.dayText {width 100%;
+	margin: 10px 0px -86px -409px;
+}
+
+.hobyText {width 100%;
+	margin: 10px 0px -86px -390px;
+}
+
+.comText {width 100%;
+	margin: 10px 0px -88px -440px;
+}
+
+.id {
+	margin: 33px 0px 0px 20px;
+	margin-bottom: 40px;
+}
+
+.pass {
+	margin: 33px 0px 0px 20px;
+	margin-bottom: 40px;
+}
+
+.name {
+	margin: 35px 0px 0px 20px;
+	margin-bottom: 40px;
+}
+
+.sex {
+	margin: 37px 0px 0px 20px;
+	margin-bottom: 40px;
+}
+
+.day {
+	margin: 37px 0px 0px 20px;
+	margin-bottom: 40px;
+}
+
+.com {
+	margin: 39px 0px 0px 20px;
+	margin-bottom: 40px;
+}
+
+.hoby {
+	margin: 37px 0px 0px 20px;
+	margin-bottom: 40px;
+}
+
+input[type="text"], input[type="password"] {
+	width: 300px;
+	padding: 6px;
+	font-size: 17px;
+}
+
+input[tupe="textarea"] {
+	font-size: 17px;
+	width: 300px;
+	padding: 6px;
+	height: 60px;
+}
+
+textarea {
+	font-size: 17px;
+	width: 300px;
+	padding: 6px;
+	height: 60px;
+	resize: none;
+}
+
+.com {
+	font-size: 17px;
+	width: 300px;
+	padding: 6px;
+	height: 60px;
+	resize: none;
+}
+
+select {
+	width: 60px;
+	height: 30px;
+}
+
+.submit {
+	width: 100%;
+	margin: 0px 0px 0px 60px;
+}
+
+.kategorii {
+	width: 200px;
+	margin: 0px 0px 10px 0px;
+}
