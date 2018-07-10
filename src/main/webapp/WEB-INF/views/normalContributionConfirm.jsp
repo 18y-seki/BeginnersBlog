@@ -61,10 +61,6 @@
 		</div>
 	</fieldset>
 
-	<div class="prof2">
-		<a href="articleUpdate">記事の編集</a> <a href="articleDelete">記事の削除</a>
-	</div>
-
 	<form:button class="square_btn">投稿</form:button>
 
 	<br>

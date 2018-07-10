@@ -49,8 +49,7 @@
 				<div class="content">
 					<div class="text">
 						<p class="mypagebuttonmargin">
-							<button type="submit" name="mypage" value="mypage"
-								onclick="location.href='usersMypage.html'" class="mypagebutton1">マイページ</button>
+
 						</p>
 						<div class="article_main">
 
@@ -76,10 +75,6 @@
 
 	</fieldset>
 
-	<div class="prof2">
-		<a href="articleUpdate">記事の編集</a> <a href="articleDelete">記事の削除</a>
-	</div>
-
 	<form:button class="square_btn">投稿</form:button>
 
 	<br>
@@ -87,6 +82,7 @@
 	<br>
 	<br>
 	<a href="easyContribution">戻る</a>
+		<a href="usersMypage">マイページへ</a>
 	<div class="scroll_button">
 		<a href="top">TOPページへ</a>
 	</div>
