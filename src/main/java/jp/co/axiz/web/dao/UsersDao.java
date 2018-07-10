@@ -23,6 +23,15 @@ public class UsersDao {
 	private final String SQL_SELECT_MEMBAR = "SELECT * FROM users "
 			+ "WHERE account_level = 0 AND delete_flg = 0";
 
+	private final String SQL_SELECT_MEMBAR_ID = "SELECT * FROM users "
+			+ "WHERE user_id=? AND account_level = 0 AND delete_flg = 0";
+
+	private final String SQL_SELECT_ADMINMEMBAR = "SELECT * FROM users "
+			+ "WHERE account_level = 1 AND delete_flg = 0";
+
+	private final String SQL_SELECT_ADMINMEMBAR_ID = "SELECT * FROM users "
+			+ "WHERE user_id=? AND account_level = 1 AND delete_flg = 0";
+
 	private final String SQL_SELECT_ADMIN = "SELECT * FROM users "
 			+ "WHERE account_level = 1 AND delete_flg = 0";
 
@@ -66,6 +75,27 @@ public class UsersDao {
 		List<Users> list = jdbcTemplate.query(SQL_SELECT_MEMBAR,
 				new BeanPropertyRowMapper<Users>(Users.class));
 
+		return list;
+	}
+
+	public List<Users> findMembarById(String userId) {
+		List<Users> list = jdbcTemplate.query(SQL_SELECT_MEMBAR_ID,
+				new BeanPropertyRowMapper<Users>(Users.class),
+				userId);
+		return list;
+	}
+
+	public List<Users> findAdminmembar() {
+		List<Users> list = jdbcTemplate.query(SQL_SELECT_ADMINMEMBAR,
+				new BeanPropertyRowMapper<Users>(Users.class));
+
+		return list;
+	}
+
+	public List<Users> findAdminembarById(String userId) {
+		List<Users> list = jdbcTemplate.query(SQL_SELECT_ADMINMEMBAR_ID,
+				new BeanPropertyRowMapper<Users>(Users.class),
+				userId);
 		return list;
 	}
 
