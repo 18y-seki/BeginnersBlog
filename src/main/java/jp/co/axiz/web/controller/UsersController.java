@@ -1,5 +1,7 @@
 package jp.co.axiz.web.controller;
 
+import java.util.List;
+
 import javax.servlet.http.HttpSession;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -7,6 +9,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import jp.co.axiz.web.dao.ArticleDao;
 import jp.co.axiz.web.dao.UsersDao;
@@ -41,8 +44,14 @@ public class UsersController {
 
 
 	@RequestMapping("/usersDelete")
-	public String usersDelete(@ModelAttribute("form") Users users, Model model) {
-		model.addAttribute("users", users);
+	public String usersDelete(@ModelAttribute("form") Users users, @RequestParam("id")String id, Model model) {
+		List<Users> list = ud.findMembarById(id);
+		Users u = list.get(0);
+
+		users.setUserId(u.getUserId());
+		users.setUserName(u.getUserName());
+
+
 		return "usersDelete";
 	}
 
@@ -55,7 +64,8 @@ public class UsersController {
 
 
 	@RequestMapping("/adminDelete")
-	public String adminDelete(@ModelAttribute("form") Users users, Model model) {
+	public String adminDelete(@ModelAttribute("form") Users users, @RequestParam("id")String id, Model model) {
+		users.setUserId(id);
 		model.addAttribute("users", users);
 		return "adminDelete";
 	}
@@ -67,28 +77,36 @@ public class UsersController {
 	}
 
 
-
-
 	@RequestMapping("/usersUpdate")
-	public String usersUpdate(@ModelAttribute("form") UpdateUsers users, Model model) {
+	public String usersUpdate(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
+		Users u = (Users)session.getAttribute("login");
+		Users beforeUser = ud.findById(u.getUserId());
+		session.setAttribute("beforeUser", beforeUser);
 		return "usersUpdate";
 	}
 
 	@RequestMapping("/usersUpdateConfirm")
 	public String usersUpdateConfirm(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
+		String birthday= users.getNewYear()+"-"+users.getNewMonth()+"-"+users.getNewDate();
+		users.setNewBirthday(birthday);
+
 		session.setAttribute("newUsers", users);
 		return "usersUpdateConfirm";
 	}
 
 	@RequestMapping("/usersUpdateResult")
 	public String usersUpdateResult(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
-		Users newUsers = (Users)session.getAttribute("newUsers");
+		UpdateUsers newUsers = (UpdateUsers)session.getAttribute("newUsers");
+		Users u = (Users)session.getAttribute("login");
+		String id = u.getUserId();
+
+		newUsers.setUserId(id);
 
 		ud.updateProfile(newUsers);
+		session.removeAttribute("beforeUser");
 		session.removeAttribute("newUsers");
 		return "usersUpdateResult";
 	}
-
 
 
 	@RequestMapping("/usersPassUpdate")
@@ -104,7 +122,7 @@ public class UsersController {
 
 	@RequestMapping("/usersPassUpdateResult")
 	public String usersPassUpdateResult(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
-		Users newUsers = (Users)session.getAttribute("newUsers");
+		UpdateUsers newUsers = (UpdateUsers)session.getAttribute("newUsers");
 
 		String newPass = newUsers.getPassword();
 		String rePass = users.getNewPassword();

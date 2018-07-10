@@ -5,23 +5,22 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
-<link href="css3/commons.css" rel="stylesheet">
-<link href="css3/login.css" rel="stylesheet">
-<link href="css3/topBack.css" rel="stylesheet">
-<link rel="icon" href="icon.png">
+<link href="icon.png" rel="icon">
+<link href="css2/commons.css" rel="stylesheet">
+<link href="css2/login.css" rel="stylesheet">
+<link href="css2/topBack.css" rel="stylesheet">
+
 </head>
 <body class="top">
 	<header>
 	<h1>
-		<p><a href="top">Beginner's Blog</a></p>
+		<a href="top">Beginner's Blog</a>
 	</h1>
 	</header>
-
 	<div class="formOne">
-		<p class="headN">登録が完了しました！</p>
-
+		<p class="headM">登録が完了しました。</p>
 		<p class="prof">
-			<a href="top">TOPページへ</a>
+			<a href="superuserMypage">スーパーユーザメニューへ</a>
 		</p>
 	</div>
 </body>

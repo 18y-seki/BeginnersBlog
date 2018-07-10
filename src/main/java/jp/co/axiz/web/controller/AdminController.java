@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 
 import jp.co.axiz.web.dao.UsersDao;
 import jp.co.axiz.web.entity.UpdateUsers;
@@ -24,19 +23,11 @@ public class AdminController {
 		return "adminMypage";
 	}
 
-	@RequestMapping(value="/usersSelect", method=RequestMethod.GET)
-	public String usersSelect(@ModelAttribute("form") Users users, Model model) {
-		return "usersSelect";
-	}
-
-	@RequestMapping(value="/usersSelect", method=RequestMethod.POST)
-	public String usersSelectID(@ModelAttribute("form") Users users, Model model) {
-		return "usersSelect";
-	}
-
-
 	@RequestMapping("/adminUpdate")
-	public String adminUpdate(@ModelAttribute("form") UpdateUsers users, Model model) {
+	public String adminUpdate(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
+		Users u = (Users)session.getAttribute("login");
+		Users beforeUser = ud.findById(u.getUserId());
+		session.setAttribute("beforeUser", beforeUser);
 		return "adminUpdate";
 	}
 
@@ -48,7 +39,12 @@ public class AdminController {
 
 	@RequestMapping("/adminUpdateResult")
 	public String adminUpdateResult(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
-		Users newUsers = (Users)session.getAttribute("newUsers");
+		UpdateUsers newUsers = (UpdateUsers)session.getAttribute("newUsers");
+
+		Users u = (Users)session.getAttribute("login");
+		String id = u.getUserId();
+
+		newUsers.setUserId(id);
 
 		String newPass = newUsers.getPassword();
 		String rePass = users.getNewPassword();

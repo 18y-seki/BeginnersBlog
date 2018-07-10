@@ -1,22 +1,21 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-        <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
-    <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
-<link href="icon.png" rel="icon">
+<link href="image/Blog_icon.png" rel="icon">
 <link href="css/commons.css" rel="stylesheet">
 <link href="css/login.css" rel="stylesheet">
 <link href="css/topBack.css" rel="stylesheet">
 </head>
 <body class="top">
 	<header>
-		<h1>
-			<a href="top">Beginner's Blog</a>
-		</h1>
+	<h1><a href="top">Beginner's Blog</a></h1>
 	</header>
 
 	<div class="formUpCon">
@@ -24,8 +23,8 @@
 
 		<p class="headM">これでよろしいですか？</p>
 
-		<form:form action="superuserUpdateResult" modelAttribute="form">
-		<p class="idTextr">ID:${beforeUser.userId}</p>
+		<form:form action="adminUpdateResult" modelAttribute="form">
+			<p class="idTextr">ID:${beforeUser.userId}</p>
 
 			<fieldset class="col">
 				<legend class="headM">変更前</legend>
@@ -52,7 +51,7 @@
 				<form:button>確認</form:button>
 		</form:form>
 		<p class="prof">
-			<a href="superuserMypage">スーパーユーザメニューへ</a>
+			<a href="adminMypage">管理者メニューへ</a>
 		</p>
 	</div>
 </body>

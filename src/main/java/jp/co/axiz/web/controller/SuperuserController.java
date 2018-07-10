@@ -25,11 +25,6 @@ public class SuperuserController {
 		return "superuserMypage";
 	}
 
-	@RequestMapping(value="/adminSelect", method=RequestMethod.GET)
-	public String adminSelect(@ModelAttribute("form") Users users, Model model) {
-		return "adminSelect";
-	}
-
 	@RequestMapping(value="/adminSelect", method=RequestMethod.POST)
 	public String adminSelectID(@ModelAttribute("form") Users users, Model model) {
 		return "adminSelect";
@@ -37,7 +32,10 @@ public class SuperuserController {
 
 
 	@RequestMapping("/superuserUpdate")
-	public String superuserUpdate(@ModelAttribute("form") UpdateUsers users, Model model) {
+	public String superuserUpdate(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
+		Users u = (Users)session.getAttribute("login");
+		Users beforeUser = ud.findById(u.getUserId());
+		session.setAttribute("beforeUser", beforeUser);
 		return "superuserUpdate";
 	}
 
@@ -49,9 +47,15 @@ public class SuperuserController {
 
 	@RequestMapping("/superuserUpdateResult")
 	public String superuserUpdateResult(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
-		Users newUsers = (Users)session.getAttribute("newUsers");
+		UpdateUsers newUsers = (UpdateUsers)session.getAttribute("newUsers");
+
+		Users u = (Users)session.getAttribute("login");
+		String id = u.getUserId();
+
+		newUsers.setUserId(id);
 
 		String newPass = newUsers.getPassword();
+
 		String rePass = users.getNewPassword();
 
 		if(!(newPass.equals(rePass))){

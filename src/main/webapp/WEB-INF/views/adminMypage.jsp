@@ -24,25 +24,19 @@
 
 			<form class="form" class="form1">
 				<p class="name">
-					お疲れ様です<br>管理人 しおり さん
+					お疲れ様です<br>管理人 さん
 				</p>
 
 				<div class="submit">
-					<a href="usersSelect"> <input type="text" value="会員参照"
-						class="button-blue" />
-					</a>
+					<a href="usersSelect">会員参照</a>
 				</div>
 
 				<div class="submit">
-					<a href="adminUpdate"> <input type="text" value="パスワード変更"
-						class="button-blue" />
-					</a>
+					<a href="adminUpdate">パスワード変更</a>
 				</div>
 
 				<div class="submit">
-					<a href="top"> <input type="text" value="ログアウト"
-						class="button-blue" />
-					</a>
+					<a href="logout">ログアウト</a>
 				</div>
 				<div class="ease"></div>
 			</form>

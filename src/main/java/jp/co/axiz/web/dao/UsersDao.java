@@ -7,6 +7,7 @@ import org.springframework.jdbc.core.BeanPropertyRowMapper;
 import org.springframework.jdbc.core.JdbcTemplate;
 import org.springframework.stereotype.Repository;
 
+import jp.co.axiz.web.entity.UpdateUsers;
 import jp.co.axiz.web.entity.Users;
 
 @Repository
@@ -23,8 +24,15 @@ public class UsersDao {
 	private final String SQL_SELECT_MEMBAR = "SELECT * FROM users "
 			+ "WHERE account_level = 0 AND delete_flg = 0";
 
+	private final String SQL_SELECT_MEMBAR_ID = "SELECT * FROM users "
+			+ "WHERE user_id=? AND account_level = 0 AND delete_flg = 0";
+
 	private final String SQL_SELECT_ADMIN = "SELECT * FROM users "
 			+ "WHERE account_level = 1 AND delete_flg = 0";
+
+
+	private final String SQL_SELECT_ADMIN_ID = "SELECT * FROM users "
+			+ "WHERE user_id=? AND account_level = 1 AND delete_flg = 0";
 
 
 	private final String SQL_INSERT_MEMBAR = "INSERT INTO users(user_id, user_name, password, delete_flg, account_level)"
@@ -61,10 +69,24 @@ public class UsersDao {
 		return list;
 	}
 
+	public List<Users> findMembarById(String userId) {
+		List<Users> list = jdbcTemplate.query(SQL_SELECT_MEMBAR_ID,
+				new BeanPropertyRowMapper<Users>(Users.class),
+				userId);
+		return list;
+	}
+
 	public List<Users> findAdmin() {
 		List<Users> list = jdbcTemplate.query(SQL_SELECT_ADMIN,
 				new BeanPropertyRowMapper<Users>(Users.class));
 
+		return list;
+	}
+
+	public List<Users> findAdminById(String userId) {
+		List<Users> list = jdbcTemplate.query(SQL_SELECT_ADMIN_ID,
+				new BeanPropertyRowMapper<Users>(Users.class),
+				userId);
 		return list;
 	}
 
@@ -81,33 +103,30 @@ public class UsersDao {
 		return list.get(0);
 	}
 
-	public void insertMembar(Users users) {
+	public void insertMembar(String id, String name, String pass) {
 		jdbcTemplate.update(SQL_INSERT_MEMBAR,
-				users.getUserId(),
-				users.getUserName(),
-				users.getPassword());
+				id,name,pass);
 	}
 
-	public void insertAdmin(Users users) {
+	public void insertAdmin(String id, String pass) {
 		jdbcTemplate.update(SQL_INSERT_ADMIN,
-				users.getUserId(),
-				users.getPassword());
+				id,pass);
 	}
 
-	public void updatePass(Users users) {
+	public void updatePass(UpdateUsers newUsers) {
 		jdbcTemplate.update(SQL_UPDATE_PASS,
-				users.getPassword(),
-				users.getUserId());
+				newUsers.getPassword(),
+				newUsers.getUserId());
 	}
 
-	public void updateProfile(Users users) {
+	public void updateProfile(UpdateUsers newUsers) {
 		jdbcTemplate.update(SQL_UPDATE_PROFILE,
-				users.getPassword(),
-				users.getSex(),
-				users.getBirthday(),
-				users.getHobby(),
-				users.getGreet(),
-				users.getUserId());
+				newUsers.getPassword(),
+				newUsers.getSex(),
+				newUsers.getBirthday(),
+				newUsers.getHobby(),
+				newUsers.getGreet(),
+				newUsers.getUserId());
 	}
 
 	public void delete(String userId) {
