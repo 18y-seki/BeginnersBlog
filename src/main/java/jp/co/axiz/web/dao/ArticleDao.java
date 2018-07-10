@@ -15,19 +15,19 @@ public class ArticleDao {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
-	private final String SQL_SELECT_ALL = "SELECT * FROM article";
+	private final String SQL_SELECT_ALL = "SELECT * FROM article ORDER BY created_at";
 
 	private final String SQL_SELECT_ID = "SELECT * FROM article WHERE article_id = ?";
 
 	private final String SQL_SELECT_CATEGORY = "SELECT * FROM article "
 			+ "WHERE category_01 = ? OR category_02 = ? OR category_03 = ?";
 
-	private final String SQL_SELECT_USERID = "SELECT * FROM article WHERE user_id = ?";
+	private final String SQL_SELECT_USERID = "SELECT * FROM article WHERE user_id = ? ORDER BY created_at";
 
 
 	private final String SQL_INSERT = "INSERT INTO article"
 			+ "(title, article_text, user_id, category_01, category_02, category_03, created_at) "
-			+ "VALUES (?, ?, ?, ?, ?, ?, now())";
+			+ "VALUES (?, ?, ?, ?, ?, ?, current_timestamp(0))";
 
 
 

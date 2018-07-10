@@ -5,6 +5,7 @@ public class Comments {
 	private Integer commentId;
 	private Integer articleId;
 	private String userId;
+	private String userName;
 	private String commentText;
 	private String createdAt;
 	private String updatedAt;
@@ -25,6 +26,12 @@ public class Comments {
 	}
 	public void setUserId(String userId) {
 		this.userId = userId;
+	}
+	public String getUserName() {
+		return userName;
+	}
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
 	public String getCommentText() {
 		return commentText;

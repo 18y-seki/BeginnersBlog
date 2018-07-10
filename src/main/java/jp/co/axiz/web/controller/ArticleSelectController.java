@@ -1,5 +1,6 @@
 package jp.co.axiz.web.controller;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import javax.servlet.http.HttpSession;
@@ -9,14 +10,15 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 import jp.co.axiz.web.dao.ArticleDao;
 import jp.co.axiz.web.dao.CommentDao;
 import jp.co.axiz.web.dao.GoodDao;
+import jp.co.axiz.web.dao.UsersDao;
 import jp.co.axiz.web.entity.Article;
 import jp.co.axiz.web.entity.Comments;
+import jp.co.axiz.web.entity.Users;
 
 @Controller
 public class ArticleSelectController {
@@ -30,6 +32,9 @@ public class ArticleSelectController {
 	@Autowired
 	GoodDao gd;
 
+	@Autowired
+	UsersDao ud;
+
 	@RequestMapping("/articleList")
 	public String articleList(Model model) {
 		List<Article> list = ad.findAll();
@@ -37,21 +42,26 @@ public class ArticleSelectController {
 		return "articleList";
 	}
 
-	@RequestMapping(value="/article", method=RequestMethod.POST)
-	public String articleI(@ModelAttribute("form") Article article, Model model, HttpSession session) {
-		Article art = ad.findById(article.getArticleId());
-		List<Comments> com = cd.findByArticleId(article.getArticleId());
-		session.setAttribute("art", art);
-		session.setAttribute("com", com);
-		return "article";
-	}
 
-	@RequestMapping(value="/article", method=RequestMethod.GET)
+
+	@RequestMapping("/article")
 	public String article(@ModelAttribute("form") Comments comment, @RequestParam("id")Integer id, Model model, HttpSession session) {
 		Article art = ad.findById(id);
 		List<Comments> com = cd.findByArticleId(id);
+		List<Comments> comments = new ArrayList<Comments>();
+		if(com!=null) {
+			for(int i = 0 ; i< com.size() ;i++) {
+				Comments c = com.get(i);
+				Users u = ud.findById(c.getUserId());
+				String name = u.getUserName();
+				c.setUserName(name);
+				comments.add(c);
+			}
+		}
+
+
 		session.setAttribute("art", art);
-		session.setAttribute("com", com);
+		session.setAttribute("comments", comments);
 		return "article";
 	}
 

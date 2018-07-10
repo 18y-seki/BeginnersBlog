@@ -55,8 +55,7 @@
 					method="post" enctype="multipart/form-data">
 
 					<label>タイトル：</label>
-					<form:input path="title" maxlength="30" style="width: 480px;"
-						value="Liveだ！" />
+					<form:input path="title" maxlength="30" style="width: 480px;" />
 
 					<fieldset>
 						<legend>ボタン</legend>
@@ -66,8 +65,7 @@
 
 					<fieldset>
 						<div class="text">
-						<textarea style="width: 600px; height: 200px;">
-							</textarea><br>
+						<textarea style="width: 600px; height: 200px;"></textarea><br>
 
 							<img src="img/resize_image.jpg"> <br>
 							<div class="kategorii">

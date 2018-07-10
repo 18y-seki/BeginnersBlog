@@ -15,10 +15,10 @@ public class CommentDao {
 	@Autowired
 	private JdbcTemplate jdbcTemplate;
 
-	private final String SQL_SELECT_ARTICLEID = "SELECT * FROM comment WHERE article_id = ?";
+	private final String SQL_SELECT_ARTICLEID = "SELECT * FROM comment WHERE article_id = ? ORDER BY created_at";
 
-	private final String SQL_INSERT = "INSERT INTO comment(article_id, user_id, comment_text) "
-			+ "VALUES(?, ?, ?)";
+	private final String SQL_INSERT = "INSERT INTO comment(article_id, user_id, comment_text, created_at) "
+			+ "VALUES(?, ?, ?, current_timestamp(0))";
 
 	private final String SQL_DELETE = "DELETE FROM comment WHERE comment_id = ?";
 
