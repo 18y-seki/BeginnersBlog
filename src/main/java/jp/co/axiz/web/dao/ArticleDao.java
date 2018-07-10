@@ -78,9 +78,9 @@ public class ArticleDao {
 				article.getTitle(),
 				article.getArticleText(),
 				article.getUserId(),
-				article.getCategory01(),
-				article.getCategory02(),
-				article.getCategory03());
+				article.getCategory_01(),
+				article.getCategory_02(),
+				article.getCategory_03());
 
 	}
 
@@ -94,7 +94,7 @@ public class ArticleDao {
 	}
 
 	public void deleteUser(String userId) {
-		jdbcTemplate.update(SQL_DELETE,
+		jdbcTemplate.update(SQL_DELETE_USER,
 				userId);
 	}
 

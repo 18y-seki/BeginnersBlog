@@ -1,14 +1,19 @@
 package jp.co.axiz.web.controller;
 
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 
+import jp.co.axiz.web.dao.ArticleDao;
 import jp.co.axiz.web.entity.Article;
 
 @Controller
 public class ArticleContributionController {
+
+	@Autowired
+	ArticleDao ad;
 
 	@RequestMapping("/easyContribution")
 	public String easyContribution(@ModelAttribute("form") Article article, Model model) {

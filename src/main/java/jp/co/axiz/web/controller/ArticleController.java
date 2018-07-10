@@ -18,7 +18,8 @@ public class ArticleController {
 	}
 
 	@RequestMapping("/easy")
-	public String easy(@ModelAttribute("form") Article article, @RequestParam(name = "riyu", required = false)Integer step, Model model) {
+	public String easy(@ModelAttribute("form") Article article,
+			@RequestParam(name="riyu", required=false)Integer step, Model model) {
 		if(step==null) {
 			return "easyContribution";
 		}else {
@@ -27,7 +28,8 @@ public class ArticleController {
 	}
 
 	@RequestMapping("/normal")
-	public String normal(@ModelAttribute("form") Article article, @RequestParam(name = "riyu", required = false)Integer step, Model model) {
+	public String normal(@ModelAttribute("form") Article article,
+			@RequestParam(name="riyu", required=false)Integer step, Model model) {
 		if(step==null) {
 			return "normalContribution";
 		}else {
@@ -36,7 +38,8 @@ public class ArticleController {
 	}
 
 	@RequestMapping("/hard")
-	public String hard(@ModelAttribute("form") Article article, @RequestParam(name = "riyu", required = false)Integer step, Model model) {
+	public String hard(@ModelAttribute("form") Article article,
+			@RequestParam(name="riyu", required=false)Integer step, Model model) {
 		if(step==null) {
 			return "hardContribution";
 		}else {

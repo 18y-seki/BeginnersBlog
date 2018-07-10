@@ -6,9 +6,10 @@ public class Article {
 	private String title;
 	private String articleText;
 	private String userId;
-	private String category01;
-	private String category02;
-	private String category03;
+	private String userName;
+	private String category_01;
+	private String category_02;
+	private String category_03;
 	private Integer good_num;
 	private String createdAt;
 	private String updatedAt;
@@ -36,23 +37,29 @@ public class Article {
 	public void setUserId(String userId) {
 		this.userId = userId;
 	}
-	public String getCategory01() {
-		return category01;
+	public String getUserName() {
+		return userName;
 	}
-	public void setCategory01(String category01) {
-		this.category01 = category01;
+	public void setUserName(String userName) {
+		this.userName = userName;
 	}
-	public String getCategory02() {
-		return category02;
+	public String getCategory_01() {
+		return category_01;
 	}
-	public void setCategory02(String category02) {
-		this.category02 = category02;
+	public void setCategory_01(String category_01) {
+		this.category_01 = category_01;
 	}
-	public String getCategory03() {
-		return category03;
+	public String getCategory_02() {
+		return category_02;
 	}
-	public void setCategory03(String category03) {
-		this.category03 = category03;
+	public void setCategory_02(String category_02) {
+		this.category_02 = category_02;
+	}
+	public String getCategory_03() {
+		return category_03;
+	}
+	public void setCategory_03(String category_03) {
+		this.category_03 = category_03;
 	}
 	public Integer getGood_num() {
 		return good_num;

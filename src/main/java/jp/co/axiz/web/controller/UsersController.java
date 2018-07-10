@@ -22,6 +22,11 @@ public class UsersController {
 	@Autowired
 	ArticleDao ad;
 
+	@RequestMapping("/usersMypage")
+	public String usersMypage(@ModelAttribute("form") Users users, Model model) {
+		return "usersMypage";
+	}
+
 	@RequestMapping("/usersLeave")
 	public String usersLeave(@ModelAttribute("form") Users users, Model model) {
 		return "usersLeave";

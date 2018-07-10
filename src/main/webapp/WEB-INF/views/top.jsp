@@ -75,8 +75,8 @@
 						<tr>
 							<td><img src="image/articleicon.png" class="Aimg"></td>
 							<th><button type="submit" name="id" value="${article.articleId}">${article.title}</button></th>
-							<td class="nd">${article.category01}</td>
-							<td class="datal">${article.userId}</td>
+							<td class="nd">${article.category_01}</td>
+							<td class="datal">${article.userName}</td>
 							<td class="datal">${article.createdAt}</td>
 
 						</tr>
