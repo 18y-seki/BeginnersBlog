@@ -25,7 +25,7 @@
 
 		<p class="headM">これでよろしいですか？</p>
 
-		<form:form action="adminUpdateConfirm" method="post">
+		<form:form action="usersPassUpdateResult" modelAttribute="form">
 
 			<p class="idText">ID</p>
 			<p class="id">
@@ -36,7 +36,7 @@
 				<legend class="headM">変更前</legend>
 				<p class="passText">PASS</p>
 				<p class="pass">
-					<form:input path="password" readonly="true" />
+					<form:input path="password" value="${beforeUser.password}" readonly="true" />
 				</p>
 			</fieldset>
 
@@ -49,7 +49,7 @@
 					PASS<br>(再入力)
 				</p>
 				<p class="pass">
-					<form:input path="newPassword" />
+					<form:password path="newPassword" />
 				</p>
 			</fieldset>
 			<br> <i class="fa fa-twitter3"></i>

@@ -37,7 +37,7 @@ public class LoginController {
 
 		if(account==0){
 			session.setAttribute("login", u);
-			return "usersMypage";
+			return "top";
 		}
 		if(account==1){
 			session.setAttribute("login", u);

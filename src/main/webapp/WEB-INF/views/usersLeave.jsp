@@ -1,6 +1,9 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -12,34 +15,44 @@
 <link href="css/login2.css" rel="stylesheet">
 <link href="css/topBack2.css" rel="stylesheet">
 </head>
+
 <body id="top">
-<div class="center">
-	<header>
-		<h1><a href="top">Beginner's Blog</a></h1>
-	</header>
+	<div class="center">
 
-<div id="formUsersDelete">
-<p class="form-title">会員退会ページ</p>
- <div class="center">
-<p id="headN">退会しますか？</p>
+			<h1><a href="top">Beginner's Blog</a></h1>
 
-<form action="usersLeaveResult" method="post" id="form1">
+		<div id="formUsersDelete">
+			<p class="form-title">会員退会ページ</p>
+			<div class="center">
+				<p id="headN">退会しますか？</p>
 
-        <p class="idText">ID</p>
-        <p class="id"><input type="text" name="id" value="kimukimu" readonly/></p>
+				<form:form action="usersLeaveResult" modelAttribute="form" id="form1">
 
-        <p class="nameText">名前</p>
-        <p class="id"><input type="text" name="name" value="きゃむ" readonly/></p>
+					<fieldset>
+						<label class="idText">ID</label>
+						<div class="id">
+							<form:input path="userId" value="${login.userId}" readonly="true" />
+						</div>
 
-		<a href="usersLeaveResult" class="fl_tw4">
-			<i class="fa fa-twitter3"></i><span>退会</span>
-		</a>
+						<label class="nameText">名前</label>
+						<div class="id">
+							<form:input path="userName" value="${login.userName}" readonly="true" />
+						</div>
 
-  </div>
-</form>
-<p class="prof">
-  <a href="usersMypage">マイページに戻る</a>
-</p>
-</div>
+					</fieldset>
+
+					<div>
+						<form:button type="submit" class="fa fa-twitter3">退会</form:button>
+					</div>
+
+				</form:form>
+
+			</div>
+
+			<p class="prof">
+				<a href="usersMypage">マイページへ</a>
+			</p>
+		</div>
+	</div>
 </body>
 </html>

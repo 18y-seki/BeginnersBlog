@@ -1,9 +1,12 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
-    pageEncoding="UTF-8"%>
-<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+	pageEncoding="UTF-8"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html>
 <html>
 <head>
-<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
 <title>Beginner's Blog</title>
 <link href="icon.png" rel="image/Blog_icon">
 <link href="css/moc3.css" rel="stylesheet">
@@ -13,15 +16,16 @@
 </head>
 <body id="top">
 	<header>
-		<h1><a href="top.html">Beginner's Blog</a></h1>
+	<h1>
+		<a href="top">Beginner's Blog</a>
+	</h1>
 	</header>
-<div id="formOne">
-<p id="headM">更新されました。</p>
+	<div id="formOne">
+		<p id="headM">更新されました。</p>
+		<p class="prof">
+		<a href="usersMypage">マイページへ</a>
+		</p>
 
-<p class="prof">
-  <a href="usersMypage.html">マイページに戻る</a>
-</p>
-</div>
-
+	</div>
 </body>
 </html>

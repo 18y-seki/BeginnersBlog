@@ -1,5 +1,8 @@
 package jp.co.axiz.web.dao;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
@@ -115,18 +118,26 @@ public class UsersDao {
 
 	public void updatePass(UpdateUsers newUsers) {
 		jdbcTemplate.update(SQL_UPDATE_PASS,
-				newUsers.getPassword(),
+				newUsers.getNewPassword(),
 				newUsers.getUserId());
 	}
 
-	public void updateProfile(UpdateUsers newUsers) {
-		jdbcTemplate.update(SQL_UPDATE_PROFILE,
-				newUsers.getPassword(),
-				newUsers.getSex(),
-				newUsers.getBirthday(),
-				newUsers.getHobby(),
-				newUsers.getGreet(),
-				newUsers.getUserId());
+	public void updateProfile(UpdateUsers users) {
+		try {
+			String birthday = users.getNewBirthday();
+			SimpleDateFormat sdFormat = new SimpleDateFormat("yyyy-MM-dd");
+			Date date = sdFormat.parse(birthday);
+
+			jdbcTemplate.update(SQL_UPDATE_PROFILE,
+					users.getNewuserName(),
+					users.getNewSex(),
+					date,
+					users.getNewHobby(),
+					users.getNewGreet(),
+					users.getUserId());
+		}catch (ParseException e) {
+			e.printStackTrace();
+		}
 	}
 
 	public void delete(String userId) {

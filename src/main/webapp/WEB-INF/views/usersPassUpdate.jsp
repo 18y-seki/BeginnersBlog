@@ -35,7 +35,7 @@
 			</p>
 			<p class="passText">PASS</p>
 			<p class="pass">
-				<form:password path="password" />
+				<form:password path="newPassword" />
 			</p>
 			<i class="fa fa-twitter3"></i>
 			<form:button>変更</form:button>

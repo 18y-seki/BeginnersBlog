@@ -36,9 +36,10 @@ public class UsersController {
 	}
 
 	@RequestMapping("/usersLeaveResult")
-	public String usersLeaveResult(@ModelAttribute("form") Users users, Model model) {
+	public String usersLeaveResult(@ModelAttribute("form") Users users, Model model, HttpSession session) {
 		ud.delete(users.getUserId());
 		ad.deleteUser(users.getUserId());
+		session.invalidate();
 		return "usersLeaveResult";
 	}
 
@@ -89,7 +90,6 @@ public class UsersController {
 	public String usersUpdateConfirm(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
 		String birthday= users.getNewYear()+"-"+users.getNewMonth()+"-"+users.getNewDate();
 		users.setNewBirthday(birthday);
-
 		session.setAttribute("newUsers", users);
 		return "usersUpdateConfirm";
 	}
@@ -110,7 +110,10 @@ public class UsersController {
 
 
 	@RequestMapping("/usersPassUpdate")
-	public String usersPassUpdate(@ModelAttribute("form") UpdateUsers users, Model model) {
+	public String usersPassUpdate(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
+		Users u = (Users)session.getAttribute("login");
+		users.setUserId(u.getUserId());
+		session.setAttribute("beforeUser", u);
 		return "usersPassUpdate";
 	}
 
@@ -124,7 +127,7 @@ public class UsersController {
 	public String usersPassUpdateResult(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
 		UpdateUsers newUsers = (UpdateUsers)session.getAttribute("newUsers");
 
-		String newPass = newUsers.getPassword();
+		String newPass = newUsers.getNewPassword();
 		String rePass = users.getNewPassword();
 
 		if(!(newPass.equals(rePass))){
@@ -133,6 +136,7 @@ public class UsersController {
 
 		ud.updatePass(newUsers);
 
+		session.removeAttribute("beforeUsers");
 		session.removeAttribute("newUsers");
 
 		return "usersPassUpdateResult";
