@@ -37,6 +37,20 @@ public class AuthController {
 		return "hardContribution";
 	}
 
+	@RequestMapping("/easy")
+	public String toukou2(@ModelAttribute("form") UpdateUsers users, Model model) {
+		return "easy";
+	}
+
+	@RequestMapping("/normal")
+	public String toukou3(@ModelAttribute("form") UpdateUsers users, Model model) {
+		return "normal";
+	}
+
+	@RequestMapping("/hard")
+	public String toukou4(@ModelAttribute("form") UpdateUsers users, Model model) {
+		return "hard";
+	}
 
 
 }

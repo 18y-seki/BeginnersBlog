@@ -67,7 +67,7 @@
 
 
 					<textarea name="editor1">
-		<div class="text">
+
 
 		</textarea>
 					<script>
@@ -98,8 +98,8 @@
 					</div>
 					</fieldset>
 
-					<a href="hardContributionConfirm" class="square_btn">確認画面へ</a> <a
-						href="usersMypage" class="square_btn">マイページへ</a>
+					<a href="hardContributionConfirm" class="square_btn">確認画面へ</a>
+					<a href="usersMypage" class="square_btn">マイページへ</a>
 			</div>
 
 			</form>

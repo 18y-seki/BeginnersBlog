@@ -54,6 +54,7 @@
 		<p class="syokyuT2">
 		<h2>中級投稿フォーム</h2>
 		</p>
+		</div>
 		<div class="buttonT">
 			<p>
 
@@ -70,7 +71,7 @@
 
 
 					<textarea name="editor1">
-		<div class="text">
+
 
 		</textarea>
 

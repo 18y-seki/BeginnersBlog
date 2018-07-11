@@ -55,7 +55,8 @@ $(function(){
 <form:form action="top" modelAttribute="form" method="get">
 	<tbody>
 	<tr><th class="tr2"></><th class="tr2">記事タイトル</><th class="tr2">カテゴリ</><th class="tr2">投稿者</><th class="tr2">投稿日時</>
-	</>
+
+
 
 <c:forEach var="article" items="${articleList}"></c:forEach>
 
