@@ -122,9 +122,6 @@ public class UsersDao {
 		}catch (ParseException e) {
             e.printStackTrace();
         }
-
-
-
 	}
 
 	public void delete(String userId) {

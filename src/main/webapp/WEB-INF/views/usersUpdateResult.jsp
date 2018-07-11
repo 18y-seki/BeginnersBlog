@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
 	pageEncoding="UTF-8"%>
+	<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <!DOCTYPE html>
 <html>
 <head>
@@ -20,8 +23,9 @@
 	<div id="formOne">
 		<p id="headM">更新されました。</p>
 		<p class="prof">
-			<a href="usersMypage">マイページへ</a>
+		<a href="usersMypage">マイページへ</a>
 		</p>
+
 	</div>
 </body>
 </html>

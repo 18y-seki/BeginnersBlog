@@ -23,7 +23,6 @@ $(function(){
     var href = $(this).attr("href");
     var target = $(href == "#" || href == ""?"html" : href);
     var position = target.offset().top;
-
     $("body, html").animate({scrollTop:position}, speed, "swing");
     return false;
     });
@@ -36,47 +35,45 @@ $(function(){
 	<div id="top3">
 		<header>
 			<h1>
-				<p>
-					<a href="top">Beginner's Blog</a>
-				</p>
+				<a href="top">
+					Beginner's Blog
+				</a>
 			</h1>
 		</header>
 	</div>
 
 <fieldset class="containe">
-	<div>
 		<div class="column">
 			<div id="content">
 				<div class="title">
-						<h2>Liveだ！</h2>
+						<h2>${art.title}</h2>
 				</div>
 				<div class="text">
-					<p>凛として時雨のライブにいきました。</p>
-
-					おすすめのアーティストなので是非聞いてください。
+					${art.articleText}
 					<br>
 					<img src="img/resize_image.jpg">
-					<p class="kategori">カテゴリ：音楽　　　　　投稿日時:2018/06/29</p>
+					<p class="kategori">カテゴリ：${art.category_01}　　　　　投稿日時:${art.createdAt}</p>
 					</fieldset>
 					<div>
 						<fieldset class="containeC">
 						<div class="overflow">
 							<h3>コメント</h3>
-							<p>名前:田中</p>
-							<p class="comment">お！</p>
-							<p class="nitiji">2018/06/30</p>
+
+							<c:forEach var="comment" items="${comments}">
+							<p>名前:${comment.userName}</p>
+							<p class="comment">${comment.commentText}</p>
+							<p class="nitiji">${comment.createdAt}</p>
 							<br>
-							<p>名前:山田</p>
-							<p class="comment">
-								時雨ですね！<br> 是非行ってみたいです！</p>
-							<p class="nitiji">2018/07/02</p>
+
+							</c:forEach>
 							</div>
 						</fieldset>
 						<fieldset class="containe">
 							<h3>コメントフォーム</h3>
 							<form:form action="comment" modelAttribute="form">
-								※コメントは最大1000文字まで<br> <label>名前:</label><form:input
-									path="userId" style="width: 200px;"/><br> <label>コメント:</label>
+								※コメントは最大1000文字まで<br> <label>名前:${login.userName}</label>
+								<br>
+								<label>コメント:</label>
 								<form:textarea path="commentText" rows="4" cols="40"/>
 								<br> <input type="submit" value="送信">
 							</form:form>
@@ -94,7 +91,7 @@ $(function(){
 					</div>
 					<div class="prof2">
 					<a href="articleUpdate">記事の編集</a>
-					<a href="articleDelete"">記事の削除</a>
+					<a href="articleDelete">記事の削除</a>
 					</div>
 						<br><br><br><br>
 					<div class="scroll_button">

@@ -3,6 +3,7 @@
 <%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
 <%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%String greet =request.getParameter("greet"); %>
 <!DOCTYPE html>
 <html>
 <head>
@@ -46,20 +47,17 @@
 				<p class="id">${beforeUser.hobby}</p>
 				<br>
 				<p class="comText">コメント</p>
-				<p class="id">
-					<form:textarea cols="30" rows="3" maxlength="10" path="greet"
-						value="${beforeUser.greet}" readonly="true" />
-				</p>
+				<p class="id"><%= greet %></p>
 			</fieldset>
 
 			<div id="headDown">→</div>
 
 			<fieldset class="uUCbox2">
 				<p class="nameText">名前</p>
-				<p class="id">${newUsers.userName}</p>
+				<p class="id">${newUsers.newuserName}</p>
 				<br><br>
 				<p class="sexText">性別</p>
-				<p class="id">${newUsers.sex}</p>
+				<p class="id">${newUsers.newSex}</p>
 
 				<br>
 
@@ -70,10 +68,7 @@
 				<p class="id">${newUsers.newHobby}</p>
 				<br>
 				<p class="comText">コメント</p>
-				<p class="id">
-					<form:textarea cols="30" rows="3" maxlength="10" path="newGreet"
-						value="${newUsers.greet}" readonly="true" />
-				</p>
+				<p class="id">${newUsers.newGreet}</p>
 			</fieldset>
 			<br>
 			<div id="center_yose">

@@ -18,7 +18,6 @@ public class LoginController {
 	@Autowired
 	UsersDao ud;
 
-
 	@RequestMapping(value="/login", method=RequestMethod.GET)
 	public String login(@ModelAttribute("form") Users users, Model model) {
 		return "login";

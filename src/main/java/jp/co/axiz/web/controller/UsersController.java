@@ -70,7 +70,6 @@ public class UsersController {
 	public String usersUpdateConfirm(@ModelAttribute("form") UpdateUsers users, Model model, HttpSession session) {
 		String birthday= users.getNewYear()+"-"+users.getNewMonth()+"-"+users.getNewDate();
 		users.setNewBirthday(birthday);
-
 		session.setAttribute("newUsers", users);
 		return "usersUpdateConfirm";
 	}
@@ -121,7 +120,10 @@ public class UsersController {
 	}
 
 	@RequestMapping("/usersMypage")
-	public String usersMypage(@ModelAttribute("form") UpdateUsers users, Model model) {
+	public String usersMypage(@ModelAttribute("form") Users users, Model model, HttpSession session) {
+		Users login =(Users)session.getAttribute("login");
+		Users u = ud.findById(login.getUserId());
+		session.setAttribute("login", u);
 		return "usersMypage";
 	}
 

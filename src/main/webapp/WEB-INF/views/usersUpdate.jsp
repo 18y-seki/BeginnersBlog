@@ -34,9 +34,8 @@
 			<br><br>
 			<p class="sexText">性別</p>
 			<p class="id">男&nbsp; 女
-			<form:radiobutton path="sex" value="男" />
-			<form:radiobutton path="sex" value="女" />
-        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<form:radiobutton path="newSex" value="男" />
+			<form:radiobutton path="newSex" value="女" />
         </p>
 
 			<p class="dayText">誕生日</p>
@@ -221,8 +220,9 @@
 
 			<p class="comText">コメント</p>
 			<p class="id">
-			<form:textarea cols="30" rows="3" maxlength="10"
-					path="greet" value="${beforeUsers.greet}" />
+			<textarea cols="30" rows="3" maxlength="10"
+					name="newGreet">${login.greet}
+					</textarea>
 					</p>
 
 			<div id="center_yose">
