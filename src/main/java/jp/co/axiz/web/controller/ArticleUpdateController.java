@@ -32,8 +32,6 @@ public class ArticleUpdateController {
 	}
 
 
-
-
 	@RequestMapping("/articleUpdateConfirm")
 	public String articleUpdate(@ModelAttribute("form") Article article, Model model,HttpSession session) {
 		model.addAttribute("form", article);
@@ -41,7 +39,7 @@ public class ArticleUpdateController {
 		String title = article.getTitle();
 		String articleText = article.getArticleText();
 		String category = article.getCategory01();
-		 String[] cate = category.split(",", 0);
+		String[] cate = category.split(",", 0);
 
 
 		if(title.equals("")){
@@ -63,12 +61,6 @@ public class ArticleUpdateController {
 			article.setCategory03(cate[2]);
 		}
 
-
-
-
-
-
-
 		session.setAttribute("form", article);
 
 		return "articleUpdateConfirm";
@@ -80,9 +72,9 @@ public class ArticleUpdateController {
 
 		Article form = (Article)session.getAttribute("form");
 
-				article.setCategory01(form.getCategory01());
-				article.setCategory02(form.getCategory02());
-				article.setCategory03(form.getCategory03());
+		article.setCategory01(form.getCategory01());
+		article.setCategory02(form.getCategory02());
+		article.setCategory03(form.getCategory03());
 
 
 
@@ -93,40 +85,4 @@ public class ArticleUpdateController {
 	}
 }
 
-
-
-
-
-/*Integer id = article.getArticleId();
-	    String title= article.getTitle();
-		String text=article.getArticleText();
-
-
-
-		Article a = ad.findById(articleId);
-
-
-
-		session.setAttribute("login", a);
-
-		return "articleUpdateConfirm";
-	}
-
-
-	@RequestMapping("/articleUpdateConfirm" , method=RequestMethod.POST)
-	public String articleUpdateConfirm(@ModelAttribute("form") Article article, Model model) {
-
-
-		 Integer Id
-		 String title
-		 String articleText
-		 String userId
-		 String category01
-		 String category02
-		 String category03
-
-
-		return "articleUpdateResult";
-	}
- */
 
