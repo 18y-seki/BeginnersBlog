@@ -1,0 +1,167 @@
+.containe7{
+	 background:#fffccc;
+
+}
+
+.bag{
+	background-color:white;
+	padding: 2px;
+}
+
+
+p a{
+	color:white;
+}
+
+header {
+	height: 160px;
+	background: linear-gradient(to top, #56ccf2, #2f80ed);
+}
+
+header2 {
+	height: 160px;
+	background: linear-gradient(to top, #56ccf2, #2f80ed);
+}
+
+
+body{
+	margin: 0px;
+}
+
+.top {
+	/*background: #7474bf;
+	background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
+	background: linear-gradient(to right, #7474bf, #348ac7);*/
+}
+
+.top h1 {
+	text-align: center;
+	line-height: 190px;
+	color: #FFFFFF;
+	font-size: 80px;
+	font-family: 'Gulim';
+	margin: -35px auto;
+}
+
+.top h1 a {
+	text-decoration: none;
+}
+
+.top h1 a:visited {
+	color: #FFFFFF;
+}
+
+.top h1 a:hover {
+	text-decoration: none;
+}
+
+.headM {
+	text-align:center;
+	font-size: 200%;
+	font-family: 'Gulim';
+	margin: -30px 0px 0px 0px;
+	color: #FFF;
+}
+
+.head2M {
+	text-align:center;
+	font-size: 200%;
+	font-family: 'Gulim';
+	margin: 30px 0px 0px 0px;
+	color: #FFF;
+}
+
+
+
+.headDown {
+	text-align:center;
+	font-size: 300%;
+	font-family: 'Gulim';
+	margin: 90px 0px 0px 0px;
+	color: #FFF;
+}
+
+.fl_tw4 {
+	color: #FFF;
+	border-radius: 7px;
+	display: inline-block;
+	height: 60px;
+	width: 150px;
+	text-align: center;
+	font-size: 22px;
+	line-height: 35px;
+	margin: -20px 0px -10px 335px;
+	background: orangered;
+	overflow: hidden;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+
+.button_main{
+	float: left;
+	width: 50%;
+	height: 150px;
+	margin: 0auto;
+}
+
+
+.fl_tw5 {
+	color: #FFF;
+	border-radius: 7px;
+	float:right;
+	height: 60px;
+	width: 150px;
+	margin: 10% 10%;
+	text-align: center;
+	font-size: 22px;
+	line-height: 35px;
+	background: orangered;   /*#88bae2;*/
+	overflow: hidden;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+.fl_tw6 {
+	color: #FFF;
+	border-radius: 7px;
+	float:left;
+	height: 60px;
+	width: 150px;
+	margin: 10% 10%;
+	text-align: center;
+	font-size: 22px;
+	line-height: 35px;
+	background: orangered;
+	overflow: hidden;
+	text-decoration:none;
+	font-weight: bold;
+}
+
+
+
+.fl_tw4 .fa-twitter3 {
+	text-shadow: 2px 2px 0px #4287d6;
+	font-size: 30px;
+}
+
+.fl_tw4 span {
+	font-family: 'Gulim';
+	display:inline-block;
+	transition: .5s
+}
+
+.containe6 {
+	width: 40%;
+	margin: 80px 0px 0px 310px;
+}
+
+
+
+.center {
+	text-align: center;
+}
+
+.ue {
+	margin-top: 55px;
+}
