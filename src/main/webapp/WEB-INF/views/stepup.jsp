@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
-<link href="icon.png" rel="image/Blog_icon">
+<link href="image/icon.png" rel="image/Blog_icon">
 <link href="css/commons.css" rel="stylesheet">
 <link href="css/moc.css" rel="stylesheet">
 <link href="css/step.css" rel="stylesheet">
@@ -44,7 +44,7 @@
 
 		<div class="ch">
 			<form action="easy">
-				<figure class="rela"> <img src="pchand.jpg" /> <figcaption
+				<figure class="rela"> <img src="image/pchand.jpg" /> <figcaption
 					class="abso">
 				<p class="profS">
 					<input type="submit" class="syo" value="初級">
@@ -61,7 +61,7 @@
 
 		<div class="ch">
 			<form action="normal">
-				<figure class="rela"> <img src="pcwater.jpg" /> <figcaption
+				<figure class="rela"> <img src="image/pcwater.jpg" /> <figcaption
 					class="abso">
 				<p class="profS">
 					<input type="submit" class="chu" value="中級">
@@ -78,7 +78,7 @@
 
 		<div class="ch">
 			<form action="hard">
-				<figure class="rela"> <img src="pcwhite.jpg" /> <figcaption
+				<figure class="rela"> <img src="image/pcwhite.jpg" /> <figcaption
 					class="abso">
 				<p class="profS">
 					<input type="submit" class="zyo" value="上級">

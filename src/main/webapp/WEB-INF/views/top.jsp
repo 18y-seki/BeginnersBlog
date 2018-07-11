@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
-<link rel="icon" href="icon.png">
+<link rel="icon" href="image/icon.png">
 <link rel="stylesheet" href="css/commons.css">
 <link rel="stylesheet" href="css/top.css">
 <link rel="stylesheet" href="css/bootstrap.min.css">

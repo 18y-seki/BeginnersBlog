@@ -10,7 +10,7 @@
 <title>Beginner's Blog</title>
 <link href="css/moc.css" rel="stylesheet">
 <link href="css/commons.css" rel="stylesheet">
-<link rel="icon" href="icon.png">
+<link rel="icon" href="image/icon.png">
 
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"
 	type="text/javascript"></script>
