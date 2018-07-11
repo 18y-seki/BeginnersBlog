@@ -29,8 +29,7 @@
 
 				<p class="headN">退会しますか？</p>
 
-				<form:form action="usersLeaveResult" modelAttribute="form"
-					id="form1">
+				<form:form action="usersLeaveResult" modelAttribute="form">
 
 					<label class="idText">ID</label>
 					<form:input path="userId" value="${login.userId}" class="id"

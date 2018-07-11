@@ -52,7 +52,7 @@ public class UsersInsertController {
 		}
 
 		if (name.length()>8) {
-			model.addAttribute("msg", "NAMEを8文字以内で入力してください");
+			model.addAttribute("msg", "名前を8文字以内で入力してください");
 			return "newInsert";
 		}
 

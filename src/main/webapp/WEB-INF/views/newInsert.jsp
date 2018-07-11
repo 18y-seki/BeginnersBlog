@@ -15,19 +15,18 @@
 <link href="image/icon.png" rel="icon">
 </head>
 <body class="top">
-		<div>
+				<div class="center">
 			<h1>
 				<a href="top">Beginner's Blog</a>
 			</h1>
-		</div>
+
 
 		<div class="box30">
 			<div class="box-title">会員登録ページ</div>
 				<div class="center">
 
 					<p class="headN">
-						ID、NAME、PASSを登録します！<br>${msg}
-					</p>
+						ID、NAME、PASSを登録します！</p><p class="msg">${msg}</p>
 				</div>
 
 				<form:form action="newInsert" modelAttribute="form" method="post"
@@ -55,15 +54,16 @@
 						<strong>4文字で</strong>入力してください。<br> （例）12ab、123k、AB12
 					</p>
 
-					<label class="nameText">名前</label>
+					<label class="nameText">PASS</label>
 					<form:input path="password" class="id" />
 
-					<p class="headNuu">全ての入力が終わったら、下の確認ボタンをクリックしてください！</p>
+					<p class="headNN">全ての入力が終わったら、下の確認ボタンをクリックしてください！</p>
 
-					<div class="center">
+					<div class="kakunin">
 						<form:button type="submit" class="btn btn-primary btn-lg">確認</form:button>
 					</div>
 				</form:form>
+				</div>
 			</div>
 			<p class="prof">
 				<a href="top">TOPページへ</a>
