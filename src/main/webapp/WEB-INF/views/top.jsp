@@ -46,7 +46,7 @@
 		</p>
 		<p id="headS">
 			<span id="under"><a href="help">このサイトについて詳しく知る</a></span>
-		</p>
+		</p><br><br>
 		<c:choose>
 		<c:when test="${empty login}">
 		<a href="newInsert" class="fl_tw2"> <i class="fa fa-twitter"></i>
@@ -61,10 +61,11 @@
 		</a>
 		</c:otherwise>
 		</c:choose>
+		<br><br>
 		<div id="jirusi">
 			<img src="image/sankaku1.png" alt="矢印">
-			<div></div>
 		</div>
+		<br><br><br>
 	</div>
 	<br>
 	<br>

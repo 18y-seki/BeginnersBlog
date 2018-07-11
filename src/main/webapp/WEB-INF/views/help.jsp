@@ -10,6 +10,7 @@
 <link href="css/commons.css" rel="stylesheet">
 <link href="css/login.css" rel="stylesheet">
 <link href="css/topBack.css" rel="stylesheet">
+<link href="css/help.css" rel="stylesheet">
 </head>
 <body style="text-align: center;">
 <!-- 投稿ページ　編集時もここに飛ぶ -->
@@ -24,15 +25,21 @@
 	</header>
 </div>
 
-<div id="kumakuma">
-<figure>
-<img src="image/help1.jpg" class="kuma1"><img src="image/help2.jpg" class="kuma2">
-</figure>
-</div>
+<div class="back">
 
-<p class="prof">
- <a href="top">TOP画面へ</a>
- </p>
+	<div class="kumakuma">
+		<figure> <img src="image/help11.jpg" class="kuma1">
+		<br><br>
+		<img src="image/help22.jpg" class="kuma2"> </figure>
+	</div>
+
+<br><br>
+
+	<p class="prof">
+		<a href="top">TOP画面へ</a>
+	</p>
+
+</div>
 
 
 <script type="text/javascript">

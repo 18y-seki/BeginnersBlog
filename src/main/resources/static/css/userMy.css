@@ -333,7 +333,7 @@ table.price tr:last-child td button {
 table.blog {
 	width: 780px;
 	height: 330px;
-	margin: -410px 0px -10px 336px;
+	margin: -450px 0px -10px 336px;
 	border-collapse: separate;
 	border-spacing: 1px 0;
 	font-size: 15px;
@@ -610,9 +610,9 @@ table.price2 tr:last-child td button {
 	top:1px;
 }
 .sMimg1 {
-	width: 15%;
+	width: 16%;
 	height: auto;
-	margin: -296px 0px -77px 638px;
+	margin: -340px 0px -77px 638px;
 }
 
 .sMimg2 {

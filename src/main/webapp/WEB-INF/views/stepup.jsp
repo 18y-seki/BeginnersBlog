@@ -8,12 +8,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
-<link href="image/icon.png" rel="image/Blog_icon">
-<link href="css/commons.css" rel="stylesheet">
-<link href="css/moc.css" rel="stylesheet">
-<link href="css/step.css" rel="stylesheet">
-<link href="css/topBack.css" rel="stylesheet">
-<link href="css/newss.css" rel="stylesheet">
+<link href="icon.png" rel="image/Blog_icon">
+
+<link href="css/stepup.css" rel="stylesheet">
 
 <script src="http://code.jquery.com/jquery-1.7.2.min.js"
 	type="text/javascript"></script>
@@ -22,90 +19,110 @@
 	type="text/javascript"></script>
 
 </head>
-<body id="">
+<body>
 
-	<div id="top">
-		<header>
-		<h1>Beginner's Blog</h1>
-		</header>
+	<div class="top">
+		<h1><a href="top">Beginner's Blog</a></h1>
 	</div>
 
-
 	<div align="center">
-		<div id="header">
-			<p class="stepup">
-				-ステップアップ-<br>
-			</p>
-			<p class="stepupP">段階を踏んでレベルアップしよう！</p>
-		</div>
+
+		<p class="stepup">
+			-ステップアップ-<br>
+		</p>
+		<p class="stepupP">
+			段階を踏んでレベルアップしよう！<br>
+		</p>
+		<p class="stepupP2">
+			好きなレベルを選んで記事を投稿しよう！<br> チュートリアルを見たい時は、「チュートリアルを見る」の横にある<br>
+			ボックスをクリックして、チェックを入れてからレベルを選択してね！
+		</p>
+
 	</div>
 
 	<div class="three">
 
 		<div class="ch">
 			<form action="easy">
-				<figure class="rela"> <img src="image/pchand.jpg" /> <figcaption
-					class="abso">
-				<p class="profS">
-					<input type="submit" class="syo" value="初級">
-				</p>
-				</figcaption></figure>
-
-				<p>
-					文字の入力と画像の挿入が出来るよ！<br> チュートリアルを見る
-
-					<input type="checkbox" name="riyu" value="2" checked>
-				</p>
+				<div class="rela">
+					<img src="image/pchand.jpg" />
+					<div class="abso">
+						<p class="profS">
+							<input type="submit" class="syo" value="初級">
+						</p>
+					</div>
+				</div>
+				<div class="box26">
+					<span class="box-title">できること</span>
+					<p>
+						文字の入力と画像の挿入！<br> チュートリアルを見る<input type="checkbox" checked
+							name="riyu" value="2">
+					</p>
+				</div>
 			</form>
+			<p class="center kiji">実際の投稿記事↓</p>
+
+			<div class="sample1">
+				<img src="image/sample1.png">
+			</div>
 		</div>
 
 		<div class="ch">
 			<form action="normal">
-				<figure class="rela"> <img src="image/pcwater.jpg" /> <figcaption
-					class="abso">
-				<p class="profS">
-					<input type="submit" class="chu" value="中級">
-				</p>
-				</figcaption> </figure>
-
-				<p>
-					文字の編集と画像の編集が出来るよ！<br> チュートリアルを見る
-
-					<input type="checkbox" name="riyu" value="2" checked>
-				</p>
+				<div class="rela">
+					<img src="image/pcwater.jpg" />
+					<div class="abso">
+						<p class="profS">
+							<input type="submit" class="chu" value="中級">
+						</p>
+					</div>
+				</div>
+				<div class="box27">
+					<span class="center box-title">できること</span>
+					<p>
+						文字の編集と画像の編集！<br> チュートリアルを見る<input type="checkbox" checked
+							name="riyu" value="2">
+					</p>
+				</div>
 			</form>
+			<p class="center kiji">実際の投稿記事↓</p>
+
+			<div class="sample1">
+				<img src="image/sample1.png">
+			</div>
 		</div>
 
 		<div class="ch">
 			<form action="hard">
-				<figure class="rela"> <img src="image/pcwhite.jpg" /> <figcaption
-					class="abso">
-				<p class="profS">
-					<input type="submit" class="zyo" value="上級">
-				</p>
-				</figcaption> </figure>
-
-				<p>
-					ページのデザインが出来るよ！<br> チュートリアルを見る
-
-					<input type="checkbox" name="riyu" value="2" checked>
-				</p>
+				<div class="rela">
+					<img src="image/pcwhite.jpg" class="whi" />
+					<div class="abso">
+						<p class="profS">
+							<input type="submit" class="zyo" value="上級">
+						</p>
+					</div>
+				</div>
+				<div class="box28">
+					<span class="center box-title">できること</span>
+					<p>
+						ページのデザインの変更！<br> チュートリアルを見る<input type="checkbox" checked
+							name="riyu" value="2">
+					</p>
+				</div>
 			</form>
+
+			<p class="center kiji">実際の投稿記事↓</p>
+
+			<div class="sample1">
+				<img src="image/sample1.png">
+			</div>
 		</div>
-
 	</div>
 
-
-
-	<div class="sample1">
-		<img src="sample1.png">
-	</div>
-
-	<div id="footer">
-		<br> <br> <br> <br> <br>
+	<div class="footer">
+		<br>
 
 	</div>
-
 
 	<script type="text/javascript">
 		$(function() {
@@ -114,6 +131,7 @@
 				var href = $(this).attr("href");
 				var target = $(href == "#" || href == "" ? "html" : href);
 				var position = target.offset().top;
+
 				$("body, html").animate({
 					scrollTop : position
 				}, speed, "swing");
@@ -121,9 +139,11 @@
 			});
 		});
 	</script>
+
 	<p class="prof">
 		<a href="usersMypage">マイページへ</a>
 	</p>
 </body>
+
 
 </html>

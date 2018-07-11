@@ -6,19 +6,14 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <meta http-equiv="Refresh" content="3;URL=top">
 <title>Beginner's Blog</title>
-	<link rel="icon" href="icon.png">
-<link href="css/commons.css" rel="stylesheet">
-<link href="css/login.css" rel="stylesheet">
+	<link rel="icon" href="image/icon.png">
+<link href="css/logout.css" rel="stylesheet">
 </head>
 <body id="top">
-
-	<header>
+	<header id="top">
 		<h1>Beginner's Blog</h1>
 	</header>
-<div class="center">
   <p class="headM">ログアウトしました。<br>
   ※３秒後にTOP画面に遷移します。</p>
-
-</div>
 </body>
 </html>
