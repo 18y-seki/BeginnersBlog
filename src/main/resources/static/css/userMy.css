@@ -215,7 +215,7 @@ table.price th.c4 {
 
 table.price th:after {
 	top: 69px;
-	left: 167px;
+	left: 117px;
 	content: "";
 	height: 0;
 	width: 0;
@@ -373,7 +373,7 @@ table.blog th.c1 {
 
 table.blog th:after {
 	top: 69px;
-	left: 410px;
+	left: 320px;
 	content: "";
 	height: 0;
 	width: 0;
@@ -515,7 +515,7 @@ table.price2 th.c5 {
 
 table.price2 th:after {
 	top: 69px;
-	left: 177px;
+	left: 120px;
 	content: "";
 	height: 0;
 	width: 0;
@@ -618,13 +618,13 @@ table.price2 tr:last-child td button {
 .sMimg2 {
 	width: 13%;
 	height: auto;
-	margin: -20px 0px -300px 460px;
+	margin: -20px 0px -290px 460px;
 }
 
 .sMimg3 {
-	width: 13%;
+	width: 14%;
 	height: auto;
-	margin: -20px 0px -300px 220px;
+	margin: -20px 0px -290px 200px;
 }
 
 .sMimg4 {
