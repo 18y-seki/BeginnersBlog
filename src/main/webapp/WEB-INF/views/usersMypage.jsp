@@ -20,7 +20,7 @@
 			<form class="form" id="form1">
 
 
-				<p class="name"><strong>木村さんのマイページ</></p>
+				<p class="name"><strong>${login.userName}さんのマイページ</strong></p>
 
 
 				<div class="submit">

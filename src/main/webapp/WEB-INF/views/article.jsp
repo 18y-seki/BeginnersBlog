@@ -53,7 +53,7 @@ $(function(){
 				<div class="text">
 					${art.articleText}
 					<br>
-					<img src="img/resize_image.jpg">
+
 					<p class="kategori">
 							カテゴリ：${art.category_01} 投稿日時:${art.createdAt}
 

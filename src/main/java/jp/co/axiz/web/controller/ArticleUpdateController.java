@@ -1,5 +1,7 @@
 package jp.co.axiz.web.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -33,12 +35,20 @@ public class ArticleUpdateController {
 
 
 	@RequestMapping("/articleDelete")
-	public String articleDelete(@ModelAttribute("form") Article article, Model model) {
+	public String articleDelete(@ModelAttribute("form") Article article, Model model, HttpSession session) {
+		Article art =(Article)session.getAttribute("art");
+
+		article.setArticleId(art.getArticleId());
+		article.setTitle(art.getTitle());
+		article.setUserId(art.getUserId());
+
 		return "articleDelete";
 	}
 
 	@RequestMapping("/articleDeleteResult")
-	public String articleDeleteRes(@ModelAttribute("form") Article article, Model model) {
+	public String articleDeleteRes(@ModelAttribute("form") Article article, Model model, HttpSession session) {
+		ad.delete(article.getArticleId());
+		session.removeAttribute("art");
 		return "articleDeleteResult";
 	}
 

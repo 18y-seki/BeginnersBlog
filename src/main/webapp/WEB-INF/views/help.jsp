@@ -18,22 +18,22 @@
 
 
 <!-- 編集時のみ出る -->
-<!-- <a href="blogmng.html">記事管理ページに戻る</a> -->
+<!-- <a href="blogmng">記事管理ページに戻る</a> -->
 
 <div id="top">
 	<header>
-		<h1><p><a href="top.html">Beginner's Blog</a></p></h1>
+		<h1><p><a href="top">Beginner's Blog</a></p></h1>
 	</header>
 </div>
 
 <div id="kumakuma">
 <figure>
-<img src="help1.jpg" class="kuma1"><img src="help2.jpg" class="kuma2">
+<img src="image/help1.jpg" class="kuma1"><img src="image/help2.jpg" class="kuma2">
 </figure>
 </div>
 
 <p class="prof">
- <a href="top.html">TOP画面へ</a>
+ <a href="top">TOP画面へ</a>
  </p>
 
 

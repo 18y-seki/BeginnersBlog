@@ -62,7 +62,7 @@
 		</c:otherwise>
 		</c:choose>
 		<div id="jirusi">
-			<img src="sankaku1.png" alt="矢印">
+			<img src="image/sankaku1.png" alt="矢印">
 			<div></div>
 		</div>
 	</div>

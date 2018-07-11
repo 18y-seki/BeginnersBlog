@@ -13,17 +13,16 @@
 </head>
 <body id="top">
 	<header>
-		<h1><a href="top.html">Beginner's Blog</a></h1>
+		<h1><a href="top">Beginner's Blog</a></h1>
 	</header>
 
 <div id="formOne">
 <p id="headN">記事を削除しました。</p>
 
 <p>
-  <a href="usersMypage.html">マイページに戻る</a>
+  <a href="usersMypage">マイページに戻る</a>
 </p>
 
-</div>
 </div>
 </body>
 </html>
