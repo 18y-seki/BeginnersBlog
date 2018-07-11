@@ -1,7 +1,25 @@
+body {
+	  background-size: cover;
+  height:100%;
+    margin: 0;
+    text-align: center;
+ }
 
-header {
-	height: 160px;
 
+.square_btn{
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #668ad8;/*ボタン色*/
+    color: #FFF;
+    border-bottom: solid 4px #627295;
+    border-radius: 3px;
+}
+.square_btn:active {/*ボタンを押したとき*/
+    -ms-transform: translateY(4px);
+    -webkit-transform: translateY(4px);
+    transform: translateY(4px);/*下に動く*/
+    border-bottom: none;/*線を消す*/
 }
 
 #top {
@@ -11,7 +29,7 @@ header {
 }
 #top h1 {
 	text-align: center;
-	line-height: 160px;
+	line-height: 120px;
 	color: #FFFFFF;
 	font-size: 80px;
 	font-family: 'Gulim';
@@ -272,9 +290,9 @@ text-align: center;
 	}
 
 #top3 {
- background: #56ccf2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #56ccf2, #2f80ed);
+  background: #7474bf;
+  background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
+  background: linear-gradient(to right, #7474bf, #348ac7);
   height: 310px;
   margin: -80px 0px 0px 0px;
 }

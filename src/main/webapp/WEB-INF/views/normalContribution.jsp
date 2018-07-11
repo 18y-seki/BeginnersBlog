@@ -33,14 +33,14 @@ $(function(){
 		<header>
 			<h1>
 				<p>
-					<a href="top.html">Beginner's Blog</a>
+					<a href="top">Beginner's Blog</a>
 				</p>
 			</h1>
 		</header>
 	</div>
 
 <div>
-<p class="syokyuT2"><h2>初級投稿フォーム</h2></p>
+<p class="syokyuT2"><h2>中級投稿フォーム</h2></p>
 <div class="buttonT"><p>
 
 <a href="normal.html" class="square_btn">チュートリアルを確認</a>

@@ -11,8 +11,6 @@
 <link href="icon.png" rel="image/Blog_icon">
 <link href="css/article.css" rel="stylesheet">
 <link href="css/commons.css" rel="stylesheet">
-<link href="css/topBack.css" rel="stylesheet">
-<link href="css/overflow.css" rel="stylesheet">
 <!-- jquery読み込み -->
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
@@ -36,24 +34,21 @@
 <script src="//cdn.ckeditor.com/4.10.0/full/ckeditor.js"></script>
 </head>
 <body>
-	<div class="top3">
+	<div id="top">
 		<header>
 		<h1>
-			<p>
-				<a href="top">Beginner's Blog</a>
-			</p>
+			<a href="top">Beginner's Blog</a>
 		</h1>
 		</header>
 	</div>
 
-	<div>
 		<p class="syokyuT2">
 		<h2>上級投稿フォーム</h2>
 		</p>
 		<div class="buttonT">
 			<p>
 
-				<a href="stepup" class="square_btn">チュートリアルを確認</a>
+				<a href="hard" class="square_btn">チュートリアルを確認</a>
 			<div class="article_main">
 				<form:form action="hardContributionConfirm" modelAttribute="form">
 					<div>
@@ -76,6 +71,7 @@
 							<option value="black">黒</option>
 						</form:select>
 					</div>
+					<div class="editor">
 					<form:textarea path="articleText" id="editor1" ></form:textarea>
 					<script>
 						CKEDITOR
@@ -99,11 +95,10 @@
 															"RemoveFormat" ],
 													[ "-", ], ],
 										});
-					</script>
+					</script></div>
 					<div class="kategorii">
 						カテゴリ：<form:input path="category" style="width: 300px;" />
 					</div>
-					</fieldset>
 					<form:button class="square_btn">確認画面へ</form:button>
 					<a href="usersMypage" class="square_btn">マイページへ</a>
 				</form:form>

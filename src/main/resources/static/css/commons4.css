@@ -1,17 +1,19 @@
 
 header {
 	height: 160px;
-
+  background: #7474bf;
+  background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
+  background: linear-gradient(to right, #7474bf, #348ac7);
 }
 
 #top {
- background: #56ccf2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #56ccf2, #2f80ed);
+  background: #7474bf;
+  background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
+  background: linear-gradient(to right, #7474bf, #348ac7);
 }
 #top h1 {
 	text-align: center;
-	line-height: 160px;
+	line-height: 190px;
 	color: #FFFFFF;
 	font-size: 80px;
 	font-family: 'Gulim';
@@ -31,8 +33,8 @@ header {
 	text-align:center;
 	font-size: 200%;
 	font-family: 'Gulim';
-	margin: 90px 0px 0px 0px;
-	color: #FFF;
+	margin: 40px 0px 0px 0px;
+	color: black;
 }
 #headS {
 	text-align:center;
@@ -42,36 +44,12 @@ header {
 	color: #FFF;
 }
 
-#headN {
-	text-align:center;
-	font-size: 200%;
-	font-family: 'Meiryo';
-	margin: 70px 0px 60px 0px;
-	color: #110e51;
-}
-
-#headNu {
-	text-align:center;
-	font-size: 150%;
-	font-family: 'Meiryo';
-	margin: 30px 0px 0px 0px;
-	color: #2c296b;
-}
-
-#headNuu {
-	text-align:center;
-	font-size: 150%;
-	font-family: 'Meiryo';
-	margin: 50px 0px 50px 0px;
-	color: #2c296b;
-}
-
 #headDown {
 	text-align:center;
 	font-size: 300%;
 	font-family: 'Gulim';
 	margin: 40px 0px 0px 0px;
-	color: #FFF;
+	color: black;
 }
 
 #headS a {
@@ -150,20 +128,30 @@ font-family: 'Gulim';
 }
 
 .fl_tw4{/*ボタンの背景*/
-  color: #FFF;/*文字・アイコン色*/
-  border-radius: 7px;/*角丸に*/
+  color:  black ;/*文字・アイコン色*/
+  border-radius: 5px;/*角丸に*/
+  border-color: black;
   display: inline-block;
   height: 40px;/*高さ*/
-  width: 120px;/*幅*/
+  width: 200px;/*幅*/
   text-align: center;/*中身を中央寄せ*/
   font-size: 22px;/*文字のサイズ*/
   line-height: 35px;/*高さと合わせる*/
-  margin: -10px 0px 0px 500px;
-  background: #1da1f3;
-  overflow: hidden;/*はみ出た部分を隠す*/
+  margin: 0px 0px 0px 0px;
+  background: white;
+  /*overflow: hidden;/*はみ出た部分を隠す*/*/
   text-decoration:none;/*下線は消す*/
   font-weight: bold;
 }
+
+
+
+#center_yose{
+
+  padding:0px 0px 0px 300px;
+}
+
+
 
 .fl_tw4 .fa-twitter3 {
     text-shadow: 2px 2px 0px #4287d6;
@@ -197,6 +185,55 @@ font-family: 'Gulim';
   border-bottom: double 6px #FFF;
   }
 
+
+#hoku {
+	background-color: #fff;
+	float: right;
+	width: 450px;
+	height: 450px;
+	margin: 20px 146px 20px 20px;
+}
+#hoku p {
+	color: #000;
+	text-align: center;
+	line-height: 450px;
+	font-family: 'Monotype Corsiva',sans-serif;
+	font-size: 42px;
+}
+#hoku2 {
+	background-color: #fff;
+	float: right;
+	width: 450px;
+	height: 450px;
+	margin: 20px 20px 20px 110px;
+	position: relative;
+}
+#hoku2 #caption {
+	font-size: 22px;
+	text-align: center;
+	padding-top: 80px;
+	color: #fff;
+	font-family: 'GlimChe',sans-serif;
+}
+#hoku2 #mask {
+	width: 100%;
+	height: 100%;
+	position: absolute;	/* 絶対位置指定 */
+	top: 0;
+	left: 0;
+	opacity: 0;	/* マスクを表示しない */
+	background-color: rgba(0,0,0,0.4);	/* マスクは半透明 */
+	-webkit-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+#hoku2:hover #mask {
+	opacity: 1;	/* マスクを表示する */
+}
+#hoku2 img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
 
 .containe {
 	width: 900px;
@@ -243,7 +280,7 @@ font-family: 'Gulim';
 }
 .yohaku {
 	width: 200%;
-	margin: 200px 0px 0px 0px;
+	margin: 700px 0px 0px 0px;
 	}
 
 .insert {
@@ -272,9 +309,9 @@ text-align: center;
 	}
 
 #top3 {
- background: #56ccf2; /* fallback for old browsers */
-  background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #56ccf2, #2f80ed);
+  background: #7474bf;
+  background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
+  background: linear-gradient(to right, #7474bf, #348ac7);
   height: 310px;
   margin: -80px 0px 0px 0px;
 }

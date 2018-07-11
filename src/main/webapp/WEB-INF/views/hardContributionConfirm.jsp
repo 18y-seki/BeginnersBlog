@@ -59,7 +59,7 @@
 		</div>
 	</fieldset>
 	<form:form action="articleContributionResult" modelAttribute="form">
-		<form:button class="square_btn">確認画面へ</form:button>
+		<form:button class="square_btn">投稿</form:button>
 	</form:form>
 
 

@@ -8,11 +8,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
-<link href="css/article.css" rel="stylesheet">
-<link href="css/commons.css" rel="stylesheet">
+<link href="css/easyCon.css" rel="stylesheet">
 <link href="css/topBack.css" rel="stylesheet">
 <link href="css/overflow.css" rel="stylesheet">
-<link rel="icon" href="icon.png">
+<link rel="icon" href="image/icon.png">
 <!-- jquery読み込み -->
 <script
 	src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"
@@ -35,11 +34,10 @@
 
 </head>
 <body>
-	<div id="top3">
+	<div id="top">
 		<h1>
 			<a href="top">Beginner's Blog</a>
 		</h1>
-
 	</div>
 
 	<div>
@@ -48,7 +46,7 @@
 		</p>
 		<div class="buttonT">
 
-			<a href="easy" class="square_btn">チュートリアルを確認</a>
+			<a href="easy" target=”_blank”class="square_btn">チュートリアルを確認</a>
 			<div class="article_main">
 
 				<form:form action="easyContributionConfirm" modelAttribute="form"
@@ -58,20 +56,19 @@
 					<form:input path="title" maxlength="30" style="width: 480px;" />
 
 					<fieldset>
-						<legend>ボタン</legend>
-						<form:button class="html">画像挿入</form:button>
+						<legend>画像挿入</legend>
 						<input type="file" name="img">
 					</fieldset>
 
 					<fieldset>
-						<div class="text">
+						<div class="text"><br>
 						<textarea style="width: 600px; height: 200px;"></textarea><br>
-
-							<img src="img/resize_image.jpg"> <br>
+<br>
 							<div class="kategorii">
 								<label>カテゴリ</label>
 								<form:input path="category_01" style="width: 300px;" value="" />
 							</div>
+							<br>
 						</div>
 					</fieldset>
 
@@ -84,6 +81,5 @@
 	</div>
 
 	<p>Copyright © 2018 Beginner's Blog All Rights Reserved.</p>
-	<a href="login_top" class="kanri">管理者ログイン</a>
 </body>
 </html>
