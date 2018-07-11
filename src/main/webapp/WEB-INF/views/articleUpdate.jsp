@@ -17,27 +17,23 @@
 
 	<p style="text-align: center;" class="mypagebuttonmargin">
 		<button type="submit" name="mypage" value="mypage"
-			onclick="location.href='usersMypage.html'" class="mypagebutton1">マイページ</button>
-		<button type="submit" onclick="location.href='high.html'"
+			onclick="location.href='usersMypage'" class="mypagebutton1">マイページ</button>
+		<button type="submit" onclick="location.href='high'"
 			class="mypagebutton1">チュートリアル</button>
 	</p>
 
 	<!-- 編集時のみ出る -->
-	<!-- <a href="blogmng.html">記事管理ページに戻る</a> -->
+	<!-- <a href="blogmng">記事管理ページに戻る</a> -->
 
 
 	<h1>記事編集</h1>
 
 	<div class="article_main">
-		<form action="articleUpdateConfirm" method="post"
-			enctype="multipart/form-data">
-
-			<p>
-				タイトル：<input type="text" name="title" maxlength="40"
-					style="width: 540px;" value="本日の献立">
-			</p>
-
-
+		<form:form action="articleUpdateConfirm" modelAttribute="form"
+			method="post" enctype="multipart/form-data">
+			<p>${msg}</p>
+			<label>タイトル：</label>
+			<form:input path="title" maxlength="40" style="width: 540px;" />
 
 			<fieldset class="htmltag">
 				htmlタグボタン:
@@ -53,35 +49,32 @@
 			</fieldset>
 
 
-			<textarea style="resize: none;" name="main" cols="125" rows="35">ああああ
+			<form:textarea path="articleText" cols="125" rows="35" />
+
+カレーの作り方。
 作り方はとっても簡単。
+できあがり。
 
-ああああ
-【あ】
 
-</textarea>
 			<!-- htmlボタンなどを設置 -->
+			カテゴリは最大3つまで設定できます。「,」(カンマ)区切りで入力してください。
 
-			<br>
-
-			<p>
-				カテゴリ：<input type="text" name="art_category" style="width: 300px;"
-					value="aaa">
-			</p>
+			<label>カテゴリ：</label>
+			<form:input path="category01" style="width: 300px;" />
 
 			<p style="text-align: center;">
-				<input type="submit" name="art_ok" value="確認画面へ"
-					class="mypagebuttoncollect"> <input type="submit"
-					name="button" value="戻る"
-					onclick="location.href='sample1'; return false;">
-			</p>
+				<form:button class="mypagebuttoncollect">確認画面へ</form:button>
+				<a href="article">戻る</a>
 
-		</form>
+			</p>
+		</form:form>
 	</div>
 
-	<footer>
+	<p class="prof">
+		<a href="usersMypage">マイページへ</a>
+	</p>
+
 	<p>Copyright © 2018 Beginner's Blog All Rights Reserved.</p>
-	<a href="login_top" class="kanri">管理者ログイン</a> </footer>
 
 </body>
 </html>

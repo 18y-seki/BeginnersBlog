@@ -47,14 +47,14 @@
 			</p>
 
 			<div class="button_line">
-				<div class="button_left">
+				<div>
 					<form:button onclick="location.href='adminInsert'; return false;"
 						class="fl_tw5">
 						<div class="fa fa-twitter3"></div>
 						<span>戻る</span>
 					</form:button>
 				</div>
-				<div class="button_left">
+				<div>
 					<form:button class="fl_tw5">
 						<div class="fa fa-twitter3"></div>
 						<span>登録</span>

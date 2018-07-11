@@ -9,46 +9,72 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
 <link rel="icon" href="icon.png">
+<link rel="stylesheet" href="css/mypage.css">
 </head>
 <body class="userbody">
-	<p class="mypagebuttonmargin">
+	<!-- 投稿ページ　編集時もここに飛ぶ -->
+	<!-- 会員ログイン時 -->
+
+	<p style="text-align: center;" class="mypagebuttonmargin">
 		<button type="submit" name="mypage" value="mypage"
-			onclick="location.href='mypage'" class="mypagebutton1">マイページ</button>
+			onclick="location.href='usersMypage'" class="mypagebutton1">マイページ</button>
+		<button type="submit" onclick="location.href='high'"
+			class="mypagebutton1">チュートリアル</button>
 	</p>
+
+	<!-- 編集時のみ出る -->
+	<!-- <a href="blogmng">記事管理ページに戻る</a> -->
+
+
+	<h1>記事編集</h1>
+
 	<div class="article_main">
+		<form:form action="articleUpdateResult" modelAttribute="form"
+			method="post" enctype="multipart/form-data">
+
+			</p>
+				<label>タイトル：</label>
+				<form:input path="title" maxlength="40" style="width: 540px;"
+					value="${fn:escapeXml(form.title)}" readonly="true" />
+			<fieldset class="htmltag">
+				htmlタグボタン:
+				<button type="button" class="html">フォント変更</button>
+				<button type="button" class="html">フォントカラー</button>
+				<button type="button" class="html">フォントサイズ</button>
+				<button type="button" class="html">下線</button>
+				<button type="button" class="html">斜線</button>
+				<button type="button" class="html">太文字</button>
+				<button type="button" class="html">リンク</button>
+				<button type="button" class="html">画像挿入</button>
+				<input type="file" name="img">
+			</fieldset>
 
 
-		<!-- つぶやきならタイトル欄を表示しない -->
-		<p>
-			タイトル：<input type="text" name="title" maxlength="40"
-				style="width: 540px;" value="本日の献立" readonly>
-		</p>
+			<form:textarea cols="125" rows="35" path="articleText"
+				value="${fn:escapeXml(form.articleText)}" readonly="true" />
 
-		<p>本文：</p>
-		<textarea style="resize: none;" name="main" cols="125" rows="35"
-			readonly>ああああ
-作り方はとっても簡単。
 
-ああああ
-【あ】
 
-</textarea>
 
-		<p>
-			カテゴリ：<input type="text" name="art_category" style="width: 300px"
-				readonly>
-		</p>
+			<!-- htmlボタンなどを設置 -->
 
-		<p style="text-align: center;">
-			<button type="submit" name="" value=""
-				onclick="location.href='articleUpdateResult'"
-				class="mypagebuttoncollect">投稿する</button>
+			<label>カテゴリ：</label>
+			<form:input path="category01" style="width: 300px;"
+				value="${fn:escapeXml(form.category01)}" readonly="true" />
 
-			<button type="submit" name="" value=""
-				onclick="location.href='articleUpdate'"
-				class="mypagebuttoncollect">戻る</button>
-		</p>
+			<p style="text-align: center;">
+				<form:button class="mypagebuttoncollect">投稿する</form:button>
+				<a href="article">戻る</a>
+
+			</p>
+		</form:form>
 	</div>
+
+	<p class="prof">
+		<a href="usersMypage">マイページへ</a>
+	</p>
+
+	<p>Copyright © 2018 Beginner's Blog All Rights Reserved.</p>
 
 </body>
 </html>

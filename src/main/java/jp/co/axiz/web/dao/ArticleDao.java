@@ -30,6 +30,11 @@ public class ArticleDao {
 			+ "VALUES (?, ?, ?, ?, ?, ?)";
 
 
+	private final String SQL_UPDATE_ARTICLE = "UPDATE article SET title = ?, article_text= ? ,"
+			+ "category_01 = ? ,category_02 = ? ,category_03=? "
+			+ "WHERE  article_id = ?";
+
+
 
 	private final String SQL_DELETE = "DELETE FROM article WHWRE article_id = ?";
 
@@ -82,8 +87,15 @@ public class ArticleDao {
 
 	}
 
-	public void update(Article article) {
+	public void updateArticle(Article article) {
+		jdbcTemplate.update(SQL_UPDATE_ARTICLE,
 
+		article.getTitle(),
+		article.getArticleText(),
+		article.getCategory01(),
+		article.getCategory02(),
+		article.getCategory03(),
+		article.getArticleId());
 	}
 
 	public void delete(Integer articleId) {

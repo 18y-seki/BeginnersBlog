@@ -12,6 +12,7 @@ public class Article {
 	private Integer good_num;
 	private String createdAt;
 	private String updatedAt;
+
 	public Integer getArticleId() {
 		return articleId;
 	}
