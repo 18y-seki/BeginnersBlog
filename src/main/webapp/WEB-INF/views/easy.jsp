@@ -1,4 +1,9 @@
-<!DOCTYPE html>
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+	pageEncoding="UTF-8"%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
+<%@ taglib prefix="fn" uri="http://java.sun.com/jsp/jstl/functions"%>
+<%@ taglib uri="http://www.springframework.org/tags/form" prefix="form"%>
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
 <title>Beginner's Blog</title>
@@ -14,13 +19,13 @@
 <div  class="top">
 
 	<header>
-		<h1><p><a href="top.html">Beginner's Blog</a></p></h1>
+		<h1><p><a href="top">Beginner's Blog</a></p></h1>
 	</header>
 
 </div>
 <div  align="center">
 <p class="my">
-	<a href="usersMypage.html">マイページへ</a>
+	<a href="usersMypage">マイページへ</a>
 </p>
 	</div>
 	<br>
@@ -61,7 +66,7 @@
 <div class="footer">
 		<br><br><br>
 		<p class="let">
-		 <a href="easyContribution.html">投稿しよう！</a>
+		 <a href="easyContribution">投稿しよう！</a>
 		</p>
 	</div>
 </div>
