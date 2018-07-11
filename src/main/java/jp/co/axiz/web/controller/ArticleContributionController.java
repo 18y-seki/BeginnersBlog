@@ -7,7 +7,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
 
 import jp.co.axiz.web.dao.ArticleDao;
 import jp.co.axiz.web.entity.Article;
@@ -44,8 +43,7 @@ public class ArticleContributionController {
 
 
 	@RequestMapping("/hardContribution")
-	public String hardContribution(@ModelAttribute("form") Article article,
-			@RequestParam(name="bgImage", required=false)String bgImage, Model model) {
+	public String hardContribution(@ModelAttribute("form") Article article, Model model) {
 		return "hardContribution";
 	}
 

@@ -29,8 +29,7 @@
 	<h1>記事編集</h1>
 
 	<div class="article_main">
-		<form:form action="articleUpdateConfirm" modelAttribute="form"
-			method="post" enctype="multipart/form-data">
+		<form:form action="articleUpdateConfirm" modelAttribute="form">
 			<p>${msg}</p>
 			<label>タイトル：</label>
 			<form:input path="title" maxlength="40" style="width: 540px;" />
@@ -60,7 +59,7 @@
 			カテゴリは最大3つまで設定できます。「,」(カンマ)区切りで入力してください。
 
 			<label>カテゴリ：</label>
-			<form:input path="category01" style="width: 300px;" />
+			<form:input path="category" style="width: 300px;" />
 
 			<p style="text-align: center;">
 				<form:button class="mypagebuttoncollect">確認画面へ</form:button>

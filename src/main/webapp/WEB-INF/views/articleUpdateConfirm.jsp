@@ -59,8 +59,8 @@
 			<!-- htmlボタンなどを設置 -->
 
 			<label>カテゴリ：</label>
-			<form:input path="category01" style="width: 300px;"
-				value="${fn:escapeXml(form.category01)}" readonly="true" />
+			<form:input path="category" style="width: 300px;"
+				value="${fn:escapeXml(form.category)}" readonly="true" />
 
 			<p style="text-align: center;">
 				<form:button class="mypagebuttoncollect">投稿する</form:button>

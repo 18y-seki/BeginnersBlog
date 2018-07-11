@@ -17,19 +17,61 @@ public class ArticleUpdateController {
 	@Autowired
 	ArticleDao ad;
 
-	@RequestMapping("/articleUpdate")
-	public String articleUpdate(@ModelAttribute("form") Article article, Model model) {
+	@RequestMapping("/articleUpdate" )
+	public String jump(@ModelAttribute("form") Article article, Model model, HttpSession session) {
+		Article art =(Article)session.getAttribute("art");
+		article.setTitle(art.getTitle());
+		article.setArticleText(art.getArticleText());
+		article.setCategory(art.getCategory_01());
 		return "articleUpdate";
+
 	}
 
+
 	@RequestMapping("/articleUpdateConfirm")
-	public String articleUpdateConfirm(@ModelAttribute("form") Article article, Model model) {
+	public String articleUpdate(@ModelAttribute("form") Article article, Model model,HttpSession session) {
+		Article art =(Article)session.getAttribute("art");
+		String title = article.getTitle();
+		String articleText = article.getArticleText();
+		String category = article.getCategory();
+		String[] cate = category.split(",", 0);
+
+		if(title.equals("")){
+			model.addAttribute("msg", "タイトルが未入力です。");
+			return "articleUpdate";
+		}
+		if(articleText.equals("")){
+			model.addAttribute("msg", "本文が未入力です。");
+			return "articleUpdate";
+		}
+		if (cate.length>3) {
+			model.addAttribute("msg", "カテゴリの指定は３つまでです。");
+			return "articleUpdate";
+		}else {
+			article.setCategory_01(cate[0]);
+			article.setCategory_02(cate[1]);
+			article.setCategory_03(cate[2]);
+		}
+		article.setArticleId(art.getArticleId());
+		session.setAttribute("form", article);
+
 		return "articleUpdateConfirm";
+
 	}
 
 	@RequestMapping("/articleUpdateResult")
-	public String articleUpdateResult(@ModelAttribute("form") Article article, Model model) {
+	public String articleUpdateConfirm(@ModelAttribute("form") Article article, Model model, HttpSession session) {
+		Article form = (Article)session.getAttribute("form");
+
+		article.setArticleId(form.getArticleId());
+		article.setCategory_01(form.getCategory_01());
+		article.setCategory_02(form.getCategory_02());
+		article.setCategory_03(form.getCategory_03());
+
+		ad.update(article);
+
 		return "articleUpdateResult";
+
 	}
 
 
