@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+}
+
+.top {
+ background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #56ccf2, #2f80ed);
+  margin:0px;
+  padding:0px;
+}
+
+.top h1 {
+
+	text-align: center;
+	line-height: 100px;
+	color: #FFFFFF;
+	font-size: 80px;
+	font-family: 'Gulim';
+}
+
+.top h1 a {
+	text-decoration: none;
+		color: #FFFFFF;
+}
+
+.top h1 a:visited {
+	color: #FFFFFF;
+}
+
+.top h1 a:hover {
+    text-decoration:none;
+   	color: #FFFFFF;
+}
+
+.center {
+ text-align: center;
+}
+
+.scroll_button a{ /*とっぷへもどるやーつ*/
+    position: fixed;
+    display: block;
+    right:50px;
+    bottom:50px;
+    background: #313131;
+    color:#fff;
+    padding:20px;
+    margin: 0px -40px -33px 0px;
+}
+
+.back {
+	background: url(../image/pchand.jpg);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: 100% auto;
+	text-align: center;
+	width: auto;
+	line-height: 250%;
+	padding-top: 50px;
+}
+
+.start {
+	background-color: #fff8dc;
+	width: 800px;
+	height: auto;
+	opacity: 0.85; 
+	margin-top: 1px;
+	margin-right: 50px;
+	margin-bottom: 80px;
+	margin-left: 50px;
+	padding-top: 1px;
+	padding-bottom: 60px;
+}
+
+.box4{
+    padding: 8px 19px;
+    	width: 400px;
+	margin: 20px 0px 20px 0px;
+    color: #2c2c2f;
+    background: #ffbf77;
+    border-top: solid 5px #ff9011;
+    border-bottom: solid 5px #ff9011;
+}
+.box4 p {
+	font-family: 'Gulim';
+	font-size: 40px;
+    margin: 0; 
+    padding: 0;
+}
+
+.bun {
+	font-size: 20px;
+}
+
+.my {
+	text-align: center;
+	line-height: 10px;
+	color: #555;
+	font-size: 25px;
+	font-family: 'Gulim';
+	margin:0px;
+}
+
+.my a {
+	text-decoration: underline;
+		color: #555;
+}
+
+.my a:visited {
+	color: #555;
+}
+
+.my a:hover {
+    text-decoration:none;
+   	color: #555;
+}
+
+.let {
+	text-align: center;
+	line-height: 10px;
+	color: blue;
+	font-size: 50px;
+	font-family: 'Gulim';
+	margin:0px;
+}
+
+.let a {
+	text-decoration: underline;
+		color: blue;
+}
+
+.let a:visited {
+	color: blue;
+}
+
+.let a:hover {
+    text-decoration:none;
+   	color: blue;
+}
