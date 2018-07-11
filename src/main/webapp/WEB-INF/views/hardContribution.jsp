@@ -53,30 +53,30 @@
 		<div class="buttonT">
 			<p>
 
-				<a href="hard" class="square_btn">チュートリアルを確認</a>
+				<a href="stepup" class="square_btn">チュートリアルを確認</a>
 			<div class="article_main">
 				<form:form action="hardContributionConfirm" modelAttribute="form">
 					<div>
-						タイトル：<input type="text" name="title" maxlength="40"
-							style="width: 540px;">
-
-					背景：<select name="bgImage">
-						<option value="white">白</option>
-						<option value="#4169e1">青</option>
-						<option value="red">赤</option>
-						<option value="yellow">黄色</option>
-						<option value="green">緑</option>
-						<option value="silver">銀色</option>
-						<option value="#d3d3d3">灰色</option>
-						<option value="#ffa500">オレンジ</option>
-						<option value="gold">金色</option>
-						<option value="#f5f5dc">ベージュ</option>
-						<option value="#adff2f">黄緑</option>
-						<option value="#add8e6">水色</option>
-						<option value="black">黒</option>
-					</select>
+						タイトル：
+						<form:input path="title" maxlength="40" style="width: 540px;" />
+						背景：
+						<form:select path="bgImage">
+							<option value="white">白</option>
+							<option value="#4169e1">青</option>
+							<option value="red">赤</option>
+							<option value="yellow">黄色</option>
+							<option value="green">緑</option>
+							<option value="silver">銀色</option>
+							<option value="#d3d3d3">灰色</option>
+							<option value="#ffa500">オレンジ</option>
+							<option value="gold">金色</option>
+							<option value="#f5f5dc">ベージュ</option>
+							<option value="#adff2f">黄緑</option>
+							<option value="#add8e6">水色</option>
+							<option value="black">黒</option>
+						</form:select>
 					</div>
-					<textarea name="editor1"></textarea>
+					<form:textarea path="articleText" id="editor1" ></form:textarea>
 					<script>
 						CKEDITOR
 								.replace('editor1',
@@ -101,7 +101,7 @@
 										});
 					</script>
 					<div class="kategorii">
-						カテゴリ：<input type="text" name="art_category" style="width: 300px;">
+						カテゴリ：<form:input path="category" style="width: 300px;" />
 					</div>
 					</fieldset>
 					<form:button class="square_btn">確認画面へ</form:button>

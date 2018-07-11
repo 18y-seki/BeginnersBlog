@@ -1,5 +1,7 @@
 package jp.co.axiz.web.controller;
 
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -9,6 +11,7 @@ import org.springframework.web.bind.annotation.RequestParam;
 
 import jp.co.axiz.web.dao.ArticleDao;
 import jp.co.axiz.web.entity.Article;
+import jp.co.axiz.web.entity.Users;
 
 @Controller
 public class ArticleContributionController {
@@ -47,16 +50,20 @@ public class ArticleContributionController {
 	}
 
 	@RequestMapping("/hardContributionConfirm")
-	public String hardContributionConfirm(@ModelAttribute("form") Article article,
-			@RequestParam(name="bgImage", required=false)String bgImage, Model model) {
-		model.addAttribute("bgImage",bgImage);
+	public String hardContributionConfirm(@ModelAttribute("form") Article article, Model model, HttpSession session) {
+		session.setAttribute("contribution",article);
 		return "hardContributionConfirm";
 	}
 
 
 	@RequestMapping("/articleContributionResult")
-	public String articleContributionResult(@ModelAttribute("form") Article article,
-			@RequestParam(name="bgImage", required=false)String bgImage, Model model) {
+	public String articleContributionResult(@ModelAttribute("form") Article article, Model model, HttpSession session) {
+		Article contribution =(Article)session.getAttribute("contribution");
+		Users login = (Users)session.getAttribute("login");
+		contribution.setUserId(login.getUserId());
+
+		ad.insertCat1(contribution);
+		session.removeAttribute("contribution");
 		return "articleContributionResult";
 	}
 }

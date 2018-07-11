@@ -7,9 +7,11 @@ public class Article {
 	private String articleText;
 	private String userId;
 	private String userName;
+	private String category;
 	private String category_01;
 	private String category_02;
 	private String category_03;
+	private String bgImage;
 	private Integer good_num;
 	private String createdAt;
 	private String updatedAt;
@@ -43,6 +45,12 @@ public class Article {
 	public void setUserName(String userName) {
 		this.userName = userName;
 	}
+	public String getCategory() {
+		return category;
+	}
+	public void setCategory(String category) {
+		this.category = category;
+	}
 	public String getCategory_01() {
 		return category_01;
 	}
@@ -60,6 +68,12 @@ public class Article {
 	}
 	public void setCategory_03(String category_03) {
 		this.category_03 = category_03;
+	}
+	public String getBgImage() {
+		return bgImage;
+	}
+	public void setBgImage(String bgImage) {
+		this.bgImage = bgImage;
 	}
 	public Integer getGood_num() {
 		return good_num;
@@ -79,6 +93,8 @@ public class Article {
 	public void setUpdatedAt(String updatedAt) {
 		this.updatedAt = updatedAt;
 	}
+
+
 
 
 

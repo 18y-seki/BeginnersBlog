@@ -29,6 +29,10 @@ public class ArticleDao {
 			+ "(title, article_text, user_id, category_01, category_02, category_03, created_at) "
 			+ "VALUES (?, ?, ?, ?, ?, ?, current_timestamp(0))";
 
+	private final String SQL_INSERT_CAT1 = "INSERT INTO article"
+			+ "(title, article_text, user_id, category_01, created_at) "
+			+ "VALUES (?, ?, ?, ?, current_timestamp(0))";
+
 
 
 	private final String SQL_DELETE = "DELETE FROM article WHERE article_id = ?";
@@ -73,7 +77,7 @@ public class ArticleDao {
 		return list;
 	}
 
-	public void register(Article article) {
+	public void insert(Article article) {
 		jdbcTemplate.update(SQL_INSERT,
 				article.getTitle(),
 				article.getArticleText(),
@@ -81,6 +85,15 @@ public class ArticleDao {
 				article.getCategory_01(),
 				article.getCategory_02(),
 				article.getCategory_03());
+
+	}
+
+	public void insertCat1(Article article) {
+		jdbcTemplate.update(SQL_INSERT_CAT1,
+				article.getTitle(),
+				article.getArticleText(),
+				article.getUserId(),
+				article.getCategory());
 
 	}
 

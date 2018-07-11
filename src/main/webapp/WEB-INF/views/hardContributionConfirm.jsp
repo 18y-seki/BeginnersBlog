@@ -47,27 +47,22 @@
 			<div class="center" class="column">
 				<div class="content">
 					<div class="title">
-						<strong>タイトル：今日のご飯</strong>
+						<strong>タイトル：${contribution.title}</strong>
 					</div>
 					<div class="text">
-						私の好きなお店<b><a href="http://www.y-shokukobo.com/menu/lunch/">やまや</a></b>
-						<br> 明太子と高菜が食べ放題だよ！ <br> <img src="img/s_0n7p.jpg">
+						${contribution.articleText}
 
-						<p class="kategori">カテゴリ：おすすめのご飯 投稿日時:2018/06/30</p>
+						<p class="kategori">カテゴリ：${contribution.category} 投稿日時:2018-07-13</p>
 					</div>
 				</div>
 			</div>
 		</div>
 	</fieldset>
+	<form:form action="articleContributionResult" modelAttribute="form">
+		<form:button class="square_btn">確認画面へ</form:button>
+	</form:form>
 
-	<div class="prof2">
-		<a href="articleUpdate">記事の編集</a> &lt;
-		<a href="articleDelete">記事の削除</a>
-	</div>
-	<br>
-	<br>
-	<br>
-	<br>
+
 	<div class="scroll_button">
 		<a href="top">TOPページへ</a>
 	</div>
