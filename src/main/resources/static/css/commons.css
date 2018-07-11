@@ -4,7 +4,7 @@
 
  background: #56ccf2; /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(to top, #56ccf2, #2f80ed);
+  background: linear-gradient(to top, #56ccf2, #2f80ed); 
 }
 .top h1 {
 	text-align: center;
@@ -47,19 +47,19 @@
 	margin: 90px 0px 0px 0px;
 	color: #blue;
 }
-.fl_tw4{/*ãƒœã‚¿ãƒ³ã®èƒŒæ™¯*/
-  color: #FFF;/*æ–‡å­—ãƒ»ã‚¢ã‚¤ã‚³ãƒ³è‰²*/
-  border-radius: 7px;/*è§’ä¸¸ã«*/
+.fl_tw4{/*ƒ{ƒ^ƒ“‚Ì”wŒi*/
+  color: #FFF;/*•¶šEƒAƒCƒRƒ“F*/
+  border-radius: 7px;/*ŠpŠÛ‚É*/
   display: inline-block;
-  height: 40px;/*é«˜ã•*/
-  width: 120px;/*å¹…*/
-  text-align: center;/*ä¸­èº«ã‚’ä¸­å¤®å¯„ã›*/
-  font-size: 22px;/*æ–‡å­—ã®ã‚µã‚¤ã‚º*/
-  line-height: 35px;/*é«˜ã•ã¨åˆã‚ã›ã‚‹*/
+  height: 40px;/*‚‚³*/
+  width: 120px;/*•*/
+  text-align: center;/*’†g‚ğ’†‰›Šñ‚¹*/
+  font-size: 22px;/*•¶š‚ÌƒTƒCƒY*/
+  line-height: 35px;/*‚‚³‚Æ‡‚í‚¹‚é*/
   margin: -10px 0px 0px 500px;
   background: #88bae2;
-  overflow: hidden;/*ã¯ã¿å‡ºãŸéƒ¨åˆ†ã‚’éš ã™*/
-  text-decoration:none;/*ä¸‹ç·šã¯æ¶ˆã™*/
+  overflow: hidden;/*‚Í‚İo‚½•”•ª‚ğ‰B‚·*/
+  text-decoration:none;/*‰ºü‚ÍÁ‚·*/
   font-weight: bold;
 }
 
@@ -68,12 +68,12 @@
     font-size: 30px;
 }
 
-.fl_tw4 span {/*ãƒ†ã‚­ã‚¹ãƒˆ*/
+.fl_tw4 span {/*ƒeƒLƒXƒg*/
 font-family: 'Gulim';
   display:inline-block;
   transition: .5s}
 
-.fl_tw4:hover span{/*ãƒ›ãƒãƒ¼ã§ä¸€å‘¨å›è»¢*/
+.fl_tw4:hover span{/*ƒzƒo[‚Åˆêü‰ñ“]*/
   -webkit-transform: rotateX(360deg);
   -ms-transform: rotateX(360deg);
   transform: rotateX(360deg);

@@ -2,8 +2,11 @@ package jp.co.axiz.web.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
+
+import jp.co.axiz.web.entity.UpdateUsers;
 
 
 
@@ -23,6 +26,17 @@ public class AuthController {
 		return "articleList";
 
 	}
+
+	@RequestMapping("/normalContribution")
+	public String toukou(@ModelAttribute("form") UpdateUsers users, Model model) {
+		return "normalContribution";
+	}
+
+	@RequestMapping("/hardContribution")
+	public String toukou1(@ModelAttribute("form") UpdateUsers users, Model model) {
+		return "hardContribution";
+	}
+
 
 
 }

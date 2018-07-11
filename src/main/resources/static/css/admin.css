@@ -1,0 +1,147 @@
+/* 管理者マイページのbody
+.body {  
+	background-color: #E4EFF0;
+	margin:0; 
+}
+
+/* ページ青くするやつ */
+.header {
+	background: #56ccf2;
+	background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed);
+	background: linear-gradient(to top, #56ccf2, #2f80ed); 
+}
+
+.header h1 {
+	text-align: center;
+	line-height: 140px;
+	color: #FFFFFF;
+	font-size: 77px;
+	font-family: 'Gulim';
+	margin:0; 
+}
+
+.header h1 a {
+	text-decoration: none;
+	color: white;
+}
+
+.header h1 a:visited {
+	color: #FFFFFF;
+}
+
+.header h1 a:hover {
+	text-decoration: none;
+}
+
+/* 管理者マイページの挨拶 */
+.adminHello {
+	color: #333;
+	font-size: 35px;
+	text-align: center;
+}
+
+/* 管理者マイページのボックス */
+.mypageBox {
+	background-color: #E4EFF0;
+	padding: 20px 35px 50px 35px;
+	width: 650px;
+	left: 50%;
+	position: absolute;
+	margin-top:15px;
+	margin-left: -360px;
+	-moz-border-radius: 7px;
+	-webkit-border-radius: 7px;
+	border: solid 3px #777;/*線*/
+	border-radius: 10px;/*角の丸み*/
+}
+
+/* 管理者マイページ内のボタン */
+.mypageButton{
+	width: 100%;
+	border: #E4EFF0 solid 2px;
+	cursor:pointer;
+	background-color: #3498db;
+	color:white;
+	font-size:24px;
+	padding-top:22px;
+	padding-bottom:22px;
+	transition: all 0.1s;
+	margin-top:-4px;
+	margin: 0 auto;
+	font-weight:700;
+	text-align: center;
+}
+
+.mypageButton:hover{
+	background-color: #2C6C6F;
+}
+
+/* パス変更の枠 */
+.passBox{
+	width: 800px;
+	height: 570px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+/* アプデリザルトの箱 */
+.aURbox{
+    width: 450px;
+    height: 270px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 20px double #fcc962;
+    border-radius: 20px;
+    
+    background: -moz-linear-gradient(top, #fcf988, #fffdb5);
+    background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
+    background: linear-gradient(to bottom, #fcf988, #fffdb5);
+}
+
+/* アプデリザルトのメッセージ */
+.aURmsg {
+	text-align:center;
+	font-size: 200%;
+	font-family: 'Meiryo';
+	margin: 70px 0px 60px 0px;
+	color: #333;
+}
+
+/* アプデの枠
+.aUbox{
+    width: 730px;
+    height: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 20px double #fcc962;
+    border-radius: 20px;
+    
+    background: -moz-linear-gradient(top, #fcf988, #fffdb5);
+    background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
+    background: linear-gradient(to bottom, #fcf988, #fffdb5);
+}
+
+/* アプデのメッセージ */
+.aUmsg1 {
+	text-align:center;
+	font-size: 200%;
+	font-family: 'Meiryo';
+	margin: 70px 0px 60px 0px;
+	color: #333;
+}
+
+.aUmsg2{
+	font-size: 40px;
+    text-align: center;
+    color: #333;
+    margin: 35px 0px 60px 0px;
+	font-family: 'Meiryo';
+	border-bottom: dashed 2px #6594e0;
+}
+
+.aUid {
+	margin: 39px 0px 0px 20px;
+	margin-bottom: 40px;
+	color: #333;
+}

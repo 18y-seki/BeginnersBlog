@@ -1,6 +1,6 @@
 
 body{  
-	background-color: silver;
+	background-color: #000;
 	background-size: cover;
 	height:100%;
 	margin:0; 
@@ -8,9 +8,9 @@ body{
 
 /* 青くするやつ。ヘッダーのやつ。 */
 .top {
-	background: #7474bf;
-	background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
-	background: linear-gradient(to right, #7474bf, #348ac7);
+ background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #56ccf2, #2f80ed); 
 	margin:0; 
 }
 

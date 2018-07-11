@@ -26,23 +26,44 @@ body,p,form,input{margin: 0}
 	border-radius: 20px;
 }
 
-    .formUpCon{
-    width: 800px;
-    height: 950px;
+.formUpCon{
+    width: 730px;
+    height: 1130px;
     margin: 30px auto;
     padding: 20px;
-    border: 5px solid #555;
+    border: 20px double #fcc962;
     border-radius: 20px;
+    
+    background: -moz-linear-gradient(top, #fcf988, #fffdb5);
+    background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
+    background: linear-gradient(to bottom, #fcf988, #fffdb5);
     }
+    
+.formadUp{
+    width: 730px;
+    height: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 20px double #fcc962;
+    border-radius: 20px;
+    
+    background: -moz-linear-gradient(top, #fcf988, #fffdb5);
+    background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
+    background: linear-gradient(to bottom, #fcf988, #fffdb5);
+}
 
 .formOne{
-	width: 800px;
-	height: 270px;
-	margin: 30px auto;
-	padding: 20px;
-	border: 5px solid #555;
-	border-radius: 20px;
-}
+    width: 450px;
+    height: 270px;
+    margin: 30px auto;
+    padding: 20px;
+    border: 20px double #fcc962;
+    border-radius: 20px;
+    
+    background: -moz-linear-gradient(top, #fcf988, #fffdb5);
+    background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
+    background: linear-gradient(to bottom, #fcf988, #fffdb5);
+    }
 
 form p{
 	font-size: 29px;
@@ -54,21 +75,39 @@ form p{
 .form-title{
 	font-size: 40px;
 	text-align: center;
-	color: #004080;
+	color: #FFF;
 	font-family: 'GlimChe';
 }
 
-
-
+.form-title2{
+	font-size: 40px;
+    text-align: center;
+    color: #3530a8;
+    margin: 35px 0px 60px 0px;
+	font-family: 'Meiryo';
+border-bottom: dashed 2px #6594e0;
+}
 
 .idText {
 	width 100%;
 	margin: 29px 0px -82px -350px;
 }
 
+.idText2 {
+	width 100%;
+	margin: 29px 0px -82px -410px;
+	color: #555;
+}
+
 .passText {
 	width 100%;
 	margin: 0px 4px -82px -390px;
+}
+
+.passText2 {
+	width 100%;
+	margin: 0px 4px -95px -410px;
+				color: #555;
 }
 
 .id,.pass{
@@ -82,7 +121,7 @@ input[type="password"] {
 	padding: 6px;
 	font-size: 17px;
 }
-
+    
 .submit{
 	width: 100%;
 	margin: 0px 0px 0px 60px;
