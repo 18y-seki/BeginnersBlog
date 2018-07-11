@@ -301,26 +301,31 @@ font-family: 'Gulim';
 
 	.nameText {
 		width 100%;
+		font-size: 26px;
 	margin: 0 auto;
 	}
 
 	.idTextr {
 	width 100%;
+	font-size: 26px;
 	margin: 0 auto;
 }
 
 .hobyText {
 	width 100%;
+	font-size: 26px;
 	margin: 0 auto;
 }
 
 .dayText{
 		width 100%;
-	margin: 0 auto;
+		font-size: 26px;
+		margin: 0 auto;
 }
 
 .comText{
 		width 100%;
+		font-size: 26px;
 	margin: 0 auto;
 }
 
@@ -334,5 +339,7 @@ font-family: 'Gulim';
 }
 
 .profile2 {
+	width: 67%;
+	height: auto;
     border: 1px solid #555;
 }

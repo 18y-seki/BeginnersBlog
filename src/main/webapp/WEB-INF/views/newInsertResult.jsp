@@ -10,19 +10,20 @@
 <link href="css/topBack.css" rel="stylesheet">
 <link rel="icon" href="image/icon.png">
 </head>
-<body class="top">
-	<header>
-	<h1>
-		<p><a href="top">Beginner's Blog</a></p>
-	</h1>
-	</header>
-
-	<div class="formOne">
-		<p class="headN">登録が完了しました！</p>
-
-		<p class="prof">
-			<a href="top">TOPページへ</a>
-		</p>
+<body id="top">
+	<div id="top">
+		<header>
+		<h1>
+			<a href="top">Beginner's Blog</a>
+		</h1>
+		</header>
+		<div class="center">
+			<p id="headM">
+				登録が完了しました！<br>
+			<p class="prof">
+				<a href="top">TOPページへ</a>
+			</p>
+		</div>
 	</div>
 </body>
 </html>

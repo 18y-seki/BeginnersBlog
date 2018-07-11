@@ -5,7 +5,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
-<link rel="icon" href="icon.png">
+<link rel="icon" href="iamge/icon.png">
 <link href="css/moc3.css" rel="stylesheet">
 <link href="css/topBack2.css" rel="stylesheet">
 <link href="css/userMy.css" rel="stylesheet">
@@ -19,9 +19,10 @@
 		</header>
 	</div>
 	<div class="profile">
-		<img src="image/admininsert.png" alt="画像" class="profile2"><br>
+		<img src="image/admininsert.png" alt="画像" class="profile2"><br><br>
 		<p class="idTextr">会員ID:${login.userId}</p>
-		<p class="nameText">名前:${login.userName} 性別:${login.sex}</p>
+		<p class="nameText">名前:${login.userName}
+		<p class="nameText">性別:${login.sex}</p>
 		<p class="dayText">誕生日:${login.birthday}</p>
 		<p class="hobyText">趣味:${login.hobby}</p>
 		<p class="comText">コメント:${login.greet}</p>

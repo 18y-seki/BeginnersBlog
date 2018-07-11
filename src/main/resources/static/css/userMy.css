@@ -333,7 +333,7 @@ table.price tr:last-child td button {
 table.blog {
 	width: 780px;
 	height: 330px;
-	margin: -230px 0px -11px 336px;
+	margin: -410px 0px -10px 336px;
 	border-collapse: separate;
 	border-spacing: 1px 0;
 	font-size: 15px;
@@ -610,9 +610,9 @@ table.price2 tr:last-child td button {
 	top:1px;
 }
 .sMimg1 {
-	width: 13%;
+	width: 15%;
 	height: auto;
-	margin: -117px 0px -77px 637px;
+	margin: -296px 0px -77px 638px;
 }
 
 .sMimg2 {
@@ -624,19 +624,19 @@ table.price2 tr:last-child td button {
 .sMimg3 {
 	width: 14%;
 	height: auto;
-	margin: -20px 0px -290px 200px;
+	margin: -20px 0px -290px 240px;
 }
 
 .sMimg4 {
 	width: 13%;
 	height: auto;
-	margin: -20px 0px -300px 341px;
+	margin: -20px 0px -300px 460px;
 }
 
 .sMimg5 {
 	width: 13%;
 	height: auto;
-	margin: -20px 0px -300px 300px;
+	margin: -20px 0px -300px 220px;
 }
 
 .Smsg {

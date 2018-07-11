@@ -1,92 +1,86 @@
-
-header {
-	height: 160px;
-
-}
-
-#top {
+.top {
  background: #56ccf2; /* fallback for old browsers */
   background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
   background: linear-gradient(to top, #56ccf2, #2f80ed);
 }
-#top h1 {
+
+.top h1 {
 	text-align: center;
-	line-height: 160px;
+	line-height: 120px;
 	color: #FFFFFF;
 	font-size: 80px;
 	font-family: 'Gulim';
 }
-#top h1 a {
+
+.top h1 a {
 	text-decoration: none;
+		color: #FFFFFF;
 }
-#top h1 a:visited {
+
+.top h1 a:visited {
 	color: #FFFFFF;
 }
-#top h1 a:hover {
-	text-decoration: none;
+
+.top h1 a:hover {
+    text-decoration:none;
+   	color: #FFFFFF;
 }
 
 
-#headM {
-	text-align:center;
-	font-size: 200%;
-	font-family: 'Gulim';
-	margin: 90px 0px 0px 0px;
-	color: #FFF;
-}
-#headS {
-	text-align:center;
-	font-size: 200%;
-	font-family: 'Gulim';
-	margin: 18px 0px 0px 0px;
-	color: #FFF;
+form p{
+    font-size: 29px;
+    font-family: 'GlimChe';
+	text-align: center;
+	    color: black;
+    }
+
+
+.idText {
+	font-size: 28px;
+	color: #3530a8;
+	width 100%;
+
 }
 
-#headN {
+.nameText {
+	font-size: 28px;
+	color: #3530a8;
+	width 100%;
+}
+
+.prof{
+	text-align: center;
+	padding: 106px;
+		font-size: 23px;
+	color: black;
+	    font-style:normal;
+}
+
+.prof a {
+	    text-decoration:underline;
+	color: black;
+	    font-style:normal;
+}
+
+.prof a:visited {
+	color: black;
+	    text-decoration:underline;
+	        font-style:normal;
+}
+
+.prof a:hover {
+    text-decoration:underline;
+	    font-style:normal;
+}
+
+.headN {
 	text-align:center;
-	font-size: 200%;
+	font-size: 180%;
 	font-family: 'Meiryo';
-	margin: 70px 0px 60px 0px;
+	margin: 10px 0px 30px 0px;
 	color: #110e51;
 }
 
-#headNu {
-	text-align:center;
-	font-size: 150%;
-	font-family: 'Meiryo';
-	margin: 30px 0px 0px 0px;
-	color: #2c296b;
-}
-
-#headNuu {
-	text-align:center;
-	font-size: 150%;
-	font-family: 'Meiryo';
-	margin: 50px 0px 50px 0px;
-	color: #2c296b;
-}
-
-#headDown {
-	text-align:center;
-	font-size: 300%;
-	font-family: 'Gulim';
-	margin: 40px 0px 0px 0px;
-	color: #FFF;
-}
-
-#headS a {
-	color: #FFF;
-	  text-decoration: none;
-}
-
-#btn2 {
-	width: 15%;
-	margin: 0 auto;
-}
-#jirusi {
-	width: 15%;
-	margin: 20px 0px 0px 635px ;
-}
 .fl_tw2{/*ボタンの背景*/
   color: #FFF;/*文字・アイコン色*/
   border-radius: 7px;/*角丸に*/
@@ -181,134 +175,49 @@ font-family: 'Gulim';
   transform: rotateX(360deg);
 }
 
-
-.scroll_button a{ /*とっぷへもどるやーつ*/
-    position: fixed;
-    display: block;
-    right:50px;
-    bottom:50px;
-    background: #313131;
-    color:#fff;
-    padding:20px;
-    margin: 0px -40px -33px 0px;
-}
-
-#under {
-  border-bottom: double 6px #FFF;
-  }
-
-
-.containe {
-	width: 900px;
-	margin: 2px auto;
-}
-
-.containe a {
-	text-decoration: none;
-	color: #29292A;
-}
-
-.containe a:visited {
-	color: #29292A;
-}
-
-.containe a:hover {
-	text-decoration: none;
-}
-
-.containeC {
-	width: 900px;
-	margin: 12px auto;
-}
-
-.containe2 {
-	width: 70%;
-	margin: 50px 0px 0px 250px;
-}
-
-.containe5 {
-	width: 60%;
-	margin: 80px 0px 0px 210px;
-}
-
-.containe6 {
-	width: 40%;
-	margin: 80px 0px 0px 310px;
-}
-
-.sintyaku {
-	width: 100%;
-	margin: -250px 0px 0px 0px;
-	font-size: 25px;
-}
-.yohaku {
-	width: 200%;
-	margin: 200px 0px 0px 0px;
-	}
-
-.insert {
-width: 60%;
-margin: 0px 0px 0px 300px;
-}
-
-.insert p {
-text-align: center;
-}
-
 .center {
  text-align: center;
 }
-
-.stepup {
-	font-size: 40px;
-		font-family: 'Gulim';
-		color: #FFF;
-	}
-
-.syokyuB {
-	background-color: #FFF;
-	width: 70%;
-	margin: 0px 0px 0px 240px;
-	}
-
-#top3 {
-  background: #7474bf;
-  background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
-  background: linear-gradient(to right, #7474bf, #348ac7);
-  height: 310px;
-  margin: -80px 0px 0px 0px;
+.center1 {
+	width: 1500px;
+	height: auto;
+	margin: 0 auto;
 }
 
-#top3 h1 {
+.box30 {
+	width:500px;
+	height: 500px;
+    margin: 20px 0px 20px 156px;
+    background: #fffccc;
+    border-radius: 14px;
+    box-shadow: 0 13px 20px rgba(0, 0, 0, 0.88);
+}
+.box30 .box-title {
+    font-size: 45px;
+    background: #71b4fc;
+    border-radius: 14px;
+    padding: 4px;
+    text-align: center;
+    color: #FFF;
+    font-weight: bold;
+    letter-spacing: 0.05em;
+}
+.box30 p {
+    padding: 15px 20px;
+    margin: 0;
+}
+
+input {
 	text-align: center;
-	line-height: 250px;
-	color: #FFFFFF;
-	font-size: 80px;
-	font-family: 'Gulim';
+}
+.msg {
+	color: red;
+	font-size: 120%;
 }
 
-#top3 h1 a {
-	text-decoration: none;
+.headNN {
+	font-size: 120%;
 }
-
-#top3 h1 a:visited {
-	color: #FFFFFF;
-}
-
-#top h1 a:hover {
-	text-decoration: none;
-}
-
-.nitiji {
-font-size: 14px;
-
-
-}
-.kategori {
-font-size: 14px;
-text-align: right;
-}
-
-.comment {
-font-size: 17px;
+.kakunin {
+	margin: 0px 0px 0px 50px;
 }

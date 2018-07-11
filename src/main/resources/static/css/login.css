@@ -330,3 +330,11 @@ font-size: 23px;
 color: red;
 text-decoration : underline;
 }
+
+.headM {
+	text-align:center;
+	font-size: 240%;
+	font-family: 'Gulim';
+	margin: 90px 0px 0px 0px;
+	color: #FFF;
+}
