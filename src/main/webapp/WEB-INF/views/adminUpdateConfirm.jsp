@@ -12,47 +12,57 @@
 <link href="css/commons.css" rel="stylesheet">
 <link href="css/login.css" rel="stylesheet">
 <link href="css/topBack.css" rel="stylesheet">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/adminUC.css" rel="stylesheet">
 </head>
-<body class="top">
-	<header>
-	<h1><a href="top">Beginner's Blog</a></h1>
-	</header>
+<body>
+	<div class="center">
+		<div class="top">
+			<h1>
+				<a href="top">Beginner's Blog</a>
+			</h1>
+		</div>
 
-	<div class="formUpCon">
-		<p class="form-title">変更内容確認ページ</p>
+		<div class="box30">
+			<p class="box-title">変更内容確認ページ</p>
 
-		<p class="headM">これでよろしいですか？</p>
+			<p class="headN">これでよろしいですか？</p>
 
-		<form:form action="adminUpdateResult" modelAttribute="form">
-			<p class="idTextr">ID:${beforeUser.userId}</p>
+			<form:form action="adminUpdateResult" modelAttribute="form">
+				<p class="idText">ID:${beforeUser.userId}</p>
 
-			<fieldset class="col">
-				<legend class="headM">変更前</legend>
-				<p class="passText">PASS</p>
-				<p class="pass">
-					<form:input value="${beforeUser.password}" path="password" readonly="true" />
-				</p>
-			</fieldset>
+				<fieldset class="col">
+					<legend class="headM">変更前</legend>
+					<p class="passText">PASS</p>
+					<p class="pass">
+						<form:input value="${beforeUser.password}" path="password"
+							readonly="true" />
+					</p>
+				</fieldset>
 
-			<div class="headDown">↓</div>
-			<br>
+				<div class="headDown">↓</div>
+				<br>
 
-			<fieldset class="col label-110">
-				<legend class="headM">変更後</legend>
-				<p class="passText">
-					PASS<br>(再入力)
-				</p>
-				<p class="pass">
-					<form:password path="newPassword" />
-				</p>
-			</fieldset>
-			<br>
-				<p class="fl_tw4"> <i class="fa fa-twitter3"></i>
-				<form:button>確認</form:button>
-		</form:form>
+				<fieldset class="col label-110">
+					<legend class="headM">変更後</legend>
+					<p class="passText">
+						PASS<br>(再入力)
+					</p>
+					<p class="pass">
+						<form:password path="newPassword" />
+					</p>
+				</fieldset>
+				<br>
+				<form:button type="submit" class="btn btn-primary btn-lg">確認</form:button>
+			</form:form>
+
+		</div>
+
 		<p class="prof">
 			<a href="adminMypage">管理者メニューへ</a>
 		</p>
 	</div>
 </body>
 </html>
+

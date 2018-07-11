@@ -26,19 +26,6 @@
    	color: #FFFFFF;
 }
 
-.formUsersDelete{
-    width: 580px;
-    height: 460px;
-    margin: 30px auto;
-    padding: 20px;
-    border: 20px double #fcc962;
-    border-radius: 20px;
-
-    background: -moz-linear-gradient(top, #fcf988, #fffdb5);
-    background: -webkit-linear-gradient(top, #fcf988, #fffdb5);
-    background: linear-gradient(to bottom, #fcf988, #fffdb5);
-}
-
 form p{
     font-size: 29px;
     font-family: 'GlimChe';
@@ -99,100 +86,6 @@ form p{
 	font-family: 'Meiryo';
 	margin: 10px 0px 30px 0px;
 	color: #110e51;
-}
-
-.fl_tw2{/*ボタンの背景*/
-  color: #FFF;/*文字・アイコン色*/
-  border-radius: 7px;/*角丸に*/
-  display: inline-block;
-  height: 120px;/*高さ*/
-  width: 450px;/*幅*/
-  text-align: center;/*中身を中央寄せ*/
-  font-size: 70px;/*文字のサイズ*/
-  line-height: 121px;/*高さと合わせる*/
-  margin: 50px 0px 0px 196px;
-  background: #1da1f3;
-  overflow: hidden;/*はみ出た部分を隠す*/
-  text-decoration:none;/*下線は消す*/
-}
-
-.fl_tw2 .fa-twitter {
-    text-shadow: 2px 2px 0px #4287d6;
-    font-size: 30px;
-}
-
-.fl_tw2 span {/*テキスト*/
-font-family: 'Gulim';
-  display:inline-block;
-  transition: .5s}
-
-.fl_tw2:hover span{/*ホバーで一周回転*/
-  -webkit-transform: rotateX(360deg);
-  -ms-transform: rotateX(360deg);
-  transform: rotateX(360deg);
-}
-
-.fl_tw3{/*ボタンの背景*/
-  color: #FFF;/*文字・アイコン色*/
-  border-radius: 7px;/*角丸に*/
-  display: inline-block;
-  height: 120px;/*高さ*/
-  width: 450px;/*幅*/
-  text-align: center;/*中身を中央寄せ*/
-  font-size: 76px;/*文字のサイズ*/
-  line-height: 121px;/*高さと合わせる*/
-  margin: -10px 0px 0px 70px;
-  background: #1da1f3;
-  overflow: hidden;/*はみ出た部分を隠す*/
-  text-decoration:none;/*下線は消す*/
-}
-
-.fl_tw3 .fa-twitter2 {
-    text-shadow: 2px 2px 0px #4287d6;
-    font-size: 30px;
-}
-
-.fl_tw3 span {/*テキスト*/
-font-family: 'Gulim';
-  display:inline-block;
-  transition: .5s}
-
-.fl_tw3:hover span{/*ホバーで一周回転*/
-  -webkit-transform: rotateX(360deg);
-  -ms-transform: rotateX(360deg);
-  transform: rotateX(360deg);
-}
-
-.fl_tw4{/*ボタンの背景*/
-  color: #FFF;/*文字・アイコン色*/
-  border-radius: 7px;/*角丸に*/
-  display: inline-block;
-  height: 40px;/*高さ*/
-  width: 120px;/*幅*/
-  text-align: center;/*中身を中央寄せ*/
-  font-size: 22px;/*文字のサイズ*/
-  line-height: 35px;/*高さと合わせる*/
-  margin: -10px 0px 0px 500px;
-  background: #1da1f3;
-  overflow: hidden;/*はみ出た部分を隠す*/
-  text-decoration:none;/*下線は消す*/
-  font-weight: bold;
-}
-
-.fl_tw4 .fa-twitter3 {
-    text-shadow: 2px 2px 0px #4287d6;
-    font-size: 30px;
-}
-
-.fl_tw4 span {/*テキスト*/
-font-family: 'Gulim';
-  display:inline-block;
-  transition: .5s}
-
-.fl_tw4:hover span{/*ホバーで一周回転*/
-  -webkit-transform: rotateX(360deg);
-  -ms-transform: rotateX(360deg);
-  transform: rotateX(360deg);
 }
 
 .center {

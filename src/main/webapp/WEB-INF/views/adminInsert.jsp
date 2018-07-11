@@ -12,36 +12,42 @@
 <link href="css2/commons.css" rel="stylesheet">
 <link href="css2/login.css" rel="stylesheet">
 <link href="css2/topBack.css" rel="stylesheet">
+<link href="css2/adminI.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="top">
-	<header>
-	<h1>
-		<a href="top">Beginner's Blog</a>
-	</h1>
-	</header>
+<body>
+	<div class="center">
+		<div class="top">
+			<h1>
+				<a href="top">Beginner's Blog</a>
+			</h1>
+		</div>
 
-	<div class="formInsert">
-		<p class="form-title">新規管理者登録</p>
+		<div class="box30">
+			<p class="box-title">新規管理者登録</p>
 
-		<p class="headM">登録するIDとパスワードを入力してください！
-		<br>${msg}</p>
+			<div class="center">
 
-		<form:form action="adminInsert" modelAttribute="form" method="post">
-			<p class="idText">ID</p>
-			<p class="id">
-				<form:input path="userId" />
-			</p>
-			<p class="passText">PASS</p>
-			<p class="pass">
-				<form:password path="password" />
-			</p>
+				<p class="headN">
+					登録するIDとパスワードを入力してください！ <br>${msg}</p>
 
-			<form:button class="fl_tw4">
-				<i class="fa fa-twitter3"></i>
-				<span>確認</span>
-			</form:button>
+				<form:form action="adminInsert" modelAttribute="form" method="post">
+					<p class="idText">ID</p>
+					<p class="id">
+						<form:input path="userId" />
+					</p>
+					<p class="passText">PASS</p>
+					<p class="pass">
+						<form:password path="password" />
+					</p>
 
-		</form:form>
+					<form:button type="submit" class="btn btn-primary btn-lg">確認</form:button>
+
+				</form:form>
+
+			</div>
+		</div>
+
 		<p class="prof">
 			<a href="superuserMypage">スーパーユーザメニューへ</a>
 		</p>

@@ -12,55 +12,54 @@
 <link href="css2/commons.css" rel="stylesheet">
 <link href="css2/login.css" rel="stylesheet">
 <link href="css2/topBack.css" rel="stylesheet">
+<link href="css2/adminIC.css" rel="stylesheet">
+<link href="css/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="top">
-	<header>
-	<h1>
-		<a href="top">Beginner's Blog</a>
-	</h1>
-	</header>
+<body>
+	<div class="center">
+		<div class="top">
+			<h1>
+				<a href="top">Beginner's Blog</a>
+			</h1>
+		</div>
 
-	<div class="formAdInCon">
-		<p class="form-title">管理者 登録情報確認ページ</p>
+		<div class="box30">
+			<p class="box-title">管理者 登録情報確認ページ</p>
 
-		<p class="headM">入力した情報を確認してください。</p>
+			<p class="headN">入力した情報を確認してください。</p>
 
-		<form:form action="adminInsertConfirm" modelAttribute="form"
-			method="post">
-			<p class="idText">ID</p>
-			<p class="id">
-				<form:input path="userId" value="${fn:escapeXml(form.userId)}"
-					readonly="true" />
-			</p>
+			<form:form action="adminInsertConfirm" modelAttribute="form"
+				method="post">
+				<p class="idText">ID</p>
+				<p class="id">
+					<form:input path="userId" value="${fn:escapeXml(form.userId)}"
+						readonly="true" />
+				</p>
 
+				<p class="passText">PASS</p>
+				<p class="pass">
+					<form:password path="password"
+						value="${fn:escapeXml(form.password)}" readonly="true" />
 
+				</p>
 
-			<p class="passText">PASS</p>
-			<p class="pass">
-				<form:password path="password" value="${fn:escapeXml(form.password)}"
-					readonly="true" />
+				<p class="headS">
+					登録情報に間違いがなければ、<br>下の登録ボタンをクリックしてください！
+				</p>
 
-			</p>
+				<div class="button_line">
+					<div class="button_left">
+						<form:button onclick="location.href='adminInsert'; return false;"
+							class="fl_tw5">
+							<div class="fa fa-twitter3"></div>
+							<span>戻る</span>
+						</form:button>
+					</div>
 
-			<p id="headS">
-				登録情報に間違いがなければ、<br>下の登録ボタンをクリックしてください！
-			</p>
+					<form:button type="submit" class="btn btn-primary btn-lg">登録</form:button>
 
-			<div class="button_line">
-				<div class="button_left">
-					<form:button onclick="location.href='adminInsert'; return false;"
-						class="fl_tw5">
-						<div class="fa fa-twitter3"></div>
-						<span>戻る</span>
-					</form:button>
 				</div>
-				<div class="button_left">
-					<form:button class="fl_tw5">
-						<div class="fa fa-twitter3"></div>
-						<span>登録</span>
-					</form:button>
-				</div>
-			</div>
+		</div>
 		</form:form>
 
 		<p class="prof">

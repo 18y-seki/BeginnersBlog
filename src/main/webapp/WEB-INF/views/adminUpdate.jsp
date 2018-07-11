@@ -12,29 +12,38 @@
 <link href="css/commons.css" rel="stylesheet">
 <link href="css/login.css" rel="stylesheet">
 <link href="css/topBack.css" rel="stylesheet">
+
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/adminU.css" rel="stylesheet">
 </head>
-<body class="top">
-	<header>
-	<h1><a href="top">Beginner's Blog</a></h1>
-	</header>
+<body>
+	<div class="center">
+		<div class="top">
+			<h1>
+				<a href="top">Beginner's Blog</a>
+			</h1>
+		</div>
 
-	<div class="formInsertCon">
-		<p class="form-title">パスワード変更画面</p>
+		<div class="box30">
+			<p class="box-title">パスワード変更画面</p>
 
-		<p class="headM">
-			ID${beforeUser.userId}さん、<br>
-			新しいPASSを入力してください<br>
-		</p>
-
-	<form:form action="adminUpdateConfirm" modelAttribute="form">
-			<p class="passText">新しいPASS</p>
-			<p class="pass">
-				<form:password path="password" />
+			<p class="headN">
+				ID${beforeUser.userId}さん、<br> 新しいPASSを入力してください<br>
 			</p>
-			<p class="fl_tw4"> <i class="fa fa-twitter3"></i>
-				<form:button>確認</form:button>
-			</p>
-		</form:form>
+
+			<form:form action="adminUpdateConfirm" modelAttribute="form">
+				<p class="passText">新しいPASS</p>
+				<p class="pass">
+					<form:password path="password" />
+				</p>
+				<form:button type="submit" class="btn btn-primary btn-lg">確認</form:button>
+
+
+
+			</form:form>
+
+		</div>
+
 		<p class="prof">
 			<a href="adminMypage">管理者メニューへ</a>
 		</p>

@@ -18,9 +18,11 @@
 
 <body>
 	<div class="center">
-	<div class="top">
-			<h1><a href="top">Beginner's Blog</a></h1>
-			</div>
+		<div class="top">
+			<h1>
+				<a href="top">Beginner's Blog</a>
+			</h1>
+		</div>
 
 		<div class="box30">
 			<div class="box-title">会員退会ページ</div>
@@ -40,19 +42,22 @@
 					<label class="nameText">名前</label>
 					<form:input path="userName" value="${login.userName}" class="id"
 						readonly="true" />
-						<br><br>
+					<br>
+					<br>
 
 					<div class="center">
 						<form:button type="submit" class="btn btn-primary btn-lg">退会</form:button>
-					</div>	<br><br>
+					</div>
+					<br>
+					<br>
 
 				</form:form>
 
 			</div>
 		</div>
-			<p class="prof">
-				<a href="usersMypage">マイページへ</a>
-			</p>
-		</div>
+		<p class="prof">
+			<a href="usersMypage">マイページへ</a>
+		</p>
+	</div>
 </body>
 </html>

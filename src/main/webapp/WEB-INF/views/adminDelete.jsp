@@ -13,37 +13,46 @@
 <link href="css/login.css" rel="stylesheet">
 <link href="css/topBack.css" rel="stylesheet">
 <link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/adminD.css" rel="stylesheet">
 </head>
-<body class="top">
-	<header>
-	<h1>
-		<a href="top">Beginner's Blog</a>
-	</h1>
-	</header>
+<body>
+	<div class="center">
+		<div class="top">
+			<h1>
+				<a href="top">Beginner's Blog</a>
+			</h1>
+		</div>
 
-	<div class="formInsert">
+		<div class="box30">
 
-		<p class="form-title">管理者強制退会ページ</p>
-		<p class="headM">この管理者でよろしいですか？</p>
-		<form:form action="adminDeleteResult" modelAttribute="form">
-			<table class="table table-striped table-bordered table-hover">
-				<thead>
-					<tr>
-						<th>ID</th>
-					</tr>
-				</thead>
-				<tbody>
+			<div class="box-title">管理者強制退会ページ</div>
 
-					<tr>
-						<td><form:input path="userId" readonly="true" /></td>
-					</tr>
-				</tbody>
-			</table>
+			<div class="center">
 
-			<i class="fa fa-twitter3"></i>
-			<form:button>削除</form:button>
+				<p class="headN">この管理者でよろしいですか？</p>
 
-		</form:form>
+				<form:form action="adminDeleteResult" modelAttribute="form">
+					<table class="table table-striped table-bordered table-hover">
+						<thead>
+							<tr>
+								<th>ID</th>
+							</tr>
+						</thead>
+						<tbody>
+
+							<tr>
+								<td><form:input path="userId" readonly="true" /></td>
+							</tr>
+						</tbody>
+					</table>
+
+					<div class="center">
+						<form:button type="submit" class="btn btn-warning btn-lg">削除</form:button>
+					</div>
+
+				</form:form>
+			</div>
+		</div>
 
 		<p class="prof">
 			<a href="superuserMypage">スーパーユーザメニューへ</a>
