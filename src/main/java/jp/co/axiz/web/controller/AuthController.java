@@ -47,9 +47,9 @@ public class AuthController {
 		return "normal";
 	}
 
-	@RequestMapping("/hard")
+	@RequestMapping("/hardContributionConfirm")
 	public String toukou4(@ModelAttribute("form") UpdateUsers users, Model model) {
-		return "hard";
+		return "hardContributionConfirm";
 	}
 
 
