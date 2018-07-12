@@ -15,6 +15,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.multipart.MultipartFile;
 
 import jp.co.axiz.web.dao.ArticleDao;
+import jp.co.axiz.web.dao.ImageDao;
 import jp.co.axiz.web.entity.Article;
 import jp.co.axiz.web.entity.Users;
 
@@ -23,6 +24,9 @@ public class ArticleContributionController {
 
 	@Autowired
 	ArticleDao ad;
+
+	@Autowired
+	ImageDao id;
 
 	@Autowired
 	ServletContext context;
@@ -56,6 +60,7 @@ public class ArticleContributionController {
 
 	@RequestMapping("/normalContribution")
 	public String normalContribution(@ModelAttribute("form") Article article, Model model) {
+
 		return "normalContribution";
 	}
 
@@ -86,6 +91,11 @@ public class ArticleContributionController {
 		contribution.setUserId(login.getUserId());
 
 		ad.insertCat1(contribution);
+
+//		String imagePath = (String)session.getAttribute("imageName");
+//		if(imagePath!=null) {
+//			id.insert(contribution.getArticleId(), imagePath);
+//		}
 		session.removeAttribute("contribution");
 		return "articleContributionResult";
 	}

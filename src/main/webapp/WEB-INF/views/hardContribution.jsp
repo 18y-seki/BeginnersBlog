@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
-<link href="icon.png" rel="image/Blog_icon">
+<link href="image/icon.png" rel="Blog_icon">
 <link href="css/article.css" rel="stylesheet">
 <link href="css/commons.css" rel="stylesheet">
 <!-- jquery読み込み -->
@@ -47,7 +47,6 @@
 		</p>
 		<div class="buttonT">
 			<p>
-
 				<a href="hard" class="square_btn">チュートリアルを確認</a>
 			<div class="article_main">
 				<form:form action="hardContributionConfirm" modelAttribute="form">

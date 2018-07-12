@@ -14,6 +14,7 @@ public class Article {
 	private String category_02;
 	private String category_03;
 	private String bgImage;
+	private String imagePath;
 	private Integer good_num;
 	private String createdAt;
 	private String updatedAt;
@@ -79,6 +80,12 @@ public class Article {
 	}
 	public void setBgImage(String bgImage) {
 		this.bgImage = bgImage;
+	}
+	public String getImagePath() {
+		return imagePath;
+	}
+	public void setImagePath(String imagePath) {
+		this.imagePath = imagePath;
 	}
 	public Integer getGood_num() {
 		return good_num;

@@ -8,11 +8,9 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <title>Beginner's Blog</title>
-<link href="icon.png" rel="image/Blog_icon">
+<link href="image/icon.png" rel="Blog_icon">
 <link href="css/article.css" rel="stylesheet">
 <link href="css/commons.css" rel="stylesheet">
-<link href="css/topBack.css" rel="stylesheet">
-<link href="css/overflow.css" rel="stylesheet">
 
 <!-- jquery読み込み -->
 <script
@@ -38,12 +36,10 @@
 </head>
 <body>
 
-	<div class="top3">
+	<div id="top3">
 		<header>
 		<h1>
-			<p>
-				<a href="top">Beginner's Blog</a>
-			</p>
+			<a href="top">Beginner's Blog</a>
 		</h1>
 		</header>
 	</div>
@@ -53,21 +49,17 @@
 		<p class="syokyuT2">
 		<h2>中級投稿フォーム</h2>
 		</p>
-		</div>
-		<div class="buttonT">
-			<p>
-
-				<a href="normal" class="square_btn">チュートリアルを確認</a>
-			<div class="article_main">
-
-				<form:form action="normalContributionConfirm" modelAttribute="form">
-
-					<div>
-						タイトル：
-						<form:input path="title" maxlength="40" style="width: 540px;" />
-					</div>
-
-
+	</div>
+	<div class="buttonT">
+		<p>
+			<a href="normal" class="square_btn">チュートリアルを確認</a>
+		<div class="article_main">
+			<form:form action="normalContributionConfirm" modelAttribute="form">
+				<div>
+					タイトル：
+					<form:input path="title" maxlength="40" style="width: 540px;" />
+				</div>
+				<div class="editor">
 					<form:textarea path="articleText" id="editor1" />
 					<script>
 						CKEDITOR.replace('editor1', {
@@ -79,24 +71,24 @@
 									"/",
 									[ "Font", "FontSize", "TextColor",
 											"Underline", "Bold", "Italic",
-											"RemoveFormat" ],
-									[ "-", ], ],
+											"RemoveFormat" ], [ "-", ], ],
 						});
 					</script>
+				</div>
+
+				<div class="kategorii">
+					<br> カテゴリ：
+					<form:input path="category" style="width: 300px;" />
+				</div>
 
 
-					<div class="kategorii">
-						<br> カテゴリ：<form:input path="category" style="width: 300px;" />
-					</div>
-					</fieldset>
 
+				<form:button class="square_btn">確認画面へ</form:button>
+				<a href="usersMypage" class="square_btn">マイページへ</a>
 
-					<form:button class="square_btn">確認画面へ</form:button>
-					<a href="usersMypage" class="square_btn">マイページへ</a>
-			</div>
 
 			</form:form>
 		</div>
-
+		</div>
 </body>
 </html>
