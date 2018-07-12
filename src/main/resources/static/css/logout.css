@@ -1,0 +1,30 @@
+
+.headM {
+	text-align:center;
+	font-size: 240%;
+	font-family: 'Gulim';
+	margin: 90px 0px 0px 0px;
+	color: #FFF;
+}
+
+#top {
+ background: #56ccf2; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #56ccf2, #2f80ed); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #56ccf2, #2f80ed);
+}
+#top h1 {
+	text-align: center;
+	line-height: 160px;
+	color: #FFFFFF;
+	font-size: 80px;
+	font-family: 'Gulim';
+}
+#top h1 a {
+	text-decoration: none;
+}
+#top h1 a:visited {
+	color: #FFFFFF;
+}
+#top h1 a:hover {
+	text-decoration: none;
+}
