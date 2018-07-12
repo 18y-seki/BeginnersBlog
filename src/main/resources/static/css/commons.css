@@ -1,0 +1,316 @@
+
+header {
+	height: 160px;
+  background: #7474bf;
+  background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
+  background: linear-gradient(to right, #7474bf, #348ac7);
+}
+
+#top {
+  background: #7474bf;
+  background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
+  background: linear-gradient(to right, #7474bf, #348ac7);
+}
+#top h1 {
+	text-align: center;
+	line-height: 160px;
+	color: #FFFFFF;
+	font-size: 80px;
+	font-family: 'Gulim';
+}
+#top h1 a {
+	text-decoration: none;
+}
+#top h1 a:visited {
+	color: #FFFFFF;
+}
+#top h1 a:hover {
+	text-decoration: none;
+}
+
+
+#headM {
+	text-align:center;
+	font-size: 200%;
+	font-family: 'Gulim';
+	margin: 90px 0px 0px 0px;
+	color: #FFF;
+}
+#headS {
+	text-align:center;
+	font-size: 200%;
+	font-family: 'Gulim';
+	margin: 18px 0px 0px 0px;
+	color: #FFF;
+}
+
+#headN {
+	text-align:center;
+	font-size: 200%;
+	font-family: 'Meiryo';
+	margin: 70px 0px 60px 0px;
+	color: #110e51;
+}
+
+#headNu {
+	text-align:center;
+	font-size: 150%;
+	font-family: 'Meiryo';
+	margin: 30px 0px 0px 0px;
+	color: #2c296b;
+}
+
+#headNuu {
+	text-align:center;
+	font-size: 150%;
+	font-family: 'Meiryo';
+	margin: 50px 0px 50px 0px;
+	color: #2c296b;
+}
+
+#headDown {
+	text-align:center;
+	font-size: 300%;
+	font-family: 'Gulim';
+	margin: 40px 0px 0px 0px;
+	color: #FFF;
+}
+
+#headS a {
+	color: #FFF;
+	  text-decoration: none;
+}
+
+#btn2 {
+	width: 15%;
+	margin: 0 auto;
+}
+#jirusi {
+	width: 15%;
+	margin: 20px 0px 0px 635px ;
+}
+.fl_tw2{/*ボタンの背景*/
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  display: inline-block;
+  height: 120px;/*高さ*/
+  width: 450px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 70px;/*文字のサイズ*/
+  line-height: 121px;/*高さと合わせる*/
+  margin: 50px 0px 0px 196px;
+  background: #1da1f3;
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+}
+
+.fl_tw2 .fa-twitter {
+    text-shadow: 2px 2px 0px #4287d6;
+    font-size: 30px;
+}
+
+.fl_tw2 span {/*テキスト*/
+font-family: 'Gulim';
+  display:inline-block;
+  transition: .5s}
+
+.fl_tw2:hover span{/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.fl_tw3{/*ボタンの背景*/
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  display: inline-block;
+  height: 120px;/*高さ*/
+  width: 450px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 76px;/*文字のサイズ*/
+  line-height: 121px;/*高さと合わせる*/
+  margin: -10px 0px 0px 70px;
+  background: #1da1f3;
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+}
+
+.fl_tw3 .fa-twitter2 {
+    text-shadow: 2px 2px 0px #4287d6;
+    font-size: 30px;
+}
+
+.fl_tw3 span {/*テキスト*/
+font-family: 'Gulim';
+  display:inline-block;
+  transition: .5s}
+
+.fl_tw3:hover span{/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+.fl_tw4{/*ボタンの背景*/
+  color: #FFF;/*文字・アイコン色*/
+  border-radius: 7px;/*角丸に*/
+  display: inline-block;
+  height: 40px;/*高さ*/
+  width: 120px;/*幅*/
+  text-align: center;/*中身を中央寄せ*/
+  font-size: 22px;/*文字のサイズ*/
+  line-height: 35px;/*高さと合わせる*/
+  margin: -10px 0px 0px 500px;
+  background: #1da1f3;
+  overflow: hidden;/*はみ出た部分を隠す*/
+  text-decoration:none;/*下線は消す*/
+  font-weight: bold;
+}
+
+.fl_tw4 .fa-twitter3 {
+    text-shadow: 2px 2px 0px #4287d6;
+    font-size: 30px;
+}
+
+.fl_tw4 span {/*テキスト*/
+font-family: 'Gulim';
+  display:inline-block;
+  transition: .5s}
+
+.fl_tw4:hover span{/*ホバーで一周回転*/
+  -webkit-transform: rotateX(360deg);
+  -ms-transform: rotateX(360deg);
+  transform: rotateX(360deg);
+}
+
+
+.scroll_button a{ /*とっぷへもどるやーつ*/
+    position: fixed;
+    display: block;
+    right:50px;
+    bottom:50px;
+    background: #313131;
+    color:#fff;
+    padding:20px;
+    margin: 0px -40px -33px 0px;
+}
+
+#under {
+  border-bottom: double 6px #FFF;
+  }
+
+
+.containe {
+	width: 900px;
+	margin: 2px auto;
+}
+
+.containe a {
+	text-decoration: none;
+	color: #29292A;
+}
+
+.containe a:visited {
+	color: #29292A;
+}
+
+.containe a:hover {
+	text-decoration: none;
+}
+
+.containeC {
+	width: 900px;
+	margin: 12px auto;
+}
+
+.containe2 {
+	width: 70%;
+	margin: 50px 0px 0px 250px;
+}
+
+.containe5 {
+	width: 60%;
+	margin: 80px 0px 0px 210px;
+}
+
+.containe6 {
+	width: 40%;
+	margin: 80px 0px 0px 310px;
+}
+
+.sintyaku {
+	width: 100%;
+	margin: -250px 0px 0px 0px;
+	font-size: 25px;
+}
+.yohaku {
+	width: 200%;
+	margin: 200px 0px 0px 0px;
+	}
+
+.insert {
+width: 60%;
+margin: 0px 0px 0px 300px;
+}
+
+.insert p {
+text-align: center;
+}
+
+.center {
+ text-align: center;
+}
+
+.stepup {
+	font-size: 40px;
+		font-family: 'Gulim';
+		color: #FFF;
+	}
+
+.syokyuB {
+	background-color: #FFF;
+	width: 70%;
+	margin: 0px 0px 0px 240px;
+	}
+
+#top3 {
+  background: #7474bf;
+  background: -webkit-linear-gradient(to right, #7474bf, #348ac7);
+  background: linear-gradient(to right, #7474bf, #348ac7);
+  height: 310px;
+  margin: -80px 0px 0px 0px;
+}
+
+#top3 h1 {
+	text-align: center;
+	line-height: 250px;
+	color: #FFFFFF;
+	font-size: 80px;
+	font-family: 'Gulim';
+}
+
+#top3 h1 a {
+	text-decoration: none;
+}
+
+#top3 h1 a:visited {
+	color: #FFFFFF;
+}
+
+#top h1 a:hover {
+	text-decoration: none;
+}
+
+.nitiji {
+font-size: 14px;
+
+
+}
+.kategori {
+font-size: 14px;
+text-align: right;
+}
+
+.comment {
+font-size: 17px;
+}

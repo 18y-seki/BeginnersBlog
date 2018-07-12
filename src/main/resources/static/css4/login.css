@@ -1,0 +1,102 @@
+
+.form {
+	width: 800px;
+	height: 400px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+
+.formAdSe {
+	width: 800px;
+	height: 450px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+}
+
+.formInsert {
+	width: 800px;
+	height: 510px;
+	margin: 30px auto;
+	padding: 0px;
+	border: 5px solid #555;
+	border-radius: 20px;
+	background-color:  #fffccc;;
+
+}
+
+.formInsertCon {
+	width: 800px;
+	height: 570px;
+	margin: 20px auto;
+	padding: 0px;
+	border: 5px solid #555;
+	border-radius: 20px;
+	background-color: #71b4fc;
+}
+
+.formAdInCon {
+	width: 800px;
+	height: 650px;
+	margin: 20px auto;
+    padding: 0px;
+	border: 5px solid #555;
+	border-radius: 20px;
+	background-color: #71b4fc;
+}
+
+.formOne {
+	width: 800px;
+	height: 270px;
+	margin: 30px auto;
+	padding: 20px;
+	border: 5px solid #555;
+	border-radius: 20px;
+	background-color: #71b4fc;
+}
+
+form p {
+	font-size: 29px;
+	font-family: 'GlimChe';
+	text-align: center;
+	color: #FFF;
+	margin: -10px;
+}
+
+.form-title {
+	font-size: 40px;
+	text-align: center;
+	color: #FFF;
+	font-family: 'GlimChe';
+	background-color: #71b4fc;
+}
+
+.idText {
+	width 100%;
+	margin: 29px 0px -82px -350px;
+}
+
+.passText {
+	width 100%;
+	margin: 0px 4px -82px -390px;
+}
+
+.id,.pass {
+	margin: 39px 0px 0px 20px;
+	margin-bottom: 40px;
+    }
+
+input[type="text"],
+input[type="password"] {
+	width: 300px;
+	padding: 6px;
+	font-size: 17px;
+}
+
+.submit{
+	width: 100%;
+	margin: 0px 0px 0px 60px;
+}
