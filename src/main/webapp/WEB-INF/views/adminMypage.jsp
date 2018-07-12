@@ -25,7 +25,7 @@
 		<div>
 			<div>
 
-				<form class="form" class="form1">
+				<form class="formB" class="form1">
 					<p class="name">
 						お疲れ様です<br>管理人 さん
 					</p>
