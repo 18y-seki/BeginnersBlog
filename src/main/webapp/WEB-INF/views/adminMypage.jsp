@@ -22,7 +22,7 @@
 		</h1>
 		</header>
 
-		<div class="form-main">
+		<div>
 			<div>
 
 				<form class="form" class="form1">
@@ -41,7 +41,6 @@
 					<div class="submit">
 						<a href="logout">ログアウト</a>
 					</div>
-					<div class="ease"></div>
 				</form>
 			</div>
 		</div>
